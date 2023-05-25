@@ -1,6 +1,26 @@
-# HB Theme Template
+# rtd.ditatompel.com Site
 
-The starter theme template of [HB Framework](https://hbstack.dev/), live demo: https://theme.hbstack.dev/.
+Based from starter theme template of [HB Framework](https://hbstack.dev/). live demo: https://theme.hbstack.dev/.
+I install this by just following [https://hbstack.dev/en/docs/getting-started/installation/](https://hbstack.dev/en/docs/getting-started/installation/) process.
+
+```bash
+# Clone the repository
+git clone --depth 1 https://github.com/hbstack/theme rtd-ditatompel-com
+cd rtd-ditatompel-com
+# change the module path located in go.mod, replace the module github.com/hbstack/theme with this repo : github.com/ditatompel/rtd-ditatompel-com.
+sed -i -e 's/module\ github.com\/hbstack\/theme/module\ github.com\/ditatompel\/rtd-ditatompel-com/' go.mod
+# push to remote repo
+git add .
+git commit --amend
+git remote set-url origin git@github.com:ditatompel/rtd-ditatompel-com.git
+git push origin main
+# install build tools
+npm ci
+# start hugo server
+npm run dev
+# or 
+npm run prod
+```
 
 ## Documentations
 

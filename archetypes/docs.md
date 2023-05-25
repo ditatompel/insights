@@ -28,6 +28,8 @@ images:
 #         vendor: bs
 #         name: book
 #         color: '#e24d0e'
+authors:
+#  - ditatompel
 ---
 
 Summary.

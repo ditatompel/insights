@@ -4,17 +4,17 @@ hb:
   # js_bundle_name: main # the JS bundle name.
   # css_bundle_name: main # the CSS bundle name.
   header:
-    brand: HB # the brand name, leave it empty to use site's title.
-    logo_bg: '#712cf9' # logo background color, used by logo with transparent background.
+    # brand: HB # the brand name, leave it empty to use site's title.
+    # logo_bg: '#712cf9' # logo background color, used by logo with transparent background.
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      github: hbstack
-      twitter: razonyang
+      github: ditatompel
+      twitter: ditatompel
   footer:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      github: hbstack
-      twitter: razonyang
+      github: ditatompel
+      twitter: ditatompel
   blog:
     paginate: 12 # paginate.
     # post_thumbnail: false # whether to show the thumbnails.
@@ -53,7 +53,7 @@ pwa:
   manifest:
     background_color: '#712cf9'
     theme_color: '#712cf9'
-    short_name: 'HB Theme'
+    short_name: 'ditatompel Insights'
 
 # see https://hugomods.com/en/docs/search/#site-parameters
 search:

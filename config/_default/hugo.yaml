@@ -1,5 +1,5 @@
 baseURL: https://insights.ditatompel.com/
-title: Insights
+title: ditatompel Insights
 # Copyright, the {year} is the placeholder of this year.
 copyright: "Copyright © 2022-{year} [insights.ditatompel.com](https://insights.ditatompel.com/). All Rights Reserved."
 defaultContentLanguage: en

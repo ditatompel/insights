@@ -1,18 +1,19 @@
-# rtd.ditatompel.com Site
+# insights.ditatompel.com Site
 
-Based from starter theme template of [HB Framework](https://hbstack.dev/). live demo: https://theme.hbstack.dev/.
+This is replacement of rtd.ditatompel.com (previously using Ghost) and based from starter theme template of [HB Framework](https://hbstack.dev/). live demo: https://theme.hbstack.dev/.
+
 I install this by just following [https://hbstack.dev/en/docs/getting-started/installation/](https://hbstack.dev/en/docs/getting-started/installation/) process.
 
 ```bash
 # Clone the repository
-git clone --depth 1 https://github.com/hbstack/theme rtd-ditatompel-com
+git clone --depth 1 https://github.com/hbstack/theme insights-ditatompel-com
 cd rtd-ditatompel-com
-# change the module path located in go.mod, replace the module github.com/hbstack/theme with this repo : github.com/ditatompel/rtd-ditatompel-com.
-sed -i -e 's/module\ github.com\/hbstack\/theme/module\ github.com\/ditatompel\/rtd-ditatompel-com/' go.mod
+# change the module path located in go.mod, replace the module github.com/hbstack/theme with this repo : github.com/ditatompel/insights-ditatompel-com.
+sed -i -e 's/module\ github.com\/hbstack\/theme/module\ github.com\/ditatompel\/insights-ditatompel-com/' go.mod
 # push to remote repo
 git add .
 git commit --amend
-git remote set-url origin git@github.com:ditatompel/rtd-ditatompel-com.git
+git remote set-url origin git@github.com:ditatompel/insights-ditatompel-com.git
 git push origin main
 # install build tools
 npm ci

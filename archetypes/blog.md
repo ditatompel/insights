@@ -1,9 +1,9 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+description: 
 date: {{ .Date }}
 lastmod:
 draft: true
-description: 
 noindex: false
 featured: false
 pinned: false

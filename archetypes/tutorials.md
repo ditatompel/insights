@@ -1,10 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+description: 
 # linkTitle:
 date: {{ .Date }}
 lastmod:
 draft: true
-description: 
 noindex: false
 # comments: false
 nav_weight: 1000

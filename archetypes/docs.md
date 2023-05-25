@@ -2,6 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 # linkTitle:
 date: {{ .Date }}
+lastmod:
 draft: true
 description: 
 noindex: false

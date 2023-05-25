@@ -81,6 +81,13 @@ taxonomies:
 build:
   writeStats: true # required by PurgeCSS.
 
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+    - :fileModTime
+    - :default
+
 markup:
   goldmark:
     renderer:

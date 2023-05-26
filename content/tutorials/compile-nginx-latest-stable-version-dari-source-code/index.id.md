@@ -15,7 +15,7 @@ nav_weight: 1000
 series:
 #  - Tutorial
 categories:
-#  - 
+  - SysAdmin
 tags:
   - Nginx
   - Linux

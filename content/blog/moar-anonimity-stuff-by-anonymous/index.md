@@ -11,9 +11,9 @@ pinned: false
 series:
 #  - 
 categories:
-  - Thoughts
-tags:
+  - TIL
   - Privacy
+tags:
   - Anonymous
 images:
 #  - 

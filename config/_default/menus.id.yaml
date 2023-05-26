@@ -1,16 +1,16 @@
 main:
-  - name: Support
-    identifier: support
+  - name: Situs Utama
+    identifier: mainsite
     weight: 100
-    url: https://github.com/hbstack
+    url: https://www.ditatompel.com
     params:
-      header: The HB support community.
+      header: Situs utama www.ditatompel.com.
       icon:
         vendor: font-awesome-solid
         name: headset
 
   - name: Documentations
-    parent: support
+    parent: mainsite
     url: https://hbstack.dev/
     weight: 1
     params:
@@ -20,14 +20,14 @@ main:
         className: text-primary
       description: The documentations.
 
-  - identifier: support-divider
-    parent: support
+  - identifier: mainsite-divider
+    parent: mainsite
     weight: 10
     params:
       divider: true
 
   - name: GitHub
-    parent: support
+    parent: mainsite
     url: https://github.com/hbstack
     weight: 11
     params:
@@ -37,7 +37,7 @@ main:
       description: The code repository.
 
   - name: Discussion
-    parent: support
+    parent: mainsite
     url: https://github.com/orgs/hbstack/discussions
     weight: 12
     params:
@@ -48,7 +48,7 @@ main:
       description: Ask questions and share your ideas.
 
   - name: Bug Report
-    parent: support
+    parent: mainsite
     url: https://github.com/orgs/hbstack/discussions/new?category=issues-and-bugs
     weight: 13
     params:
@@ -59,7 +59,7 @@ main:
       description: Tell us about a bug or issue.
 
   - name: Feature Request
-    parent: support
+    parent: mainsite
     url: https://github.com/orgs/hbstack/discussions/new?category=ideas
     weight: 14
     params:

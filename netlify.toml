@@ -23,8 +23,8 @@ GO_VERSION = "1.20"
   status = 404
 
 [[redirects]]
-  from = "/zh-hans/*"
-  to = "/zh-hans/404.html"
+  from = "/id/*"
+  to = "/id/404.html"
   status = 404
 
 # fallback 404 page.

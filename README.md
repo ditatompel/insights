@@ -1,6 +1,6 @@
 # insights.ditatompel.com Site
 
-This is replacement of rtd.ditatompel.com (previously using Ghost) and based from starter theme template of [HB Framework](https://hbstack.dev/). live demo: https://theme.hbstack.dev/.
+This is replacement for `rtd.ditatompel.com` (previously using **Ghost**) and based from starter theme template of [HB Framework](https://hbstack.dev/). live demo: https://theme.hbstack.dev/.
 
 I install this by just following [https://hbstack.dev/en/docs/getting-started/installation/](https://hbstack.dev/en/docs/getting-started/installation/) process.
 
@@ -23,7 +23,8 @@ npm run dev
 npm run prod
 ```
 
-## Documentations
+## Original upstream section
+### Documentations
 
 | English | 简体中文 |
 | ------- | -------- |
@@ -34,7 +35,7 @@ npm run prod
 | [Deployment](https://hbstack.dev/en/docs/deployment/) | [部署](https://hbstack.dev/zh-hans/docs/deployment/) |
 | [Modules](https://hbstack.dev/en/docs/modules/) | [模块](https://hbstack.dev/zh-hans/docs/modules/) |
 
-## Features
+### Features
 
 - **Fast** and **SEO** friendly: [PageSpeed Insight](https://pagespeed.web.dev/analysis?url=https://theme.hbstack.dev/en/) scored perfect :100: in all four metrics on mobile and desktop.
 - **Multi-purpose**: blog, project documentations, digital garden, gallery, landing pages and so on.
@@ -67,6 +68,6 @@ npm run prod
 - Content: supports KaTex (math), Mermaid (diagrams) and Bootstrap shortcodes.
 - ...
 
-## Screenshot
+### Screenshot
 
 ![Screenshot](https://raw.githubusercontent.com/hbstack/theme/main/images/screenshot.png)

@@ -7,18 +7,18 @@ main:
       header: Main site www.ditatompel.com.
       icon:
         vendor: font-awesome-solid
-        name: headset
+        name: globe
 
-  - name: Documentations
+  - name: www.ditatompel.com
     parent: mainsite
-    url: https://hbstack.dev/
+    url: https://www.ditatompel.com
     weight: 1
     params:
       icon:
-        vendor: bs
-        name: book
+        vendor: fas
+        name: globe
         className: text-primary
-      description: The documentations.
+      description: Main site of ditatompel.com.
 
   - identifier: mainsite-divider
     parent: mainsite
@@ -26,45 +26,45 @@ main:
     params:
       divider: true
 
-  - name: GitHub
+  - name: Tools
     parent: mainsite
-    url: https://github.com/hbstack
+    url: https://www.ditatompel.com/tools
     weight: 11
     params:
       icon:
-        vendor: fab
-        name: github
-      description: The code repository.
+        vendor: fas
+        name: wrench
+      description: Collection of free online tools.
 
-  - name: Discussion
+  - name: Free Proxy
     parent: mainsite
-    url: https://github.com/orgs/hbstack/discussions
+    url: https://www.ditatompel.com/proxy
     weight: 12
     params:
       icon:
-        vendor: font-awesome-regular
-        name: comments
+        vendor: font-awesome-solid
+        name: network-wired
         color: green
-      description: Ask questions and share your ideas.
-
-  - name: Bug Report
+      description: Free HTTP, HTTPS, SOCKS5 proxy list.
+  - name: Monero
     parent: mainsite
-    url: https://github.com/orgs/hbstack/discussions/new?category=issues-and-bugs
+    url: https://www.ditatompel.com/monero
     weight: 13
+    params:
+      icon:
+        vendor: fab
+        name: monero
+        color: orange
+      description: Monero remote nodes.
+  - name: CVEs
+    parent: mainsite
+    url: https://www.ditatompel.com/cve
+    weight: 14
     params:
       icon:
         vendor: font-awesome-solid
         name: bug
         color: red
-      description: Tell us about a bug or issue.
+      description: Publicly known CVE database.
 
-  - name: Feature Request
-    parent: mainsite
-    url: https://github.com/orgs/hbstack/discussions/new?category=ideas
-    weight: 14
-    params:
-      icon:
-        vendor: font-awesome-regular
-        name: lightbulb
-        color: orange
-      description: Suggest new or updated features.
+  

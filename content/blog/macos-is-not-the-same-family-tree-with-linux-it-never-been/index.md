@@ -1,5 +1,5 @@
 ---
-title: "Macos Is Not The Same Family Tree With Linux, It Never Been"
+title: "MacOS Is Not The Same Family Tree With Linux, It Never Been"
 date: 2019-05-14T04:13:23+07:00
 lastmod:
 draft: false

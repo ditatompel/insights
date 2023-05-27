@@ -13,7 +13,7 @@ nav_weight: 1000
 #   name: toggles
 #   color: '#e24d0e'
 series:
-  - Docs
+#  - Docs
 categories:
 #  - 
 tags:

@@ -28,7 +28,7 @@ images:
 #         name: book
 #         color: '#e24d0e'
 authors:
-#  - ditatompel
+  - ditatompel
 ---
 
 Kali ini ane mau share cara sinkronisasi *primary DNS* **ispCP** ke *secondary DNS server*. Tapi sebelumnya, apa itu **ispCP**?

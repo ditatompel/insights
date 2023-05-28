@@ -1,6 +1,6 @@
 ---
 title: "TCP/IP - 3-Way-Handshake - MiTM - Session Hijacking"
-url: "tcp-ip-3-way-handshake-mitm-session-hijacking"
+url: "blog/2012/05/tcp-ip-3-way-handshake-mitm-session-hijacking"
 description: "Konsep dasar TCP/IP 3 way handshake , network sniffing, MITM, session hijacking yang dikemas dalam cerita kehidupan sehari-hari agar lebih mudah dimengerti."
 date: 2012-05-12T06:16:34+07:00
 lastmod:

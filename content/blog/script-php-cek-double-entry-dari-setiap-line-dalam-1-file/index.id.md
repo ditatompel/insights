@@ -25,7 +25,7 @@ images:
 #         name: book
 #         color: '#e24d0e'
 authors:
-#  - ditatompel
+  - ditatompel
 ---
 
 Jadi ceritanya kemarin ada **NOC** yang bertanya, bisa ga sih klo kita ngecek entri konfigurasi yang *double* menggunakan script. Terus ane dikasi contoh file yang namanya `nice.rsc`. Setelah saya buka, ternyata file tersebut digunakan untuk menambahkan alamat IP yang terdaftar di **OpenIXP** ke **MikroTik RouterOS**.

@@ -6,14 +6,14 @@ I install this by just following [https://hbstack.dev/en/docs/getting-started/in
 
 ```bash
 # Clone the repository
-git clone --depth 1 https://github.com/hbstack/theme insights-ditatompel-com
+git clone --depth 1 https://github.com/hbstack/theme insights
 cd rtd-ditatompel-com
 # change the module path located in go.mod, replace the module github.com/hbstack/theme with this repo : github.com/ditatompel/insights-ditatompel-com.
-sed -i -e 's/module\ github.com\/hbstack\/theme/module\ github.com\/ditatompel\/insights-ditatompel-com/' go.mod
+sed -i -e 's/module\ github.com\/hbstack\/theme/module\ github.com\/ditatompel\/insights/' go.mod
 # push to remote repo
 git add .
 git commit --amend
-git remote set-url origin git@github.com:ditatompel/insights-ditatompel-com.git
+git remote set-url origin git@github.com:ditatompel/insights.git
 git push origin main
 # install build tools
 npm ci

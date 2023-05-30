@@ -1,4 +1,4 @@
-module github.com/ditatompel/insights-ditatompel-com
+module github.com/ditatompel/insights
 
 go 1.19
 

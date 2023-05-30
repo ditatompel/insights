@@ -8,7 +8,7 @@ I install this by just following [https://hbstack.dev/en/docs/getting-started/in
 # Clone the repository
 git clone --depth 1 https://github.com/hbstack/theme insights
 cd rtd-ditatompel-com
-# change the module path located in go.mod, replace the module github.com/hbstack/theme with this repo : github.com/ditatompel/insights-ditatompel-com.
+# change the module path located in go.mod, replace the module github.com/hbstack/theme with this repo : github.com/ditatompel/insights.
 sed -i -e 's/module\ github.com\/hbstack\/theme/module\ github.com\/ditatompel\/insights/' go.mod
 # push to remote repo
 git add .

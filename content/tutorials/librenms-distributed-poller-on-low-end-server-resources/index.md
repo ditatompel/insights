@@ -15,7 +15,7 @@ nav_weight: 1000
 series:
 #  - Tutorial
 categories:
-  - Networking
+  - SysAdmin
   - Self-Hosted
 tags:
   - LibreNMS
@@ -318,3 +318,4 @@ $config['service_watchdog_enabled'] = true;
 A systemd unit file is provided - the sysv and upstart init scripts could also be used with a little modification.
 
 A systemd unit file can be found in `misc/librenms.service`. To install run `cp /opt/librenms/misc/librenms.service /etc/systemd/system/librenms.service && systemctl enable --now librenms.service`.
+

@@ -31,7 +31,7 @@ authors:
   - ditatompel
 ---
 
-So, inspired from J[erry Ng's Ghost backup script](https://jerrynsh.com/backing-up-ghost-blog-in-5-steps/) which can be used to backup single blog site to remote storage using `rclone`, I write this script that can be used to automatic backup multi Ghost blog on the same server to remote **AWS S3 compatible server** (in this case Minio) using Minio-CLI.
+So, inspired from [Jerry Ng's Ghost backup script](https://jerrynsh.com/backing-up-ghost-blog-in-5-steps/) which can be used to backup single blog site to remote storage using `rclone`, I write this script that can be used to automatic backup multi Ghost blog on the same server to remote **AWS S3 compatible server** (in this case Minio) using Minio-CLI.
 
 <!--more-->
 

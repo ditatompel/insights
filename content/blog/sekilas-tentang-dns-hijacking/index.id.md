@@ -1,6 +1,6 @@
 ---
 title: "Sekilas Tentang DNS Hijacking"
-description: "Bagaimana secara teknis DNS hijacking itu dilakukan, bukan tutorial mengenai penggunaan tools / teknik nyata seorang attacker melakukan DNS Hijacking."
+description: "Mengupas bagaimana secara teknis DNS hijacking itu dilakukan, bukan tutorial mengenai penggunaan tools / teknik nyata seorang attacker melakukan DNS Hijacking"
 date: 2012-01-18T03:20:20+07:00
 lastmod:
 draft: false
@@ -34,15 +34,15 @@ Karena belakangan ini sedang marak **DNS Hijacking**, bahkan **Twitter** pun jad
 
 <!--more-->
 
-**DNS Hijacking** adalah teknik serangan yang bertujuan untuk mengubah entri DNS menuju ke IP lain daripada menuju ke IP sebenarnya. Sebelum melanjutkan, ada baiknya untuk mengerti terlebih dahulu mengerti apa dan bagaimana [Sistem Penamaan Domain](https://id.wikipedia.org/wiki/Sistem_Penamaan_Domain) itu bekerja.
+**DNS Hijacking** adalah teknik serangan yang bertujuan untuk mengubah entri DNS menuju ke IP lain daripada menuju ke IP sebenarnya. Sebelum melanjutkan, ada baiknya untuk mengerti terlebih dahulu mengerti apa dan bagaimana [Sistem Penamaan Domain](https://web.archive.org/web/20110530065350/http://devilzc0de.org:80/forum/thread-7744.html) (Web Archive) itu bekerja.
 
-![dig](dig.png#center)
+![dig command](dig.png#center)
 
-Untuk memahami lebih baik, saya coba kasi contoh di kehidupan sehari-hari. (Bukan cerita nyata)
+Untuk memahami lebih baik, saya coba kasi contoh di kehidupan sehari-hari. Dan supaya tidak terlalu panjang saya pangkas *flow*nya sampai dengan *authoritative DNS* saja dan tidak sampai ke *root DNS*.  (Bukan cerita nyata)
 
-Taruh kata saya ingin mencari *exploit* di situs `1337day.com`. Maka saya akan memasukkan alamat `1337day.com` ke *address bar browser* lalu menekan enter, sehingga saya akan dibawa ke situs `http://1337day.com/`. Tapi, apa yang terjadi di balik layar saat kita melakukan aktivitas tersebut?
+Taruh kata saya ingin mencari **exploit** di situs 1337day.com. Maka saya akan memasukkan alamat 1337day.com ke *address bar browser* lalu menekan enter, sehingga saya akan dibawa ke situs [http://1337day.com/ (archive)](https://web.archive.org/web/20130329071147/http://1337day.com/) . Tapi, apa yang terjadi di balik layar saat kita melakukan aktivitas tersebut?
 
-Pada dasarnya, browser akan mengirimkan permintaan ke **DNS Server** untuk mendapatkan alamat IP domain `1337day.com`, DNS server tersebut kemudian menjawab dan memberitahu browser kita alamat IP untuk 1337day.com adalah `77.120.120.218` sehingga browser kita akan mengakses alamat IP 1337day.com (`77.120.120.218`) dan menampilkan isi dari halaman website tersebut.
+Pada dasarnya, browser akan mengirimkan permintaan ke DNS Server untuk mendapatkan alamat IP domain 1337day.com, *authoritative DNS* server tersebut kemudian menjawab dan memberitahu browser kita alamat IP untuk 1337day.com adalah `77.120.120.218` sehingga browser kita akan mengakses alamat IP 1337day.com (`77.120.120.218`) dan menampilkan isi dari halaman website tersebut.
 
 Cerita berlanjut, 2 hari kemudian saya dapat kabar dari seorang teman kalau situs 1337day.com udah tutup dan berubah jadi toko baju.
 
@@ -109,10 +109,10 @@ Saya akan coba tambahin dan benerin kata2 yang masih belepotan di kesempatan lai
 
 Source :
 
-* paper dari situs darkc0de.com
-* Sistem Penamaan Domain (`http://devilzc0de.org/forum/thread-7744.html`) oleh @[linuxer46]
-* SET(harvester)+Dns Spoofing (`http://devilzc0de.org/forum/thread-11128.html`) oleh @[motaroirhaby]
-* DNS spoofing di Local Network Tutorial (`http://devilzc0de.org/forum/thread-2671.html`) oleh @[wenkhairu]
-* DNS Cache Poisoning (`http://devilzc0de.org/forum/thread-800.html`) oleh @[oela]
-* Bailiwicked DNS Attack (Cache Poisoning) (`http://ezine.echo.or.id/ezine19/e19.008.txt`) oleh @[Cyberheb]
+- paper dari situs **darkc0de.com**
+- [Sistem Penamaan Domain](https://web.archive.org/web/20110530065350/http://devilzc0de.org:80/forum/thread-7744.html) oleh **linuxer46** (Web Archive)
+- **SET(harvester)+Dns Spoofing** (*dead link *URL: `http://devilzc0de.org:80/forum/thread-11128.html`) oleh **motaroirhaby**
+- **DNS spoofing di Local Network Tutorial** (*dead link* URL: `http://devilzc0de.org/forum/thread-2671.html`) oleh **wenkhairu**
+- **DNS Cache Poisoning** (*dead link* URL: `http://devilzc0de.org/forum/thread-800.html`) oleh **oela**
+- [Bailiwicked DNS Attack (Cache Poisoning)](https://web.archive.org/web/20210921234941/http://ezine.echo.or.id/ezine19/e19.008.txt) oleh **Cyberheb** (Web Archive)
 

@@ -136,6 +136,7 @@ sudo -u postgres psql
 CREATE DATABASE <your_db_name> WITH ENCODING = 'UTF8';
 CREATE USER <your_misskey_db_user> WITH ENCRYPTED PASSWORD '<YOUR_PASSWORD>';
 GRANT ALL PRIVILEGES ON DATABASE <your_db_name> TO <your_misskey_db_user>;
+\c <your_db_name>
 GRANT ALL ON SCHEMA public TO <your_misskey_db_user>;
 \q
 ```

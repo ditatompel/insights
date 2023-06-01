@@ -1,6 +1,6 @@
 ---
 title: "Membaca Binary Secara Manual"
-description: "Bagaimana membaca sekumpulan angka 0 dan 1 (Binary) menjadi angka desimal. Kemudian cara mengkonversi desimal ke text (ASCII) menggunakan keyboard & Notepad"
+description: "Bagaimana membaca sekumpulan angka 0 dan 1 (Binary) menjadi decimal. Kemudian cara menggunakan angka desimal tersebut diterjemahkan ke text (ASCII) menggunakan ASII table"
 # linkTitle:
 date: 2012-01-08T04:29:52+07:00
 lastmod:
@@ -29,27 +29,34 @@ images:
 #         color: '#e24d0e'
 authors:
   - ditatompel
+  - jasmerah1966
 ---
 
-Sebenarnya artikel ini udah lama. Beberapa saya pungut dari tulisannya om **Capsoel** di **X-Code Magazine edisi 6** dan sisanya *Googling*. Saya coba angkat dan share disini karena teman saya yang tahun lalu melamar kerja di suatu perusahaan ujian pertamanya *covert Binary* ke *Decimal* dengan cara penghitungan manual. Semoga berguna.
+Bagaimana membaca sekumpulan angka 0 dan 1 (*Binary*/*Biner*) menjadi angka *decimal*/*Desimal*. Kemudian cara menggunakan angka desimal tersebut diterjemahkan ke text (ASCII) menggunakan **ASII table** atau keyboard & Notepad.
 
 <!--more-->
+
+Tulisan ini diadopsi dari tulisan om **ditatompel** dari **devilzc0de** yang berjudul Membaca [Binary Secara Manual](https://rtd.ditatompel.com/membaca-binary-secara-manual/) dan diadaptasi seperlunya. Semoga berguna terutama buat kamu yang ingin mulai masuk di bidang ilmu komputer.
+
+Sebenarnya artikel ini udah lama. Beberapa saya pungut dari tulisannya om **Capsoel** di **X-Code Magazine edisi 6**, om **ditatompel** dari **devilzc0de** dan sisanya *Googling*. Semoga berguna terutama buat kamu yang ingin mulai masuk di bidang ilmu komputer.
+
+## Apa itu bilangan Binary?
 
 ```
 01000100011001010111011001101001011011000111101001100011001100000110010001100101
 ```
 
-Apa itu? kenapa hanya angka `0` dan `1`? Saya yakin tidak semua orang (bahkan yang setiap harinya utak atik komputer) mengerti bagimana membaca **Binary**.
+Apa itu? kenapa hanya angka `0` dan `1`? Saya yakin tidak semua orang (bahkan yang setiap harinya utak atik komputer) mengerti bagimana membaca **Binary**. Bahkan orang-orang yang *"ahli"* berkecimpung di bidang trading Binomo seperti **Indra Kenz** atau **Doni Salmanan**  yang baru viral belakangan ini mengerti cara menerjemahkan *binary* ke *decimal*, karena memang tidak ada hubungannya dengan *trading* mereka :laughing:.
 
-Sederetan angka 0 dan 1 ini adalah kode **binary**. Pertama, saya akan menunjukan bagaimana membaca sekumpulan angka 0 dan 1 tersebut sebagai angka **desimal**. Kemudian saya baru menunjukan bagaimana cara menggunakan angka tersebut diterjemahkan ke *text* (atau **ASCII**) menggunakan *keyboard* anda dengan *software* bawaan Windows, yaitu `notepad` (Dulu saya coba di notepadnya **Windows XP**).
+Sederetan angka 0 dan 1 ini adalah kode **binary**. Pertama, saya akan menunjukan bagaimana membaca sekumpulan angka 0 dan 1 tersebut sebagai angka **desimal**. Kemudian saya baru menunjukan bagaimana cara menggunakan angka tersebut diterjemahkan ke text (ASCII) menggunakan **ASCII table**.
 
+## Menerjemahkan Binary ke Decimal
 Sebagai contoh mudah:
-
 ```
 10101
 ```
 
-pertama, bayangkan 5 digit di atas adalah sebuah slot kosong:
+pertama, bayangkan 5 digit di atas adalah sebuah slot kosong (tolong, ini bukan judi slot gacor ya :wink:):
 
 ```
 _ _ _ _ _
@@ -140,16 +147,14 @@ Lalu convert ke bilangan **decimal**
 01100101 = 101
 ```
 
-Lalu ASCIInya mana?
+## Menerjemahkan Decimal ke ASCII
+Lalu ASCIInya mana? Untuk menerjemahkan Decimal ke ASCII, bisa menggunakan ASCII table berikut (gunakan kolom `Dec` dan `Char`):
 
-Hehehe.. Sekarang giliran notepad menerjemahkannya.. (dulu ane coba ni teknik pake Notepad di **Windows XP**, kaga tau sekarang jalan di **Windows 7** atau tidak).
+![ASCII table](ascii-table.png#center "ASCII table")
 
-Caranya tahan <kbd>ALT</kbd> + Angka desimal yang sudah ditranslate.
+Atau jika menggunakan Windows bisa coba gunakan Notepad pada Windows, caranya tahan <kbd>ALT + Bilangan decimal</kbd> yang sudah ditranslate. (terakhir saya coba di Notepad Windows XP, kurang tau sekarang masih bisa atau tidak). Misal :
 
 <kbd>ALT</kbd> + <kbd>68</kbd> = `D`   
 <kbd>ALT</kbd> + <kbd>101</kbd> = `e`
 
-dan seterusnya, silahkan dicoba dan dibuktikan..
-
-Atau kalau mau mudah bisa menggunakan translator binary yang banyak beredar di internet.. Misalnya saja `http://home.paulschou.net/tools/xlate/`.
-
+dan seterusnya, silahkan dicoba dan dibuktikan.

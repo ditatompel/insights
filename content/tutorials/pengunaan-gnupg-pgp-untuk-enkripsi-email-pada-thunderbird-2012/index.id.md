@@ -16,7 +16,7 @@ nav_weight: 1000
 series:
 #  - Tutorial
 categories:
-  - Privacy
+  - Privasi
   - Security
 tags:
   - PGP

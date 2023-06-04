@@ -1,4 +1,3 @@
 # see https://hugomods.com/en/docs/google-adsense/.
 # google_adsense = 'ca-pub-XXXXXXXXXXXXXXXX' # Please make that the Google AdSense module was imported.
-params:
-  google_adsense: ca-pub-9452844291790895
+google_adsense: ca-pub-9452844291790895

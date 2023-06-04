@@ -11,7 +11,7 @@ pinned: false
 series:
 #  - 
 categories:
-  - Privacy
+  - Privasi
 tags:
   - Kominfo
 images:

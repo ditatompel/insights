@@ -12,7 +12,7 @@ series:
 #  - 
 categories:
   - Security
-  - Privacy
+  - Privasi
   - TIL
 tags:
   - MyBB

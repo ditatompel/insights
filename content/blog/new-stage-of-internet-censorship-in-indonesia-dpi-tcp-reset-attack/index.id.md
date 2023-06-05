@@ -44,6 +44,8 @@ Sejak beberapa bulan yang lalu, saya mulai tidak dapat mengakses **reddit.com** 
 
 Browser saya selalu mengatakan _error **"The connection was reset"**_. *Service* gratis [libreddit yang saya sediakan](https://libreddit.ditatompel.com/) untuk mengakses **Reddit** tanpa konten bermuatan **NSFW** juga menjadi tidak bekerja (servernya sebelumnya ada di **Indonesia Data Center Duren Tiga** atau **IDC-3D**).
 
+> _Baca juga: "[Cara Akses Reddit Tanpa VPN Dengan Libreddit]({{< ref "/blog/cara-akses-reddit-tanpa-vpn-dengan-libreddit/index.id.md" >}})"._
+
 Setelah berdiskusi dengan rekan kantor dan melakukan sedikit observasi, saya dapat menyimpulkan bahwa yang saya alami adalah **_TCP reset attack_ (TCP RST)** dan terjadi di _**Upstream** provider_ / _network checkpoint_ yang saya gunakan. Sepertinya (menurut saya pribadi), *upstream provider* yang saya gunakan dipaksa atau terpaksa melakukan aktifitas *"jahat"* ini.
 
 Kenapa saya bilang terpaksa atau dipaksa? Karena *Upstream provider* adalah pelaku bisnis, dan tujuan bisnis salah satunya adalah meraih laba sebesar-besarnya. Sedangkan untuk melakukan **Deep Packet Inspection (DPI)** untuk *traffic* yang besar bukan hal yang murah. Coba saja cari informasi harga **Palo Alto 5200** series, **Cisco Firepower 9300** series, atau **FortiGate 6000** series jika tidak percaya. Itu baru biaya *hardware*, belum untuk biaya *maintenance*, dan pengeluaran oprasional seperti *training*, gaji, dan lain-lain. Tapi jika ancamannya adalah pencabutan izin, apa boleh buat?

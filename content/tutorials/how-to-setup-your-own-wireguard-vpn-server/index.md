@@ -72,6 +72,8 @@ Adapt the VPS size to fit with your need to avoid extra charge of overuse bandwi
 
 Once your VPS ready and running, it's recommended to update your OS first using `apt update && apt upgrade` command and `reboot` your VPS.
 
+> _If you want to manage **WireGuard** peers (client) on a single server easily, you might be interested to read "[Installing WireGuard-UI to Manage Your WireGuard VPN Server]({{< ref "/tutorials/installing-wireguard-ui-to-manage-your-wireguard-vpn-server/index.md" >}})"._
+
 ### Install WireGuard
 Install WireGuard using `sudo apt install wireguard` command. Once WireGuard is installed, we need to generate private and public key pairs for our WireGuard server.
 

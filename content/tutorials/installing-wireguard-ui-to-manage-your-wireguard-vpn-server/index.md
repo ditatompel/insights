@@ -304,6 +304,8 @@ After adding your peers (clients), press **"Apply Config"** and try to connect t
 
 ![WireGuard UI clients page](wg-ui-clients.png#center)
 
+What next? How about [Configure WireGuard VPN Clients]({{< ref "/tutorials/configure-wireguard-vpn-clients/index.md" >}})?
+
 ### Notes
 - If you have some technical difficulties setting up your own WireGuard server, I can help you to set that up for small amount of **IDR** (_I accept **Monero XMR** for **credits** if you don't have Indonesia Rupiah_).
 - To find out how to contact me, please visit [https://www.ditatompel.com/pages/contact](https://www.ditatompel.com/pages/contact).

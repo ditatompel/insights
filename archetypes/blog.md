@@ -31,5 +31,6 @@ authors:
 Summary.
 
 <!--more-->
+---
 
 Content.

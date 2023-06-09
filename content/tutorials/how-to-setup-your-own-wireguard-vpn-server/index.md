@@ -68,7 +68,7 @@ Adapt the VPS size to fit with your need to avoid extra charge of overuse bandwi
 > _**WireGuard** did **NOT need high disk I/O, so NVMe disk is NOT necessary**._
 
 ## Setup your WireGuard Server
-> _**IMPORTANT NOTE**: Since I'm not familiar with **IPv6** subnetting, I'll only use use IPv4._
+> _**IMPORTANT NOTE**: Since I'm not familiar with **IPv6** subnetting, I'll only use **IPv4**._
 
 Once your VPS ready and running, it's recommended to update your OS first using `apt update && apt upgrade` command and `reboot` your VPS.
 
@@ -102,7 +102,7 @@ Write down the output, we'll need that later to configure WireGuard connection f
 ```
 
 ### Configuring WireGuard Server
-Before configuring your **WireGuard** server, you need to **decide your private network address range for your WireGuard** connection (*tunnel* interface). You should choose valid [private network IP ranges](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_addresses). For example:
+Before configuring your **WireGuard** server, you need to **decide your private network IP range for your WireGuard** connection (*tunnel* interface). You should choose valid [private network IP ranges](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_addresses). For example:
 - Between `10.0.0.0` - `10.255.255.255` (`10.0.0.0/8`)
 - Between `172.16.0.0` - `172.31.255.255` (`172.16.0.0/12`)
 - Between `192.168.0.0` - `192.168.255.255` (`192.168.0.0/16`)
@@ -177,7 +177,7 @@ PreDown = iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 
 Replace `eth0` from above configuration with your server default network interface.
 
-Your `/etc/wireguard/wg0.conf` shoud look like this:
+Your `/etc/wireguard/wg0.conf` should look like this:
 ```plain
 # /etc/wireguard/wg0.conf
 
@@ -193,7 +193,7 @@ PreDown = ufw route delete allow in on wg0 out on eth0
 PreDown = iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 ```
 
-Now our WireGuard server is ready. Try to start your WireGuard server using `systemd`:
+Now our WireGuard server is ready. Try to start your WireGuard server using `wg-quick` (via `systemd`):
 ```shell
 sudo systemctl start wg-quick@wg0.service
 ```
@@ -233,7 +233,7 @@ Jun 05 14:52:31 fra1-do1 systemd[1]: Finished WireGuard via wg-quick(8) for wg0.
 To automatically start WireGuard service when the system start, you can execute `sudo systemctl enable wg-quick@wg0.service` command.
 
 ## Setup WireGuard Peer (*client*)
-In this section, I'll use Linux machine to connect to our configured WireGuard server using `systemd` service. For other method such as connecting using **NetworkManager** GUI, Different OS and mobile devices, I'll add that later to another article.
+In this section, I'll use Linux machine using `wg-quick` via `systemd` as an example to connect to our configured WireGuard server. For other method such as connecting using **NetworkManager** GUI, Different OS and mobile devices, you can read my next article: "[Configure WireGuard VPN Clients]({{< ref "/tutorials/configure-wireguard-vpn-clients/index.md" >}})".
 
 Configuring WireGuard peer (client) in Linux using `systemd` is almost the same as setting up WireGuard server. The different is you didn't need to configure firewall and IP forward for peers. All you need to do is install WireGuard, create private and public key, configure DNS server you want to use, add start the service.
 

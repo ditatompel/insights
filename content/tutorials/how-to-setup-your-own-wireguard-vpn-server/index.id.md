@@ -305,6 +305,29 @@ Sebagai contoh, jika Anda hanya ingin mengarahkan lalu-lintas jaringan menuju IP
 - `PersistentKeepalive` = `15` : Berapa detik sekali *peer* mengirimkan *ping* ke server, supaya server dapat mencapai / berkomunikasi dengan peer yang berada dibalik **NAT**/firewall.
 - `DNS` Anda juga dapat menentukan DNS server yang ingin Anda gunakan dengan menentukan alamat IP DNS server pada konfigurasi `DNS`.
 
+#### Menambahkan *Peers Public Key* ke WireGuard Server
+Setelah itu, Anda perlu menambahkan setiap peer public key ke konfigurasi WireGuard server. Hal ini perlu dilakukan agar peers (client) dapat melakukan koneksi ke WireGuard server. Ada 2 cara yang bisa dilakukan, tergantung dari konfigurasi server Anda.
+
+Jika Anda mengikuti tutorial ini dengan setting `SaveConfig = true` pada server, maka Anda bisa menambahkan *peer public key* dengan perintah berikut di WireGuard Server:
+```shell
+wg set wg0 peer 6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk= allowed-ips 10.10.88.2
+```
+Ubah `wg0` sesuai dengan *interface* WireGuard Anda di server, `6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk=` dengan *public key peer* Anda, dan `10.10.88.2` dengan alamat IP pada *IP range* WireGuard yang akan digunakan oleh peer.
+
+Jika Anda tidak menggunakan setting `SaveConfig = true` pada server, maka Anda tinggal menambahkan informasi *peer* ke konfigurasi server (`/etc/wireguard/wg0.conf`). Contohnya:
+```plain
+[Peer]
+PublicKey = 6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk=
+AllowedIPs = 10.10.88.2/32
+```
+Ubah `6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk=` dengan *public key peer* Anda, dan `10.10.88.2` dengan alamat IP pada *IP range* WireGuard yang akan digunakan oleh peer.
+
+jangan lupa untuk melakukan *restart* WireGuard *service* setiap Anda melakukan perubahan pada file `/etc/wireguard/wg0.conf`.
+```shell
+sudo systemctl restart wg-quick@wg0.service
+```
+
+### Melakukan koneksi ke Server
 Sekarang, konfigurasi *peer* (*client*) sudah selesai, Anda dapat mencoba melakukan koneksi ke WireGuard server dengan `wg-quick` via `systemd`:
 ```shell
 sudo systemctl start wg-quick@wg-do1.service

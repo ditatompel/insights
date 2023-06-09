@@ -299,6 +299,30 @@ For example, if you only want to route traffic to IP 1.0.0.1 and 8.8.4.4 using s
 - `PersistentKeepalive` = `15` : How many seconds for peer send *ping* to the server regularly, so the server can reach the peer sitting behind **NAT**/firewall.
 - `DNS` You can also specify DNS servers you want to use in your `DNS` configuration value.
 
+
+#### Adding Peers Public Key to WireGuard Server
+you need to add every peers public key to WireGuard server configuration. This need to be done to allow peers connect to our WireGuard server. There are 2 ways to do this, depending on your server configuration.
+
+If you following this tutorial with `SaveConfig = true` in the server config, you can add *peer public key* by issuing this command (in WireGuard Server):
+```shell
+wg set wg0 peer 6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk= allowed-ips 10.10.88.2
+```
+Replace `wg0` with your WireGuard server *interface*, `6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk=` with your peer public key, and `10.10.88.2` with the IP address of that will be used by that peer.
+
+If your WireGuard server configuration doesn't contain `SaveConfig = true` config, all you need to do is add peers informations to your WireGuard server config (`/etc/wireguard/wg0.conf`). For Example:
+```plain
+[Peer]
+PublicKey = 6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk=
+AllowedIPs = 10.10.88.2/32
+```
+Replace `6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk=` with your peer public key, and `10.10.88.2` with the IP address of that will be used by that peer.
+
+Don't forget to restart WireGuard service every time you change `/etc/wireguard/wg0.conf` file.
+```shell
+sudo systemctl restart wg-quick@wg0.service
+```
+
+### Connecting to Server
 Now, our peer (client) configuration is complete. you can try to connect your device to your WireGuard server using `systemd` service.
 
 ```shell

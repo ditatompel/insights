@@ -2,7 +2,6 @@ main:
   - name: Situs Utama
     identifier: mainsite
     weight: 100
-    url: https://www.ditatompel.com
     params:
       header: Situs utama www.ditatompel.com.
       icon:

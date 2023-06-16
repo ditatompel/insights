@@ -26,14 +26,14 @@ hb:
         - blog
         - tutorials
     giscus:
-      repo: hbstack/theme
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
+      repo: ditatompel/insights
+      repo_id: R_kgDOJnjREg
+      category_id: DIC_kwDOJnjREs4CXRWP
   docs:
     giscus:
-      repo: hbstack/theme
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
+      repo: ditatompel/insights
+      repo_id: R_kgDOJnjREg
+      category_id: DIC_kwDOJnjREs4CXRWP
   content_panel:
     repo:
       service: github # github or gitlab.
@@ -46,10 +46,27 @@ hb:
 seo:
   favicons: # see https://hugomods.com/en/docs/seo/#favicons-module
     icon: images/logo.png # use logo as favicon.
+    svg_icon: images/logo.svg
+    mask_icon: images/logo.svg
+    mask_icon_color: '#712cf9'
+    sizes:
+      - size: 180x180
+        rel: apple-touch-icon
 
 # PWA settings, see https://hugomods.com/en/docs/pwa/#site-parameters.
 pwa:
   debug: false
+  icon_path: images/logo.png
+  icon_sizes:
+    - 48
+    - 64
+    - 128
+    - 144
+    - 256
+    - 512
+  precaches:
+    - url: /en/
+    - url: /id/
   manifest:
     background_color: '#712cf9'
     theme_color: '#712cf9'

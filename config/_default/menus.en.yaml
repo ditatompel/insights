@@ -2,7 +2,6 @@ main:
   - name: Main Website
     identifier: mainsite
     weight: 100
-    url: https://www.ditatompel.com
     params:
       header: Main site www.ditatompel.com.
       icon:

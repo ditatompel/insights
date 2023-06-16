@@ -26,14 +26,14 @@ hb:
         - blog
         - tutorials
     giscus:
-      repo: hbstack/theme
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
+      repo: ditatompel/insights
+      repo_id: R_kgDOJnjREg
+      category_id: DIC_kwDOJnjREs4CXRWP
   docs:
     giscus:
-      repo: hbstack/theme
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
+      repo: ditatompel/insights
+      repo_id: R_kgDOJnjREg
+      category_id: DIC_kwDOJnjREs4CXRWP
   content_panel:
     repo:
       service: github # github or gitlab.

@@ -5,7 +5,7 @@ date: 2023-06-04T01:19:36+07:00
 lastmod:
 draft: false
 noindex: false
-featured: false
+featured: true
 pinned: false
 # comments: false
 series:

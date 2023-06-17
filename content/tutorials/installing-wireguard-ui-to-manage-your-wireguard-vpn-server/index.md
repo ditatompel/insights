@@ -1,6 +1,6 @@
 ---
 title: "Installing WireGuard-UI to Manage Your WireGuard VPN Server"
-description: 
+description: "To manage WireGuard peers (client) on a single server easily, you can use WireGuard-UI, a web-based user interface to manage your WireGuard setup written in Go."
 # linkTitle:
 date: 2023-06-06T04:20:43+07:00
 lastmod:
@@ -36,7 +36,7 @@ authors:
   - ditatompel
 ---
 
-To manage **WireGuard** *peers* (client) on a single server easily, you can use **WireGuard-UI**, a web-based user interface to manage your WireGuard setup written in Go.
+To manage **WireGuard** *peers* (client) on a single server easily, you can use **WireGuard-UI**, a web-based user interface to manage your WireGuard setup written in **Go**.
 
 <!--more-->
 ---
@@ -110,7 +110,7 @@ WGUI_USERNAME=<YOUR_WIREGUARD_UI_USERNAME>
 WGUI_PASSWORD=<YOUR_WIREGUARD_UI_PASSWORD>
 ```
 
-If you want to enable email feature, you need to set up your _SMTP_\*_ environment variable. See [WireGuard UI Environment Variables details](https://github.com/ngoduykhanh/wireguard-ui#environment-variables) for more information.
+If you want to enable email feature, you need to set up your `SMTP_*` environment variable. See [WireGuard UI Environment Variables details](https://github.com/ngoduykhanh/wireguard-ui#environment-variables) for more information.
 
 ### Finding Server Default Interface
 Then, find out which network interface used by your server as its *default route*. You can use `ip route list default` to see that. Example output of my `ip route list default` command:
@@ -204,7 +204,7 @@ sudo systemctl enable wireguard-ui-daemon.service
 
 
 ### Auto Restart WireGuard Daemon
-Because **WireGuard-UI** only takes care of WireGuard configuration generation. You need another `systemd` to watch for the changes and restart the **WireGuard** service. Create `/etc/systemd/system/wgui.service` and fill with this following example:
+Because **WireGuard-UI** only takes care of WireGuard configuration generation, you need another `systemd` to watch for the changes and restart the **WireGuard** service. Create `/etc/systemd/system/wgui.service` and fill with this following example:
 ```systemd
 [Unit]
 Description=Restart WireGuard
@@ -232,6 +232,7 @@ WantedBy=multi-user.target
 
 Apply `systemd` configurations changes by issuing this following commands:
 ```shell
+systemctl daemon-reload
 systemctl enable wgui.{path,service}
 systemctl start wgui.{path,service}
 ```
@@ -279,7 +280,7 @@ Now restart your nginx configuration `sudo systemctl restart nginx`.
 **Please note** that Nginx server block configuration above is **very basic config**. If you need recommended SSL configuration for Nginx, follow this [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/). If you want to use [Let's Encrypt](https://letsencrypt.org/) certificate, install `python3-certbot-nginx` and request your certificate using `certbot --nginx -d wgui.example.com`.
 
 ## Using WireGuard-UI
-Now afrer configuring all those required services, it's time to **configure our WireGuard config using WireGuard-UI**. Go to your WireGuard-UI (sub)domain and login with username and password you've configured before from `/etc/wireguard-ui/.env`.
+Now after configuring all those required services, it's time to **configure our WireGuard config using WireGuard-UI**. Go to your WireGuard-UI (sub)domain and login with username and password you've configured before from `/etc/wireguard-ui/.env`.
 
 > _**Do not** press **"Apply Config"** before you finished configuring your WireGuard setting from WireGuard UI._
 

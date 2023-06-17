@@ -6,6 +6,7 @@ date: 2023-06-05T19:04:57+07:00
 lastmod:
 draft: false
 noindex: false
+featured: true
 # comments: false
 nav_weight: 1000
 # nav_icon:
@@ -354,5 +355,5 @@ Ketika dikombinasikan dengan **Nginx** sebagai *reverse proxy*, Anda bahkan bisa
 Akan tetapi, melakukan *maintenance* pada jaringan WireGuard yang besar bisa sangat kompleks dan susah dilakukan. Namun, ada *software* yang dapat membantu Anda untuk membantu mengatur hal itu, salah satu contohnya adalah [Netmaker](https://www.netmaker.io/).
 
 ### Catatan Tambahan
-- Jika Anda memiliki kesulitan teknis untuk menmelakukan *setup* VPN server WireGuard sendiri, saya dapat membantu Anda untuk melakukannya dengan imbalan sedikit uang. (_Saya juga menerima **Monero XMR** sebagai **imbalan** jika Anda tidak memiliki mata uang Rupiah_).
+- Jika Anda memiliki kesulitan teknis untuk melakukan *setup* VPN server WireGuard sendiri, saya dapat membantu Anda untuk melakukannya dengan imbalan sedikit uang. (_Saya juga menerima **Monero XMR** sebagai **imbalan** jika Anda tidak memiliki mata uang Rupiah_).
 - Untuk dapat menghubungi saya, silahkan kunjungi [https://www.ditatompel.com/pages/contact](https://www.ditatompel.com/pages/contact).

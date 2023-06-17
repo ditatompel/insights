@@ -6,6 +6,7 @@ date: 2023-06-05T19:04:57+07:00
 lastmod:
 draft: false
 noindex: false
+featured: true
 # comments: false
 nav_weight: 1000
 # nav_icon:

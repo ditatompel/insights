@@ -40,7 +40,11 @@ I hope this announcement finds you well. I would like to inform you of an import
 
 Starting **12th of June 2023**, my Libreddit instance (libreddit.ditatompel.com) will be taken offline as part of the protest against Reddit policies and [API cost changes](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh0jf/dont_let_reddit_kill_3rd_party_apps/). During this time, I encourage you to participate in discussions and engage with other online communities to voice your concerns about the importance of an open and inclusive digital space.
 
-I understand that this inaccessibility may cause inconvenience, and I sincerely apologize for any disruption caused to your browsing experience. I will closely monitor the situation and provide updates regarding the duration of the blackout and any developments that may arise. I appreciate your understanding and support during this crucial time.
+I understand that this inaccessibility may cause inconvenience, and I sincerely apologize for any disruption caused to your browsing experience. I will closely monitor the situation and provide updates regarding the duration of the blackout and any developments that may arise.
+
+## Updates
+### 2023-06-18
+> It's impossible for me to run and maintain my Libreddit instance with the new reddit API cost, so I decide to **permanenly shutdown my Libreddit instance**. I appreciate your understanding and support during this crucial time. Thank you!
 
 Sincerely,
 

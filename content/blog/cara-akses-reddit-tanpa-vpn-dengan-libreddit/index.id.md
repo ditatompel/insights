@@ -47,7 +47,6 @@ Berikut ini daftar beberapa instance yang dapat kamu pakai:
 |URL|Location|Behind Cloudflare?|Comment|
 |-|-|-|-|
 |https://reddit.moe.ngo|🇮🇩 Indonesia|✅||
-|https://libreddit.ditatompel.com|🇸🇬 Singapura|✅|SFW only|
 |https://safereddit.com|🇺🇸 Amerika Serikat||SFW only|
 |https://lr.riverside.rocks|🇺🇸 Amerika Serikat|||
 |https://libreddit.privacy.com.de|🇩🇪 Jerman|||
@@ -59,7 +58,7 @@ Cara menggunakan `libreddit` sangat mudah, kamu cuma butuh *browser*, kunjungi s
 
 Itu supaya ketika kamu kedepannya mengakses `libreddit` *instance* itu lagi, yang tampil di halaman depan adalah konten-konten dari *subreddit* yang sudah kamu *subscribe*.
 
-Caranya, cari *subreddit* yang ingin kamu *subscribe* dari kolom pencarian. Misalnya [r/indonesia](https://libreddit.ditatompel.com/r/indonesia).
+Caranya, cari *subreddit* yang ingin kamu *subscribe* dari kolom pencarian. Misalnya [r/indonesia](https://safereddit.com/r/indonesia).
 
 ![Pencarian di libreddit](libreddit-1.png#center)
 
@@ -81,14 +80,14 @@ Dari hasil pengalaman saya, mengakses reddit menggunakan libreddit terasa lebih 
 - Privasi   
 **Libreddit** hanya menggunakan *"Cookie"* untuk menyimpan *menu "Setting"* dan *subreddit* yang kamu *subscribe*. *"Cookie"* tersebut sama sekali tidak menyimpan informasi personal kita.
 - Pilihan **SFW** *only* / **+NSFW**   
-**Beberapa _libreddit instance_ memilih TIDAK menampilkan** konten **NSFW** (_**SFW** only_), seperti [libreddit.ditatompel.com](https://libreddit.ditatompel.com) dan [safereddit.com](https://safereddit.com). Jadi kamu bisa lebih merasa "aman" ketika melakukan browsing reddit disana.
+**Beberapa _libreddit instance_ memilih TIDAK menampilkan** konten **NSFW** (_**SFW** only_), seperti [safereddit.com](https://safereddit.com). Jadi kamu bisa lebih merasa "aman" ketika melakukan browsing reddit disana.
 
 ## Tips Memanfaatkan _Plugin **Privacy Redirect**_
 Sering kali saat kita melakukan pencarian di mesin penelusuran seperti Google.com, muncul konten dari halaman situs Reddit. Namun karena kita tidak dapat mengakses *link* Reddit tersebit karena ISP yang kita gunakan memblokir akses ke situs reddit.com.
 
 Disini adanya [_plugin browser "**Privacy Redirect**"_](https://github.com/SimonBrazell/privacy-redirect) akan sangat membantu. Dia tugasnya akan melakukan *redirect* (mengubah) *link* asal ke *link* yang sudah kita tentukan sebelumnya.
 
-Misalnya, ketika hasil pencarian dari google.com menampilkan *link* ke _https://**reddit.com**/r/indonesia_, ketika kita mengeklik *link* tersebut, _plugin "**Privacy Redirect**"_ akan mengubah *link* tersebut ke _libreddit instance_ pilihan kita yang sudah kita tentukan sebelumnya, misal: _https://**libreddit.ditatompel.com**/r/indonesia_.
+Misalnya, ketika hasil pencarian dari google.com menampilkan *link* ke _https://**reddit.com**/r/indonesia_, ketika kita mengeklik *link* tersebut, _plugin "**Privacy Redirect**"_ akan mengubah *link* tersebut ke _libreddit instance_ pilihan kita yang sudah kita tentukan sebelumnya, misal: _https://**safereddit.com**/r/indonesia_.
 
 Saat ini, _plugin Privacy Redirect_ tersebut tersedia di [Firefox Add-Ons](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/), [Chrome Web Store](https://chrome.google.com/webstore/detail/privacy-redirect/pmcmeagblkinmogikoikkdjiligflglb), dan [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/privacy-redirect/elnabkhcgpajchapppkhiaifkgikgihj).
 

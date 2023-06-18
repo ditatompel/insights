@@ -39,6 +39,8 @@ authors:
 - Mainnet Wallet RPC (TOR) : `xmrnodfez4ryr4khacshh4uet2u7rjvnqkuv6j474wasjbvx2pespnad.onion:18089`
 - Mainnet P2P: `xmrnode1.ditatompel.com:18080`
 
+> **UPDATE 2**: I will **permanently close** this Monero Public Node service, please read: [Permanently Shutdown Services and Public Nodes]({{< ref "/blog/announcement-permanently-shutdown-services-and-public-nodes/index.md" >}}).
+
 ## Motives
 First, Monero is secure, private, untraceable, an open-source, community-driven project.
 

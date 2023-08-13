@@ -53,7 +53,7 @@ The following services will be close permanently:
 - `tube.ditatompel.com`, Peertube instance.
 - `sts.ditatompel.com`, Mastodon instance.
 
-I will permanently close the services above as of June 25, 2023. If you have ever registered on my Peertube and Mastodon instances, please download your data as soon as possible.
+I will permanently close the services above as of November 5th, 2023. If you have ever registered on my Peertube and Mastodon instances, please download your data as soon as possible.
 
 > _The Monero Remote Node checker service ([https://www.ditatompel.com/monero/remote-node](https://www.ditatompel.com/monero/remote-node)) still **continue to run as usual**._
 

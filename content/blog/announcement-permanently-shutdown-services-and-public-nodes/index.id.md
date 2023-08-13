@@ -53,7 +53,7 @@ Berikut ini adalah layanan-layanan publik yang akan saya tutup secara permanen:
 - `tube.ditatompel.com`, Peertube instance.
 - `sts.ditatompel.com`, Mastodon instance.
 
-Layanan-layanan diatas akan saya tutup secara permanen per tanggal 25 Juni 2023. Jika Anda pernah melakukan registrasi di **Peertube** dan **Mastodon** *instance* saya, mohon untuk segera melakukan download data Anda yang berada disana.
+Layanan-layanan diatas akan saya tutup secara permanen per tanggal 5 Novemver 2023. Jika Anda pernah melakukan registrasi di **Peertube** dan **Mastodon** *instance* saya, mohon untuk segera melakukan download data Anda yang berada disana.
 
 > _layanan pengecekan Monero Remote Node yang diakses dari [https://www.ditatompel.com/monero/remote-node](https://www.ditatompel.com/monero/remote-node) akan **tetap berjalan seperti biasa**._
 

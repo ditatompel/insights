@@ -110,3 +110,5 @@ Setelah memiliki _SSH key pair_ dan _SSH config file_ dikonfigurasi, saatnya men
 ![menambahkan SSH key baru ke akun GitHub](github-add-new-ssh-key.jpg#center)
 
 Dengan begitu proses konfigurasi sudah selesai dan Anda dapat mencoba melakukan lakukan koneksi ke GitHub dengan perintah `ssh -T github.com`. Seharusnya Anda menerima pesan bahwa koneksi Anda ke GitHub berhasil: "**Hi jasmerah1966! You've successfully authenticated, but GitHub does not provide shell access.**".
+
+Selanjutnya: Baca [Cara Setting 'Verified' (Sign) Git Commit Dengan SSH atau GPG Signature]({{< ref "/tutorials/how-to-create-verified-sign-git-commit/index.id.md" >}}).

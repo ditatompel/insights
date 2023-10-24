@@ -50,6 +50,8 @@ Untuk mengikuti langkah-langkah di artikel ini, pastikan Anda sudah dapat menggu
 ## Menggunakan SSH Key Signature
 Cara paling mudah adalah menggunakan metode SSH signature. Anda dapat menggunakan SSH key yang sudah Anda gunakan untuk __Authentication key__ dan mengupload _public key_ yang sama untuk digunakan sebagai __Signing key__.
 
+> _Catatan: Untuk menggunakan metode SSH Key Signature, Anda perlu menggunakan Git `2.34` keatas._
+
 ### Menambahkan SSH Key Sebagai Signing Key
 
 Untuk menambahkan SSH key sebagai __Signing key__ di akun GitHub Anda: 

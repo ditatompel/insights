@@ -44,6 +44,19 @@ Proses authentikasi menggunakan protokol SSH memanfaatkan __SSH public dan priva
 
 Kali ini saya ingin berbagi cara menggunakan protokol SSH sebagai metode autentikasi ke spesifik provider, yaitu GitHub. Namun sebelum memulai, pastikan `git` dan `ssh` sudah terinstall di komputer Anda dan Anda sudah memiki akun di GitHub.com.
 
+## Global Config
+> _**Catatan**: Jika Anda sudah pernah mensetting global config untuk Git, Anda bisa melewati langkah ini._
+
+Jalankan perintah berikut untuk mensetting nama dan email Anda saat melakukan _commit_:
+```shell
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+Ubah `John Doe` dan `johndoe@example.com` sesuai dengan Akun milik Anda.
+
+> _**Catatan**: Pastikan alamat email sesuai dengan alamat email yang Anda gunakan dan sudah terverifikasi di GitHub._
+
 ## Membuat SSH key
 
 Ketika Anda ingin mengakses _private_ repositori Anda atau melakukan perubahan ke repositori GitHub Anda menggunakan SSH, Anda perlu menggunakan SSH _private key_ untuk proses autentikasi. Maka dari itu, buat SSH key pair menggunakan perintah berikut:

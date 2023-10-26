@@ -44,6 +44,19 @@ Proses authentikasi menggunakan protokol SSH memanfaatkan __SSH public dan priva
 
 Kali ini saya ingin berbagi cara menggunakan protokol SSH sebagai metode autentikasi ke spesifik provider, yaitu GitHub. Namun sebelum memulai, pastikan `git` dan `ssh` sudah terinstall di komputer Anda dan Anda sudah memiki akun di GitHub.com.
 
+## Global Config
+> _**Catatan**: Jika Anda sudah pernah mensetting global config untuk Git, Anda bisa melewati langkah ini._
+
+Jalankan perintah berikut untuk mensetting nama dan email Anda saat melakukan _commit_:
+```shell
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+Ubah `John Doe` dan `johndoe@example.com` sesuai dengan Akun milik Anda.
+
+> _**Catatan**: Pastikan alamat email sesuai dengan alamat email yang Anda gunakan dan sudah terverifikasi di GitHub._
+
 ## Membuat SSH key
 
 Ketika Anda ingin mengakses _private_ repositori Anda atau melakukan perubahan ke repositori GitHub Anda menggunakan SSH, Anda perlu menggunakan SSH _private key_ untuk proses autentikasi. Maka dari itu, buat SSH key pair menggunakan perintah berikut:
@@ -105,7 +118,7 @@ Setelah memiliki _SSH key pair_ dan _SSH config file_ dikonfigurasi, saatnya men
 1. Masuk ke __"Settings"__ > __"SSH and GPG keys"__ > Klik tombol __"New SSH key"__.
 2. Isi __"Title"__ dengan apapun yang mudah Anda ingat untuk mengidentifikasi _SSH key_ Anda.
 3. Pada bagian __"Key type"__, pilih __"Authentication Key"__.
-4. Terakhir kembali ke terminal dan _paste_ isi dari __SSH public key__ (pada contoh tutorial ini adaalah `~/.ssh/github_key.pub`) key _textarea_ __"Key"__. Setelah itu klik tombol __Add SSH key"__.
+4. Terakhir kembali ke terminal dan _paste_ isi dari __SSH public key__ (pada contoh tutorial ini adalah `~/.ssh/github_key.pub`) key _textarea_ __"Key"__. Setelah itu klik tombol __Add SSH key"__.
 
 ![menambahkan SSH key baru ke akun GitHub](github-add-new-ssh-key.jpg#center)
 

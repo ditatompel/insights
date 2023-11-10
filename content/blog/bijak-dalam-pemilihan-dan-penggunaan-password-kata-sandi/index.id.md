@@ -84,7 +84,7 @@ Begitu pula dengan fitur penyimpanan password bawaan dari ponsel, sebisa mungkin
 
 ![OTP menurut Kominfo](pak-menkom-johnny-ngomong-otp-harus-selalu-diganti-lmao.jpg#center "OTP menurut Kominfo")
 
-Dikutip dari situs [tempo.co](https://bisnis.tempo.co/read/1630039/kebocoran-data-pribadi-terjadi-lagi-johnny-plate-masyarakat-harus-sering-ganti-password), $\large yang$ $\large mulia$ **Mentri Kemenkominfo** $\large maha$ $\scriptstyle da$$\cal S$$\Eta\Iota$$\scriptscriptstyle a$$\large T$, Pak **Johnny G Plate** mengatakan :
+Dikutip dari situs [tempo.co](https://bisnis.tempo.co/read/1630039/kebocoran-data-pribadi-terjadi-lagi-johnny-plate-masyarakat-harus-sering-ganti-password), {{< katex formula="\large yang" inline=true />}} {{< katex formula="\large mulia" inline=true />}} **Mentri Kemenkominfo** {{< katex formula="\large maha" inline=true />}} {{< katex formula="\scriptstyle da" inline=true />}}{{< katex formula="\cal S\Eta\Iota\large T" inline=true />}}, Pak **Johnny G Plate** mengatakan :
 
 > *"One time password itu harus selalu kita ganti sehingga kita bisa menjaga agar data kita tidak diterobos,"*.
 

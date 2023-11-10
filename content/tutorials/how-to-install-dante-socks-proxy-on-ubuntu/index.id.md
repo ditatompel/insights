@@ -145,7 +145,7 @@ curl -x socks5://myproxyuser:myproxy_password@server_ip:proxy_port http://ifconf
 ```
 > _Sesuaikan `myproxyuser`, `myproxy_password`, `server_ip`, dan `proxy_port` dengan authentikasi dan konfigurasi yang sudah Anda lakukan sebelumnya._
 
-Dari perintah diatas, Anda seharusnya **mendapatkan alamat IP server proxy Anda**, bukan alamat IP komputer Anda.
+Dari perintah diatas, Anda seharusnya **mendapatkan alamat IP server proxy Anda**, bukan alamat IP dari ISP yang komputer Anda.
 
 ## Troubleshooting
 

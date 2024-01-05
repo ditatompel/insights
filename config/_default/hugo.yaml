@@ -72,6 +72,8 @@ outputs:
     - SearchIndex    # required by search module.
     - WebAppManifest # required by PWA module to make your site installable.
 
+rssLimit: 9
+
 taxonomies:
   authors: authors       # multiple authors.
   tags: tags

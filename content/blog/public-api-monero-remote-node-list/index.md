@@ -46,6 +46,8 @@ Since the Monero remote nodes that I monitor are increasing and my page that dis
   - `success`
   - `data[].postal`
 
+Diff: [013aa7d](https://github.com/ditatompel/insights/commit/013aa7db35edd28e72907d5786fcf8877a5a3e70#diff-a8f1b286fbca7e5d241e20d067c8b17a67b86cc142d10dc7cc23cbc9fcc0e332L139-L167).
+
 Because I [refactoring my backend]({{< ref "/blog/rewriting-ditatompel-site-to-svelte-tailwind-and-go/index.md" >}}), there will most likely be another breaking changes in the near future.
 
 ### Update 2023-05-24

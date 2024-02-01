@@ -62,3 +62,13 @@ If I fail to implement the _service worker_ feature in my latest website version
 ---
 
 I will provide the latest updates regarding the transition process on this page. With all these changes, I hope there will be a significant increase in performance both from the frontend and backend.
+
+## Update
+
+### 2024-01-31
+- __BREAKING__: __The Monero Public API endpoint__ moved from `https://www.ditatompel.com/api/monero/remote-node` to `https://api.ditatompel.com/monero/remote-node`. See [Public API Monero Remote Node List]({{< ref "/blog/public-api-monero-remote-node-list/index.md" >}}) and [commit diff 013aa7d](https://github.com/ditatompel/insights/commit/013aa7db35edd28e72907d5786fcf8877a5a3e70#diff-a8f1b286fbca7e5d241e20d067c8b17a67b86cc142d10dc7cc23cbc9fcc0e332L139-L167) for more details.
+
+### 2024-01-29
+Even though it is still in the beta stage, I have deployed the latest version of the frontend and backend to the production server on January 29 2024. And from the current results of [PageSpeed Insights](https://pagespeed.web.dev/), I am quite satisfied with the performance that I got.
+
+![PageSpeed Insights ditatompel.com mobile](pagespeed-insights-ditatompel-dot-com.png#center)

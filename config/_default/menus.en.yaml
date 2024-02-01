@@ -55,15 +55,3 @@ main:
         name: monero
         color: orange
       description: Monero remote nodes.
-  - name: CVEs
-    parent: mainsite
-    url: https://www.ditatompel.com/cve
-    weight: 14
-    params:
-      icon:
-        vendor: font-awesome-solid
-        name: bug
-        color: red
-      description: Publicly known CVE database.
-
-  

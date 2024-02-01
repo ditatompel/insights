@@ -62,3 +62,13 @@ Jika saya gagal mengimplementasikan fitur _service worker_ di versi website terb
 ---
 
 Saya akan menginformasikan update terbaru mengenai proses transisi di halaman ini. Dengan semua perubahan ini saya berharap adanya peningkatan performa yang signifikan baik dari sisi _frontend_ maupun _backend_.
+
+## Update
+
+### 2024-01-31
+- __BREAKING__: __Monero Public API endpoint__ dipindahkan dari `https://www.ditatompel.com/api/monero/remote-node` ke `https://api.ditatompel.com/monero/remote-node`. Lihat [commit diff 013aa7d](https://github.com/ditatompel/insights/commit/013aa7db35edd28e72907d5786fcf8877a5a3e70#diff-a8f1b286fbca7e5d241e20d067c8b17a67b86cc142d10dc7cc23cbc9fcc0e332L139-L167) untuk informasi lebih detail.
+
+### 2024-01-29
+Meskipun masih masih tahap _beta_, _frontend_ dan _backend_ versi terbaru sudah saya _deploy_ ke _production server_ pada tanggal 29 Januari 2024. Dan dari hasil [PageSpeed Insights](https://pagespeed.web.dev/) saat ini, saya cukup puas untuk performa yang saya didapatkan.
+
+![PageSpeed Insights ditatompel.com mobile](pagespeed-insights-ditatompel-dot-com.png#center)

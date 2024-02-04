@@ -288,7 +288,7 @@ Go to **"WireGuard Server"** page and configure WireGuard config:
 - **Server Interface Addresses**: `10.10.88.1/24`
 - **Listen Port**: `51822`
 - **Post Up Script**: `/opt/wireguard-ui/postup.sh`
-- **Post Down Script**: `/opt/wireguard-ui/postup.sh`
+- **Post Down Script**: `/opt/wireguard-ui/postdown.sh`
 
 ![WireGuard- UI Server Settings](wg-ui-server-config.png#center)
 

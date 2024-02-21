@@ -90,7 +90,7 @@ gpg --full-generate-key
 
 After executing the command above, you will be asked to complete the information, including:
 1. Type: Choose any, I recommend just using the default: `RSA and RSA`.
-2. Key size: Fill in between 1024 to 4096. Default 3072. I recommend using `4096`.
+2. Key size: Fill in between 1024 and 4096. Default 3072. I recommend using `4096`.
 3. How long the GPG key is valid: I recommend using the default (`0`, no expiration date).
 4. Enter Name and email information. Pay attention when filling in email information, **make sure the email you enter is the same as the email you use on GitHub**.
 5. Enter `passharse` your GPG key.
@@ -177,7 +177,7 @@ gpg --armor --export 156C485C2EB2C1D6
 
 Copy your GPG key (starting from `-----BEGIN PGP PUBLIC KEY BLOCK-----` to `-----END PGP PUBLIC KEY BLOCK-----`) which after this step, you need to add to your GitHub account.
 
-### Adding GPG to Yyur GitHub Aacount
+### Adding GPG to Your GitHub Account
 
 1. Go to __"Settings"__ > __"SSH and GPG keys"__ > Click the __"New GPG key"__ button.
 2. Fill in __"Title"__ with whatever you can easily remember to identify your _GPG key_.
@@ -189,33 +189,3 @@ If it has been set correctly, you can commit with the command `git commit -S` or
 For signing with **S/MIME** I have never had the opportunity to try. Maybe if anyone wants to add it, please add it by doing a pull request.
 
 I hope this helps.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-> _**Catatan**: Ubah key ID milik saya diatas (`156C485C2EB2C1D6`) dengan key ID milik Anda._
-
-Copy GPG key Anda (diawali dari `-----BEGIN PGP PUBLIC KEY BLOCK-----` sampai `-----END PGP PUBLIC KEY BLOCK-----`) yang setelah ini perlu Anda tambahkan ke akun GitHub Anda.
-
-### Menambahkan GPG Ke Akun GitHub Anda
-
-1. Masuk ke __"Settings"__ > __"SSH and GPG keys"__ > Klik tombol __"New GPG key"__.
-2. Isi __"Title"__ dengan apapun yang mudah Anda ingat untuk mengidentifikasi _GPG key_ Anda.
-3. Masukkan GPG key Anda ke _textarea_ __"Key"__. Setelah itu klik tombol __Add GPG key"__.
-
-## Melakukan Signing Commit
-Jika sudah disetting dengan benar, Anda bisa melakukan commit dengan perintah `git commit -S` atau `git commit -S -m 'Pesan commit kamu'`
-
-Untuk signing dengan **S/MIME** saya belum pernah memiliki kesempatan untuk mencoba. Mungkin jika ada yang ingin menambahkan silahkan ditambahkan dengan melakukan pull request.
-
-Semoga membantu.

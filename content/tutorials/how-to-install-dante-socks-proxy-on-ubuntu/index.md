@@ -36,7 +36,7 @@ authors:
   - jasmerah1966
 ---
 
-This article helps you setting up and configuring **Dante** as a **private SOCKS proxy** (with authentication) on **Debian** based Linux distribution.
+This article helps you to set up and configuring **Dante** as a **private SOCKS proxy** (with authentication) on **Debian** based Linux distribution.
 
 <!--more-->
 ---
@@ -103,7 +103,7 @@ socks pass {
 
 From the example configuration above, **Dante** will listen to any available IP addresses on port `1080` and all outgoing traffic will be passed through `eth0` interface.
 
-You can change the _port_ and you must adjust the `external` _interface_ with your default server interface.
+You can change the _port_, and you must adjust the `external` _interface_ with your default server interface.
 
 After adjusting the **Dante** configuration to fit with your needs, restart the service using `sudo systemctl restart danted.service` command.
 
@@ -150,7 +150,7 @@ From the `curl` command above, your public IP address should become your proxy s
 
 ## Troubleshooting
 
-If you cannot establish a `SOCKS5` connection to your _proxy server_, make sure the _port_ used by Dante is open. run the following `ufw` command (for Debian-based systems) to open a port from the firewall:
+If you cannot establish a `SOCKS5` connection to your _proxy server_, make sure the _port_ used by Dante is open. Run the following `ufw` command (for Debian-based systems) to open a port from the firewall:
 
 ```shell
 ufw allow proto tcp to any port 1080

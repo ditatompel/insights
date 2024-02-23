@@ -40,20 +40,22 @@ authors:
   - ditatompel
 ---
 
-**Wakapi** is a minimalist, __self-hosted__ **WakaTime**-compatible backend for coding statistics. It's cross platform (Windows, MacOS, Linux) and can be self-hosted to your local computer or your own server, so your data is really yours. This article will guide you how to run Wakapi on Linux operating system.
+**Wakapi** is a minimalist, __self-hosted__ **WakaTime** - compatible backend for coding statistics. It's cross-platform (Windows, macOS, Linux) and can be self-hosted to your local computer or your own server, so your data is really yours. This article will guide you how to run Wakapi on Linux operating system.
 
 <!--more-->
 ---
 
 ## Introduction
 
-As someone who extensively use computers on a daily basis, particularly performing server maintenance and coding, I'm always curious about what I've been working on, which projects consume the most of my time, and which programming languages I use the most. Over the past year, I've tried several services, from [Activity Watch](https://activitywatch.net/), [CodeStats](https://codestats.net/) to [WakaTime](https://wakatime.com/).
+As someone who extensively use computers on a daily basis, particularly performing server maintenance and coding, I'm always curious about what I've been working on, which projects consume the most of my time, and which programming languages I use the most.
 
-With **Activity Watch**, while the backend can be installed on a local or remote server, I found it to be somewhat _resource-intensive_. While **CodeStats** and **WakaTime** were really good, the coding statistics data was sent to their servers; this aspect was a concern for me.
+Over the past year, I've tried several services, from [Activity Watch](https://activitywatch.net/), [CodeStats](https://codestats.net/) to [WakaTime](https://wakatime.com/).
+
+With **Activity Watch**, while the backend can be installed on a local or remote server, I found it to be somewhat _resource-intensive_. While **CodeStats** and **WakaTime** were excellent, the coding statistics data was sent to their servers; this aspect was a concern for me.
 
 A few days ago, I found a solution for that problem: [Wakapi](https://wakapi.dev/). It's an API endpoint **compatible with the WakaTime client**, and it can be _self-hosted_.
 
-The **Wakapi server** is built using the **Go** programming language and can be run on various operating systems, including Windows, MacOS (both `ARM` and `x86_64`), and Linux (both `ARM` and `x86_64`). In this article, I want to share my experience installing and running Wakapi on a Linux server.
+The **Wakapi server** is built using the **Go** programming language and can be run on various operating systems, including Windows, macOS (both `ARM` and `x86_64`), and Linux (both `ARM` and `x86_64`). In this article, I want to share my experience installing and running Wakapi on a Linux server.
 
 ## Server Installation
 
@@ -104,7 +106,7 @@ sudo curl -o /opt/wakapi/wakapi.yml https://raw.githubusercontent.com/muety/waka
 sudo chown wakapi:wakapi /opt/wakapi/wakapi.yml /opt/wakapi/wakapi
 ```
 
-Then, edit the `/opt/wakapi/wakapi.yml` configuration file as needed. For instance, if I'm using the subdomain `wakapi.example.com` with **Nginx** as a _reverse proxy_ for Wakapi, I'd set the `listen_ipv4` to `127.0.0.1` and `public_url` to `https://wakapi.example.com`. Adjust other configurations such as database connection, SMTP email, etc if you need to.
+Then, edit the `/opt/wakapi/wakapi.yml` configuration file as needed. For instance, if I'm using the subdomain `wakapi.example.com` with **Nginx** as a _reverse proxy_ for Wakapi, I'd set the `listen_ipv4` to `127.0.0.1` and `public_url` to `https://wakapi.example.com`. Adjust other configurations such as database connection, SMTP email, etc. if you need to.
 
 ### Creating a Systemd Service
 
@@ -157,7 +159,7 @@ WantedBy=multi-user.target
 
 ```
 
-Then, reload and start the wakapi service:
+Then, reload and start the Wakapi service:
 
 ```shell
 sudo systemctl daemon-reload

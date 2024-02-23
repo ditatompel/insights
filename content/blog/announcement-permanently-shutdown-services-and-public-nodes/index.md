@@ -41,8 +41,8 @@ I hope this announcement finds you well. It's been more than 2 years that I run 
 
 For the last few months, I have several problems in providing and maintaining these services, so I decided to permanently close these services. It's hard for me, but I have to.
 
-There are several reasons that make me unable to continue maintain these services alive:
-1. I **want and need** to **have more time with the someone I love the most**.
+There are various reasons that make me unable to continue to maintain these services alive:
+1. I **want and need** to **have more time with someone I love the most**.
 2. Regarding point `#1`, I don't have time to maintain these services anymore.
 3. Reduce server costs that I have to spend.
 

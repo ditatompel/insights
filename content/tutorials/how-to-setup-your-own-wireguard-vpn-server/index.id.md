@@ -49,7 +49,7 @@ Setelah [beberapa seri artikel tentang **VPN IPsec**](https://insights.ditatompe
 - Nyaman dan terbiasa dengan Linux *command-line*.
 - Pengetahuan dasar _subnetting_ di **IPv4** (_jujur saja, sayya tidak begitu familiar dengan subnetting di IPv6, jadi artikel ini hanya untuk IPv4_).
 
-Untuk pemilihan *cloud provider* mana yang akan Anda gunakan, itu terserah Anda. Di artikel ini, saya akan mengguakan **Droplet** di [**DigitalOcean**](https://m.do.co/c/42d4ba96cc94) (*refferal link*) untuk VPN server saya. (Anda bisa mendapatkan kredit sebesar 200 dolar yang valid untuk 60 hari secara cuma-cuma dengan menggunakan *link* referensi saya).
+Untuk pemilihan *cloud provider* mana yang akan Anda gunakan, itu terserah Anda. Di artikel ini, saya akan mengguakan **Droplet** di [**DigitalOcean**](https://m.do.co/c/42d4ba96cc94) (*referral link*) untuk VPN server saya. (Anda bisa mendapatkan kredit sebesar 200 dolar yang valid untuk 60 hari secara cuma-cuma dengan menggunakan *link* referensi saya).
 
 > _**CATATAN**: Anda harus tahu bahwa **cloud provider biasanya membebankan biaya *extra* jika Anda melebihi batasan quota** yang telah mereka berikan._
 

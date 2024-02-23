@@ -37,20 +37,20 @@ authors:
   - ditatompel
 ---
 
-This article contains information about how to **import** your **WireGuard VPN** config to your **Android**, **iOS/iPhone**, **MacOS**, **Windows** and **Linux** machine.
+This article contains information about how to **import** your **WireGuard VPN** config to your **Android**, **iOS/iPhone**, **macOS**, **Windows** and **Linux** machine.
 
 <!--more-->
 ---
 
-This article is part of [**WireGuard VPN** series](https://insights.ditatompel.com/en/series/wireguard-vpn/). If you haven't read the previous series, you might be interested to [setup your own **WireGuard VPN server** using cheap ~$6 VPS]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.md" >}}) or [installing **WireGuard-UI** to manage your **WireGuard VPN server**]({{< ref "/tutorials/installing-wireguard-ui-to-manage-your-wireguard-vpn-server/index.md" >}}).
+This article is part of [**WireGuard VPN** series](https://insights.ditatompel.com/en/series/wireguard-vpn/). If you haven't read the previous series, you might be interested to [set up your own **WireGuard VPN server** using cheap ~$6 VPS]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.md" >}}) or [installing **WireGuard-UI** to manage your **WireGuard VPN server**]({{< ref "/tutorials/installing-wireguard-ui-to-manage-your-wireguard-vpn-server/index.md" >}}).
 
 [WireGuard](https://www.wireguard.com/) was initially released for the **Linux kernel**, it is now *cross-platform* (**Windows**, **macOS**, **BSD**, **iOS**, and **Android**). When you buy a **WireGuard VPN** from *VPN providers*, you will usually receive a configuration file (some providers also give you **QR Code** image). This configuration file is all you need.
 
-For Windows, MacOS, Android, and iOS, all you have to do is import the configuration file into the [official WireGuard application](https://www.wireguard.com/install/). For Linux who use `wg-quick` tool even more simpler, you just have to copy the configuration file to the `/etc/wireguard` folder.
+For Windows, macOS, Android, and iOS, all you have to do is import the configuration file into the [official WireGuard application](https://www.wireguard.com/install/). For Linux who use `wg-quick` tool even simpler, you just have to copy the configuration file to the `/etc/wireguard` folder.
 
 Even though the setup method is quite easy, I still want to write the steps on how to install or import the WireGuard configuration file here.
 
-The WireGuard configuration file given by *VPN provider* (or your **SysAdmin**) is just a text file, usually will look like this:
+The WireGuard configuration file given by *VPN provider* (or your **Sysadmins**) is just a text file, will usually look like this:
 ```plain
 [Interface]
 Address = 10.10.88.5/32
@@ -73,12 +73,12 @@ Download [official WireGuard client for iOS from App Store](https://apps.apple.c
 You can import configuration file by pressing <kbd>+</kbd> button from the top right of the app.
 
 ### Using QR Code
-1. If your VPN provider give you **QR Code** image for your configuration, choose **"Create from QR code"** and scan your WireGuard configuration QR Code.
-2. When promoted to enter **name of the scanned tunnel** ([*example image*](wg-ios1.png)), fill with anything you can easily remember. *Avoid using character other than `-` and `[a-z]`*. Your new VPN connection profile will added to your WireGuard app.
+1. If your VPN provider gives you **QR Code** image for your configuration, choose **"Create from QR code"** and scan your WireGuard configuration QR Code.
+2. When promoted to enter **name of the scanned tunnel** ([*example image*](wg-ios1.png)), fill with anything you can easily remember. *Avoid using character other than `-` and `[a-z]`*. Your new VPN connection profile will be added to your WireGuard app.
 
 ### Using import file or archive
 1. To import configuration from `.conf` file, you need to download the configuration file to your device. 
-2. After configuration file is downloaded to your device, choose **"Create from file or archive"** and pick file of your WireGuard configuration file.
+2. After configuration file is downloaded to your device, select **"Create from file or archive"** and pick file of your WireGuard configuration file.
 _Remember to avoid using character other than `-` and `[a-z]` for the interface **"name"**_.
 
 After your configuration was imported, simply tap **"Active" toggle button** of your desired VPN profile to **on** to connect [[*example image of connected WireGuard VPN in iOS app*](wg-ios2.png)].
@@ -89,25 +89,25 @@ Download [official WireGuard client for Android from Play Store](https://play.go
 You can import configuration file by pressing <kbd>+</kbd> button from the bottom right of the app.
 
 ### Using QR Code
-1. If your *VPN provider* give you **QR Code** image for your configuration, choose **"Scan from QR code"** and scan your WireGuard configuration QR Code.
-2. When promoted to enter **Tunnel Name** ([*example image*](wg-android1.png)), fill with anything you can easily remember. _Avoid using character other than `-` and `[a-z]`_. Your new VPN connection profile will added to your WireGuard app.
+1. If your *VPN provider* gives you **QR Code** image for your configuration, choose **"Scan from QR code"** and scan your WireGuard configuration QR Code.
+2. When promoted to enter **Tunnel Name** ([*example image*](wg-android1.png)), fill with anything you can easily remember. _Avoid using character other than `-` and `[a-z]`_. Your new VPN connection profile will be added to your WireGuard app.
 
 ### Using import file or archive
 1. To import configuration from `.conf` file, you need to download the configuration file to your device. 
-2. After configuration file is downloaded to your device, choose **"Import from file or archive"** and pick file of your WireGuard configuration file.
+2. After configuration file is downloaded to your device, select **"Import from file or archive"** and pick file of your WireGuard configuration file.
 _Remember to avoid using character other than `-` and `[a-z]` for the interface **"name"**_.
 
 After your configuration was imported, simply tap **"Active" toggle button** of your desired VPN profile to **on** to connect [[*example image of connected WireGuard VPN in Android app*](wg-android2.png)].
 
-## Windows and MacOS
-I'll put Windows and MacOS in the same section because importing WireGuard config on those OS is pretty simillar. After [official WireGuard application](https://www.wireguard.com/install/) for your OS is installed:
+## Windows and macOS
+I'll put Windows and macOS in the same section because importing WireGuard config on those OSes is pretty similar. After [official WireGuard application](https://www.wireguard.com/install/) for your OS is installed:
 
-1. Click "**Add Tunnel**" button (or it's dropdown icon) and "**Import tunnel(s) from file...**", then pick file of your WireGuard configuration file.
+1. Click "**Add Tunnel**" button (or it's dropdown icon) and "**Import tunnel(s) from file…**", then pick file of your WireGuard configuration file.
 2. After connected to your VPN profile, try to check your IP address. Your VPN server should appear as your public IP, not your ISP IP address.
 ![WireGuard VPN connected on Windows](wg-windows-connected.png#center)
 
 ## Linux
-For Linux users, you need to install `wireguard` *package* to your system. Find how to install wireguard package from [official WireGuard](https://www.wireguard.com/install/) site or your *distribution* documentation page.
+For Linux users, you need to install `wireguard` *package* to your system. Find how to install WireGuard package from [official WireGuard](https://www.wireguard.com/install/) site or your *distribution* documentation page.
 
 ### Using wg-quick
 The easiest and simplest way to use WireGuard is using `wg-quick` tool that comes from `wireguard` *package*. Put your WireGuard configuration file from your VPN provider to `/etc/wireguard` and start WireGuard connection with:
@@ -127,6 +127,7 @@ Try to check your WireGuard connection by check your public IP from your browser
 > _**Note 2**: Users of `systemd-resolved` should make sure that `systemd-resolvconf` is installed._
 
 ### Using NetworkManager
+
 **NetworkManager** on *bleeding-edge* *distros* such as **Arch Linux** has native support for setting up WireGuard interface.
 
 #### Using NetworkManager TUI & GUI
@@ -177,12 +178,12 @@ method=manual
 addr-gen-mode=stable-privacy
 method=ignore
 ```
-![nmcli wireguard connection example](wg-nmcli.png#center)
+![nmcli WireGuard connection example](wg-nmcli.png#center)
 
 ## Notes
-- You can't connect to the same VPN server from 2 or more different devices with same key. **You every devices MUST have it's own unique key**.
+- You can't connect to the same VPN server from 2 or more different devices with same key. **You every device MUST have its own unique key**.
 - For some operating system such as Windows, if you can't import your WireGuard configuration file from your WireGuard app, make sure that your WireGuard configuration file is ended with `.conf`.
 
 ### Additional Notes
-- If you interested to [setup your own **WireGuard VPN server** using cheap ~$6 VPS]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.md" >}}),but have some technical difficulties; I can help you to set that up for small amount of **IDR** (_I accept **Monero XMR** for **credits** if you don't have Indonesia Rupiah_).
+- If you interested to [set up your own **WireGuard VPN server** using cheap ~$6 VPS]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.md" >}}), but have some technical difficulties; I can help you to set that up for small amount of **IDR** (_I accept **Monero XMR** for **credits** if you don't have Indonesia Rupiah_).
 - To find out how to contact me, please visit [https://www.ditatompel.com/pages/contact](https://www.ditatompel.com/pages/contact).

@@ -36,7 +36,7 @@ require (
 	github.com/hugomods/images v0.8.3 // indirect
 	github.com/hugomods/mermaid v0.1.1 // indirect
 	github.com/hugomods/pwa v0.7.0 // indirect
-	github.com/hugomods/search v0.8.3 // indirect
+	github.com/hugomods/search v0.13.2 // indirect
 	github.com/hugomods/simple-icons v10.4.0+incompatible // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
 )

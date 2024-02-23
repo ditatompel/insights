@@ -48,27 +48,27 @@ After [series of my IPsec VPN article](https://insights.ditatompel.com/en/series
 - Comfortable with Linux *command-line*.
 - Basic knowledge of _**IPv4** subnetting_ (_to be honest, I'm not familiar with IPv6 subnetting, so this article is for **IPv4** only_).
 
-It doesn't matter which *cloud provider* you choose. in this article, I will use [**DigitalOcean**](https://m.do.co/c/42d4ba96cc94) (*refferal link*) **Droplet** for my **WireGuard VPN server** (You can get your **free $200** in credit over 60 days by registering using my *refferal code*).
+It doesn't matter which *cloud provider* you choose. In this article, I will use [**DigitalOcean**](https://m.do.co/c/42d4ba96cc94) (*referral link*) **Droplet** for my **WireGuard VPN server** (You can get your **free $200** in credit over 60 days by registering using my *referral code*).
 
 > _**NOTE**: You should know that **cloud providers usually charge extra amount of `$` for every GB of overuse bandwidth**. So, know your needs and your limits!_
 
 > _VPS server I use for this article will be destroyed when this article is published._
 
 ## Deploying your new VPS (DigitalOcean Droplet, optional)
-> _If you already have your own VPS running, you can skip this step and go to next step: "[Setup your WireGuard Server](#setup-your-wireguard-server)"._
+> _If you already have your own VPS running, you can skip this step and go to next step: "[Set up your WireGuard Server](#setup-your-wireguard-server)"._
 
 1. Go to your project and **Create new Droplet**.
-2. Choose **droplet region closest to you** to avoid any potential network latency. In this example, I'll choose **Frankfurt** datacenter.
-3. Choose your **Droplet OS**, for this article, I'll use **Ubuntu** `22.04 LTS`.
-4. Choose your **Droplet size**. I'll start with basic, **1 CPU** with **1GB of RAM** and **1TB network transfer** ($6/month).   
+2. Choose **droplet region closest to you** to avoid any potential network latency. In this example, I'll pick **Frankfurt** datacenter.
+3. Select your **Droplet OS**, for this article, I'll use **Ubuntu** `22.04 LTS`.
+4. Select your **Droplet size**. I'll start with basic, **1 CPU** with **1GB of RAM** and **1TB network transfer** ($6/month).   
 Adapt the VPS size to fit with your need to avoid extra charge of overuse bandwidth (1TB monthly transfer is enough for me).
 ![DigitalOcean VPS size](do1.png#center)
-5. Set up your prefered *authentication method*, I **prefer using SSH public and private key** rather than *password auth*.
+5. Set up your preferred *authentication method*, I **prefer using SSH public and private key** rather than *password auth*.
 6. Set any other options as *default*. _I'm sure you **don't need backup and managed database options** for this setup_.
 
 > _**WireGuard** did **NOT need high disk I/O, so NVMe disk is NOT necessary**._
 
-## Setup your WireGuard Server
+## Set up your WireGuard Server
 > _**IMPORTANT NOTE**: Since I'm not familiar with **IPv6** subnetting, I'll only use **IPv4**._
 
 Once your VPS ready and running, it's recommended to update your OS first using `apt update && apt upgrade` command and `reboot` your VPS.
@@ -76,6 +76,7 @@ Once your VPS ready and running, it's recommended to update your OS first using 
 > _If you want to manage **WireGuard** peers (client) on a single server easily, you might be interested to read "[Installing WireGuard-UI to Manage Your WireGuard VPN Server]({{< ref "/tutorials/installing-wireguard-ui-to-manage-your-wireguard-vpn-server/index.md" >}})"._
 
 ### Install WireGuard
+
 Install WireGuard using `sudo apt install wireguard` command. Once WireGuard is installed, we need to generate private and public key pairs for our WireGuard server.
 
 > _Tips: You can create **vanity** public key address for **WireGuard** using tool like [warner/wireguard-vanity-address](https://github.com/warner/wireguard-vanity-address)._
@@ -108,11 +109,11 @@ Before configuring your **WireGuard** server, you need to **decide your private 
 - Between `172.16.0.0` - `172.31.255.255` (`172.16.0.0/12`)
 - Between `192.168.0.0` - `192.168.255.255` (`192.168.0.0/16`)
 
-> _Tips: Avoid using your current used private IP ranges and commonly used private IP range. For example: Docker uses `172.17.0.0/16` ip range by default. If you use Docker, you must use another IP range for your WireGuard IP range to avoid conflict._
+> _Tips: Avoid using your current used private IP ranges and commonly used private IP range. For example: Docker uses `172.17.0.0/16` IP range by default. If you use Docker, you must use another IP range for your WireGuard IP range to avoid conflict._
 
 In this article, I only use **IPv4** and use `10.10.88.0/24` for my WireGuard network.
 
-You'll also need to decide which **UDP** port WireGuard should listen to. Many *network appliance* out there (such as **Netgate**, **QNAP**, etc) set **UDP** port **51280** as their default WireGuard listen port. But, in this article, I'll use `UDP` port `51822`.
+You'll also need to decide which **UDP** port WireGuard should listen to. Many *network appliance* out there (such as **Netgate**, **QNAP**, etc.) set **UDP** port **51280** as their default WireGuard listen port. But, in this article, I'll use `UDP` port `51822`.
 
 Now, we have all (basic) required information for WireGuard server to run:
 - Server Public IP: `xxx.xx.xx0.246`
@@ -133,10 +134,10 @@ SaveConfig = true
 ```
 > _**Note**: From the configuration above, notice that I pick `10.10.88.1` as my server IP address for WireGuard network._
 
-Replace `<YOUR_SERVER_PRIVATE_KEY>`, `<YOUR_SERVER_IP_ADDRESS>`, `<SERVER_UDP_LISTEN_PORT>` with your prefered configuration.
+Replace `<YOUR_SERVER_PRIVATE_KEY>`, `<YOUR_SERVER_IP_ADDRESS>`, `<SERVER_UDP_LISTEN_PORT>` with your preferred configuration.
 
 #### Allowing IP forward
-In this article, we'll allow this WireGuard server as our default *gateway* for *peers* (clients), so any outgoing network traffic (except to your **LAN/WLAN** network) can go trough this WireGuard server. If you use WireGuard as *peer-to-peer* connection, yo don't need to do this.
+In this article, we'll allow this WireGuard server as our default *gateway* for *peers* (clients), so any outgoing network traffic (except to your **LAN/WLAN** network) can go through this WireGuard server. If you use WireGuard as *peer-to-peer* connection, you don't need to do this.
 
 Edit `/etc/sysctl.conf` and add `net.ipv4.ip_forward=1` to the end of the file, then run `sudo sysctl -p` to load the new `/etc/sysctl.conf` values.
 ```shell
@@ -166,7 +167,7 @@ Next, you need to know which network interface used by your server as its *defau
 ```plain
 default via 164.90.160.1 dev eth0 proto static
 ```
-Write down the word after `dev` output, that's your default network interface. We will need that infromation later. In this example, my default network interface is `eth0`. 
+Write down the word after `dev` output, that's your default network interface. We will need that information later. In this example, my default network interface is `eth0`. 
 
 Now add this following configuration to your `/etc/wireguard/wg0.conf` under `[Interface]` section:
 ```plain
@@ -236,7 +237,7 @@ To automatically start WireGuard service when the system start, you can execute 
 ## Setup WireGuard Peer (*client*)
 In this section, I'll use Linux machine using `wg-quick` via `systemd` as an example to connect to our configured WireGuard server. For other method such as connecting using **NetworkManager** GUI, Different OS and mobile devices, you can read my next article: "[Configure WireGuard VPN Clients]({{< ref "/tutorials/configure-wireguard-vpn-clients/index.md" >}})".
 
-Configuring WireGuard peer (client) in Linux using `systemd` is almost the same as setting up WireGuard server. The different is you didn't need to configure firewall and IP forward for peers. All you need to do is install WireGuard, create private and public key, configure DNS server you want to use, add start the service.
+Configuring WireGuard peer (client) on Linux using `systemd` is almost the same as setting up WireGuard server. The different is you didn't need to configure firewall and IP forward for peers. All you need to do is install WireGuard, create private and public key, configure DNS server you want to use, add start the service.
 
 ### Generating Private and Public Key Pairs (Client Side)
 If you already have your own WireGuard key pairs, you can use that keys, skip this step and go to the next step: "[Configuring WireGuard Peer (client)](#configuring-wireguard-peer-client)".
@@ -294,7 +295,7 @@ PersistentKeepalive = 15
 Replace `<YOUR_PEER_PRIVATE_KEY>`, `<YOUR_PEER_IP_ADDRESS>`, `<YOUR_SERVER_PUBLIC_KEY>`, `<YOUR_SERVER_PUBLIC_IP_ADDRESS>`, and `<SERVER_UDP_LISTEN_PORT>` with yours.
 
 Note:
-- `AllowedIPs` = `0.0.0.0/0` means all traffic will go trough that peer (in this case, our WireGuard server).   
+- `AllowedIPs` = `0.0.0.0/0` means all traffic will go through that peer (in this case, our WireGuard server).   
 You can specify / selective routing specific IP to specific peer (if you connected to multiple peers / servers).   
 For example, if you only want to route traffic to IP 1.0.0.1 and 8.8.4.4 using specific peer and use your current internet connection as default route, you can remove `0.0.0.0/0` and add `1.0.0.1/32,8.8.4.4/32` (separated by comma) to `AllowedIPs` value.
 - `PersistentKeepalive` = `15` : How many seconds for peer send *ping* to the server regularly, so the server can reach the peer sitting behind **NAT**/firewall.
@@ -304,13 +305,13 @@ For example, if you only want to route traffic to IP 1.0.0.1 and 8.8.4.4 using s
 #### Adding Peers Public Key to WireGuard Server
 you need to add every peers public key to WireGuard server configuration. This need to be done to allow peers connect to our WireGuard server. There are 2 ways to do this, depending on your server configuration.
 
-If you following this tutorial with `SaveConfig = true` in the server config, you can add *peer public key* by issuing this command (in WireGuard Server):
+If you're following this tutorial with `SaveConfig = true` in the server config, you can add *peer public key* by issuing this command (in WireGuard Server):
 ```shell
 wg set wg0 peer 6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk= allowed-ips 10.10.88.2
 ```
 Replace `wg0` with your WireGuard server *interface*, `6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk=` with your peer public key, and `10.10.88.2` with the IP address of that will be used by that peer.
 
-If your WireGuard server configuration doesn't contain `SaveConfig = true` config, all you need to do is add peers informations to your WireGuard server config (`/etc/wireguard/wg0.conf`). For Example:
+If your WireGuard server configuration doesn't contain `SaveConfig = true` config, all you need to do is add peers information to your WireGuard server config (`/etc/wireguard/wg0.conf`). For Example:
 ```plain
 [Peer]
 PublicKey = 6gnV+QU7jG7BzwWrBbqiYpKQDGePYQunebkmvmFrxSk=
@@ -324,7 +325,7 @@ sudo systemctl restart wg-quick@wg0.service
 ```
 
 ### Connecting to Server
-Now, our peer (client) configuration is complete. you can try to connect your device to your WireGuard server using `systemd` service.
+Now, our peer (client) configuration is complete. You can try to connect your device to your WireGuard server using `systemd` service.
 
 ```shell
 sudo systemctl start wg-quick@wg-do1.service
@@ -343,11 +344,11 @@ To verify your configurations is properly configured, try to check your public I
 ![What is my IP](wg-vpn-do-ip.png#center)
 
 ## Conclusion
-WireGuard is my favorite VPN protocol. It's fast and less resource usage compared with other VPN protocols. It's highly configurable and works with multiple environments. It can be used for *peer-to-peer* connection, *client-server* connection, or creating secure *mesh network*.
+WireGuard is my favorite VPN protocol. It's fast and less resource usage compared with other VPN protocols. It's highly configurable and works with multiple environments. Furthermore, it can be used for *peer-to-peer* connection, *client-server* connection, or creating secure *mesh network*.
 
-When combined with **Nginx** as *reverse proxy*, you can even exposing your local HTTP server (and mostly any services) sitting behind **NAT**/firewall to the internet.
+When combined with **Nginx** as *reverse proxy*, you can even expose your local HTTP server (and almost any services) sitting behind **NAT**/firewall to the internet.
 
-Anyway, managing large scale of WireGuard network can be very dificult. But, there are a tool to help you managing large scale WireGuard networks, such as [Netmaker](https://www.netmaker.io/).
+Anyway, managing large scale of WireGuard network can be very difficult. But, there are a tool to help you to manage large scale WireGuard networks, such as [Netmaker](https://www.netmaker.io/).
 
 ### Additional Notes
 - If you have some technical difficulties setting up your own WireGuard server, I can help you to set that up for small amount of **IDR** (_I accept **Monero XMR** for **credits** if you don't have Indonesia Rupiah_).

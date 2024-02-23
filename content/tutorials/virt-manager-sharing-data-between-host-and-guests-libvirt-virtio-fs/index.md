@@ -49,12 +49,12 @@ df -h | grep '/dev/sd'
 /dev/sda1       511M  144K  511M   1% /efi
 /dev/sdb1       916G  588G  282G  68% /mnt/hdd2
 ```
-- `/dev/sda`  500GB SATA SSD (main host operationg system).
-- `/dev/sdb1` 1TB SATA HDD mounted to `/mnt/hdd2` (which I want to share that path to Linux guests) .
+- `/dev/sda` 500GB SATA SSD (main host operating system).
+- `/dev/sdb1` 1TB SATA HDD mounted to `/mnt/hdd2` (which I want to share that path to Linux guests).
 - `/dev/sdc1` 500GB mSATA SSD mounted to `/mnt/msata` (which I place all the VMs disks).
 
 ## Setting up guest VMs
-Open **Virt-Manager** -> choose VM(s) -> **Add Hardware** -> **Filesystem**.
+Open **Virt-Manager** → choose VM(s) → **Add Hardware** → **Filesystem**.
 
 Choose `virtio-9p` for **Driver**, `/path/to/mount_point/on/guest` for **Source path**, and `/mnt/hdd2` for **Target path**.
 

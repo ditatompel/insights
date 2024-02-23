@@ -41,7 +41,7 @@ This article may be useful for those of you who want to get started using **Git*
 
 Git is one of the most popular and widely used _version controls_ by software developers around the world. Several _"Cloud" based version controls service build on top of Git_ such as [GitLab](https://about.gitlab.com/), [GitHub](https://github.com/), and [Codeberg](https://codeberg.org/) offer several unique features from each other. However, there is a feature that every provider definitely has, the feature is accessing and Git repositories using the SSH protocol.
 
-The authentication process using the SSH protocol utilizes **SSH public and private keys** so you don't need to provide a _username_ or _personal access token_ every time you want to access or commit to your repository.
+The authentication process using the SSH protocol utilizes **SSH public and private keys**, so you don't need to provide a _username_ or _personal access token_ every time you want to access or commit to your repository.
 
 In this article, I want to share how to use the SSH protocol as an authentication method for a specific provider: GitHub. But before starting, make sure `git` and `ssh` are installed on your computer and of course you must have an account at GitHub.com.
 
@@ -58,7 +58,7 @@ Change `John Doe` and `johndoe@example.com` with your name and email address.
 
 > _**Note**: Make sure the email address matches with the email address you use at GitHub.com._
 
-## Creting SSH key
+## Creating SSH key
 
 When you want to access your private repository or make changes to your GitHub repository using SSH, you need to use an SSH private key for the authentication process. Therefore, create an SSH key pair using the following command:
 
@@ -120,10 +120,10 @@ Once you have your SSH key pair and SSH config file configured, it's time to add
 1. Go to __"Settings"__ > __"SSH and GPG keys"__ > click on __"New SSH key"__ button.
 2. Fill __"Title"__ with anything that you can easily remember to identify your SSH key.
 3. On __"Key type"__ options, choose __"Authentication Key"__.
-4. Finally, go back to your terminal and _paste_ content of your __SSH public key__ (in this tutorial is `~/.ssh/github_key.pub`) to __"Key"__ _textarea_. Then submit by pressing __Add SSH key"__ button.
+4. Finally, go back to your terminal and _paste_ content of your __SSH public key__ (in this tutorial is `~/.ssh/github_key.pub`) to __"Key"__ _textarea_. Then submit by pressing __"Add SSH key"__ button.
 
 ![Adding new SSH key to GitHub account](github-add-new-ssh-key.jpg#center)
 
-The configuration process is complete and you can try connecting to GitHub with `ssh -T github.com` command from your terminal. You should receive a message that your connection to GitHub was successful: "**Hi jasmerah1966! You've successfully authenticated, but GitHub does not provide shell access**.".
+The configuration process is complete, and you can try connecting to GitHub with `ssh -T github.com` command from your terminal. You should receive a message that your connection to GitHub was successful: "**Hi jasmerah1966! You've successfully authenticated, but GitHub does not provide shell access**.".
 
 Next: Read [How To Create Verified Sign Git Commit Using SSH or GPG Signature]({{< ref "/tutorials/how-to-create-verified-sign-git-commit/index.md" >}}).

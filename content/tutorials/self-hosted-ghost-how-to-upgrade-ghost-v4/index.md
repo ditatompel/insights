@@ -46,7 +46,7 @@ It’s a good idea to check whenever your current theme is compatible with Ghost
 
 To see what changes are need to be made, download a copy of your theme zip file, and upload it to [GScan](https://gscan.ghost.org/) automatic theme compatibility testing tool.
 
-GScan will provide a report on any new features in the Ghost theme API which are not being used, or any old ones you might be using which have been deprecated - so you can get everything fixed up.
+GScan will provide a report on any new features in the Ghost theme API which are not being used, or any old ones you might be using which have been deprecated – so you can get everything fixed up.
 
 ### Export Content and Members
 Start by exporting a JSON file of all your posts from the **labs area** of Ghost Admin.
@@ -65,7 +65,7 @@ sudo npm install -g ghost-cli@latest
 ```
 
 ### Update to the latest minor version
-Now, after you upgrade `Ghost-CLI` to the lastest version, you need to update every site to the latest minor version before upgrading to major version.
+Now, after you upgrade `Ghost-CLI` to the latest version, you need to update every site to the latest minor version before upgrading to major version.
 
 **Make sure you’re in your site’s root directory** and then run the Ghost update command using Ghost-CLI **as your ghost admin user**.
 
@@ -84,13 +84,13 @@ After updating your site(s) to latest minor version, you're ready to upgrade to 
 {{< youtube udbaAvl3s3E >}}
 
 ## v4.0 Highlight Changelog
-- **Dashboard**: Get detailed insights into how content and members are performing so you can understand what's working.
-- **Memberships and subscriptions** are now natively part of the core platform - no longer in beta.
+- **Dashboard**: Get detailed insights into how content and members are performing, so you can understand what's working.
+- **Memberships and subscriptions** are now natively part of the core platform – no longer in beta.
 - **Email newsletters** are now natively built into Ghost.
-- Brand **new post-preview** UI, showing you what your post will look like on web, mobile, email, social and search - all in one place.
+- Brand **new post-preview** UI, showing you what your post will look like on web, mobile, email, social, and search – all in one place.
 - Premium subscriptions with **Stripe** now work in **135 currencies**, with support for **Apple Pay**, **Google Pay**, and 0% payment fees.
 - Embedded memberships and subscriptions UI, called **Portal**, which works with every Ghost theme. Past, present and future.
-- Re-built the Ghost [Theme directory](https://ghost.org/themes/), including live previews and automatic installs.
+- Re-built the Ghost [Theme directory](https://ghost.org/themes/), including live previews and automatic installations.
 - **Performance improvement**: Front-end performance jumped by more than 50%, **overall performance** in terms of requests-per-second by 40%, reduced latency by 30%, and made serving requests after start/restart faster by 300%.
 
 ## Links and Resources

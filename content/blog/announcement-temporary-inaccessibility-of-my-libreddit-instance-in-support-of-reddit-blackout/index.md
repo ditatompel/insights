@@ -36,7 +36,7 @@ To support the **Reddit blackout movement**, my Libreddit instance will be inacc
 
 Dear Users,
 
-I hope this announcement finds you well. I would like to inform you of an important decision I have made to support the **Reddit blackout movement**. In solidarity with this cause, my Libreddit instance will be inaccessible for *unknown period of time* and I will see [how it goes (Libreddit github issue #818)](https://github.com/libreddit/libreddit/issues/818).
+I hope this announcement finds you well. I would like to inform you of an important decision I have made to support the **Reddit blackout movement**. In solidarity with this cause, my Libreddit instance will be inaccessible for *unknown period of time* and I will see [how it goes (Libreddit GitHub issue #818)](https://github.com/libreddit/libreddit/issues/818).
 
 Starting **12th of June 2023**, my Libreddit instance (libreddit.ditatompel.com) will be taken offline as part of the protest against Reddit policies and [API cost changes](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh0jf/dont_let_reddit_kill_3rd_party_apps/). During this time, I encourage you to participate in discussions and engage with other online communities to voice your concerns about the importance of an open and inclusive digital space.
 
@@ -44,7 +44,7 @@ I understand that this inaccessibility may cause inconvenience, and I sincerely 
 
 ## Updates
 ### 2023-06-18
-> It's impossible for me to run and maintain my Libreddit instance with the new reddit API cost, so I decide to **permanenly shutdown my Libreddit instance**. I appreciate your understanding and support during this crucial time. Thank you!
+> It's impossible for me to run and maintain my Libreddit instance with the new Reddit API cost, so I decide to **permanently shutdown my Libreddit instance**. I appreciate your understanding and support during this crucial time. Thank you!
 
 Sincerely,
 

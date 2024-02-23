@@ -49,7 +49,7 @@ Libreswan can authenticate IKEv2 clients on the basis of [X.509](https://en.wiki
 - Android 4.x and newer (using the strongSwan VPN client)
 - Windows 7, 8.x and 10
 
-Because IKEv2 use key exchange and you need to import Server and Client Certificate on your machine. It will be a problem in the future to manage/revoke the imported certificate if you have multiple IKEv2 VPN servers with same root CA Common Name and client certificate username.
+Because IKEv2 use key exchange, and you need to import Server and Client Certificate on your machine. It will be a problem in the future to manage/revoke the imported certificate if you have multiple IKEv2 VPN servers with same root CA Common Name and client certificate username.
 
 This is my personal snippet to set up IKEv2 VPN server & clients for multiple servers. Basically I only add (let say) server name or node name after root CA Common Name and client certificate username.
 
@@ -70,7 +70,7 @@ printf '%s\n' "$PUBLIC_IP"
 
 Make sure the output matches the server's public IP. The `$PUBLIC_IP` variable is required for the next steps.
 
-Create new `ikev2.conf` file in `/etc/ipsec.d/` directory and include them in  `/etc/ipsec.conf` :
+Create new `ikev2.conf` file in `/etc/ipsec.d/` directory and include them in `/etc/ipsec.conf` :
 ```bash
 cat > /etc/ipsec.d/ikev2.conf <<EOF
 
@@ -140,8 +140,8 @@ For Libreswan `3.18` and older:
 > _You can replace Google Public DNS `8.8.8.8` and `8.8.4.4` with your server provider DNS if you want._
 
 ### Generate Certificate Authority (CA) and VPN Server Certificates
-- You can specify the certificate validity period (in months) with `-v` argument. e.g. `-v 36`.
-- As i mentioned above, To easily manage VPN certificates on multiple server. I've add `SERVERNAME` after `IKEv2 VPN CA` Common Name. Replace `SERVERNAME` with something you can easily remember.
+- You can specify the certificate validity period (in months) with `-v` argument. e.g., `-v 36`.
+- As I mentioned above, To easily manage VPN certificates on multiple server. I've added `SERVERNAME` after `IKEv2 VPN CA` Common Name. Replace `SERVERNAME` with something you can easily remember.
 
 ```bash
 certutil -z <(head -c 1024 /dev/urandom) \
@@ -207,7 +207,7 @@ pk12util: PKCS12 EXPORT SUCCESSFUL
 
 You may repeat this step to generate certificates for additional VPN clients, but make sure to replace every `VPNUSERNAME` with `VPNUSERNAME2`, etc.
 
-> _**Note**: To connect multiple VPN clients simultaneously, you must generate a unique certificate for each devices._
+> _**Note**: To connect multiple VPN clients simultaneously, you must generate a unique certificate for each device._
 
 (For macOS and iOS clients) Export the CA certificate as `vpnca_SERVERNAME.cer`:
 
@@ -215,7 +215,7 @@ You may repeat this step to generate certificates for additional VPN clients, bu
 certutil -L -d sql:/etc/ipsec.d -n "IKEv2 VPN CA SERVERNAME" -a -o vpnca_SERVERNAME.cer
 ```
 
-To check certificate database, you can run these following command:
+To check certificate database, you can run these following commands:
 
 ```bash
 certutil -L -d sql:/etc/ipsec.d
@@ -253,13 +253,13 @@ The IKEv2 setup on the VPN server is now complete. Follow instructions below to 
 
 **Note**: If you specified the server's DNS name (instead of its IP address) for `$PUBLIC_IP` variable in first step above, you must enter the DNS name in the **Server** and **Remote ID** fields.
 
-### MacOS Clients Configuration
+### macOS Clients Configuration
 
 Transfer both `vpnca_SERVERNAME.cer` and `VPNUSERNAME.p12` to your Mac, then double-click to import them **one by one** into the **login** keychain in **Keychain Access**.
 
 Next, double-click on the imported `IKEv2 VPN CA SERVERNAME` certificate, expand **Trust** and select **Always Trust** from the **IP Security (IPsec)** drop-down menu.
 
-![MacOS VPN CA](vpn_ca.png#center)
+![macOS VPN CA](vpn_ca.png#center)
 
 When finished, check to make sure both `VPNUSERNAME` and `IKEv2 VPN CA SERVERNAME` are listed under the **Certificates** category of **login** keychain.
 - Go to **Network** section in **System Preferences**.
@@ -271,7 +271,7 @@ When finished, check to make sure both `VPNUSERNAME` and `IKEv2 VPN CA SERVERNAM
 - **Server Address**: Your VPN `Server IP` (or DNS name).
 - **Remote ID**: Your VPN `Server IP` (or DNS name).
 - Leave the **Local ID** field blank.
-- Click the **Authentication Settings**... button.
+- Click the **Authentication Settings**… button.
 - Select **None** from the **Authentication Settings** drop-down menu.
 - Select the **Certificate** radio button, then select the **VPNUSERNAME** certificate.
 - Click **OK**.
@@ -280,9 +280,9 @@ When finished, check to make sure both `VPNUSERNAME` and `IKEv2 VPN CA SERVERNAM
 - Click **Connect**.
 
 ### iOS (iPhone/iPad) Clients Configuration
-Transfer both `vpnca_SERVERNAME.cer` and `VPNUSERNAME.p12` to your iOS device, then import them **one by one** as **iOS profiles**. To transfer the files, you may use AirDrop or host the files on your website, then download and import them in Safari. When finished, check to make sure both `VPNUSERNAME` and `IKEv2 VPN CA SERVERNAME` are listed under **Settings** -> **General** -> **Profiles**.
-- Go to **Settings** -> **General** -> **VPN**.
-- Tap **Add VPN Configuration**....
+Transfer both `vpnca_SERVERNAME.cer` and `VPNUSERNAME.p12` to your iOS device, then import them **one by one** as **iOS profiles**. To transfer the files, you may use AirDrop or host the files on your website, then download and import them in Safari. When finished, check to make sure both `VPNUSERNAME` and `IKEv2 VPN CA SERVERNAME` are listed under **Settings** → **General** →**Profiles**.
+- Go to **Settings** → **General** → **VPN**.
+- Tap **Add VPN Configuration**….
 - Tap **Type**. Select **IKEv2** and go back.
 - **Description**: enter anything you like (usually name of the VPN connection).
 - **Server**: Your VPN `Server IP`.
@@ -298,14 +298,14 @@ Transfer both `vpnca_SERVERNAME.cer` and `VPNUSERNAME.p12` to your iOS device, t
 Once connected, you will see a VPN icon in the status bar. You can verify that your traffic is being routed properly by [looking up your IP address on DuckDuckGo](https://duckduckgo.com/?q=ip&ia=answer).
 
 ### Other Devices
-Since I only use IKEv2 on my Mac and iPhone for work device, I can't post guide for Windows, Linux and Android here. You can follow the [guide for each OSes here](https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/ikev2-howto.md#configure-ikev2-vpn-clients).
+Since I only use IKEv2 on my Mac and iPhone for work device, I can't post guide for Windows, Linux, and Android here. You can follow the [guide for each OS here](https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/ikev2-howto.md#configure-ikev2-vpn-clients).
 
 ## Known issues
-1. The built-in VPN client in Windows may not support IKEv2 fragmentation. On some networks, this can cause the connection to fail or have other issues. You may instead try the [IPsec/L2TP]({{< ref "/tutorials/configure-ipsec-l2tp-vpn-clients/index.md" >}}) or [IPsec/XAuth]({{< ref "/tutorials/configure-ipsec-xauth-vpn-clients/index.md" >}}) mode.
+1. The built-in VPN client on Windows may not support IKEv2 fragmentation. On some networks, this can cause the connection to fail or have other issues. You may instead try the [IPsec/L2TP]({{< ref "/tutorials/configure-ipsec-l2tp-vpn-clients/index.md" >}}) or [IPsec/XAuth]({{< ref "/tutorials/configure-ipsec-xauth-vpn-clients/index.md" >}}) mode.
 2. If using the strongSwan Android VPN client, you must **upgrade Libreswan** on your server to version `3.26` or above.
 3. If your VPN client can connect but cannot open any website, try editing `/etc/ipsec.conf` on the VPN server. Find the line `phase2alg=` under section `conn ikev2-cp` and delete `aes_gcm-null,`. Save the file and run `service ipsec restart`.
 4. Ubuntu 18.04 and CentOS users may encounter the error "The password you entered is incorrect" when trying to import the generated `.p12` file into Windows. This is due to a bug in `NSS`. Read more [here](https://github.com/hwdsl2/setup-ipsec-vpn/issues/414#issuecomment-460430354).
-5. Connecting multiple IKEv2 clients simultaneously from behind the same NAT (e.g. home router) is not supported at this time. For this use case, please instead use [IPsec/XAuth]({{< ref "/tutorials/configure-ipsec-xauth-vpn-clients/index.md" >}}) mode.
+5. Connecting multiple IKEv2 clients simultaneously from behind the same NAT (e.g., home router) is not supported at this time. For this use case, please instead use [IPsec/XAuth]({{< ref "/tutorials/configure-ipsec-xauth-vpn-clients/index.md" >}}) mode.
 
 ## Credits
 - All articles credits belongs to [Lin Song](https://www.linkedin.com/in/linsongui/) and [contributors](https://github.com/hwdsl2/setup-ipsec-vpn/graphs/contributors).

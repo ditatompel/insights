@@ -43,7 +43,7 @@ To manage **WireGuard** *peers* (client) on a single server easily, you can use 
 
 [Wireguard-UI](https://github.com/ngoduykhanh/wireguard-ui) is a *web-based* user interface to manage your **WireGuard** server setup written by [ngoduykhanh](https://github.com/ngoduykhanh) using **Go** programming language. This is an alternative way to install and easily manage your WireGuard VPN server. 
 
-If you prefer to install WireGuard server *"from scratch"* and manage it manually, you can follow my previous article about "[How to Setup Your Own WireGuard VPN Server]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.md" >}})".
+If you prefer to install WireGuard server *"from scratch"* and manage it manually, you can follow my previous article about "[How to Set up Your Own WireGuard VPN Server]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.md" >}})".
 
 ## Prerequisites
 - A **VPS** (**Ubuntu** `22.04 LTS`) with Public IP address and **Nginx** installed.
@@ -54,7 +54,7 @@ If you prefer to install WireGuard server *"from scratch"* and manage it manuall
 In this guide, our goals:
 - Server run _**WireGuard** daemon_ listen on port `51822/UDP`.
 - **WireGuard UI** run from `127.0.0.1` on port `5000`.
-- **Nginx** act as *reverse proxy* and serve **WireGuard UI** service using **HTTPS**.
+- **Nginx** acts as *reverse proxy* and serve **WireGuard UI** service using **HTTPS**.
 
 ## Prepare Your Server
 First, make sure your system is *up-to-date* and **WireGuard is installed** on your server. 
@@ -128,7 +128,7 @@ iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE
 ```
 The `postup.sh` bash script above will be executed when WireGuard service is **started**.
 
-Create `/opt/wireguard-ui/postdown.sh`. and fill with this example config:
+Create `/opt/wireguard-ui/postdown.sh`, and fill with this example config:
 ```bash
 #!/usr/bin/bash
 # /opt/wireguard-ui/postdown.sh
@@ -204,7 +204,7 @@ sudo systemctl enable wireguard-ui-daemon.service
 
 
 ### Auto Restart WireGuard Daemon
-Because **WireGuard-UI** only takes care of WireGuard configuration generation, you need another `systemd` to watch for the changes and restart the **WireGuard** service. Create `/etc/systemd/system/wgui.service` and fill with this following example:
+Because **WireGuard-UI** only takes care of WireGuard configuration generation, another `systemd` is required to watch for the changes and restart the **WireGuard** service. Create `/etc/systemd/system/wgui.service` and fill with this following example:
 ```systemd
 [Unit]
 Description=Restart WireGuard
@@ -290,9 +290,9 @@ Go to **"WireGuard Server"** page and configure WireGuard config:
 - **Post Up Script**: `/opt/wireguard-ui/postup.sh`
 - **Post Down Script**: `/opt/wireguard-ui/postdown.sh`
 
-![WireGuard- UI Server Settings](wg-ui-server-config.png#center)
+![WireGuard-UI Server Settings](wg-ui-server-config.png#center)
 
-Then go to **"Global Settings"**, verify that all your config is correct (especially for **"Endpoint Address"** and **"Wireguard Config File Path"**).
+Then go to **"Global Settings"**, verify that all your config is correct (especially for **"Endpoint Address"** and **"WireGuard Config File Path"**).
 
 After that, try to **Apply** your configuration.
 

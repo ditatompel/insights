@@ -35,21 +35,21 @@ authors:
   - ditatompel
 ---
 
-If you following my article about [How to install Misskey in Ubuntu 22.04 (Manual NodeJS and PM2 without Docker)]({{< ref "/tutorials/how-to-install-misskey-in-ubuntu-22-04-manual-without-docker/index.md" >}}), you may encounter some problem when trying to [update your Misskey instances](https://misskey-hub.net/en/docs/install/manual.htmlhow-to-update-your-misskey-server-to-the-latest-version).
+If you're following my article about [How to install Misskey in Ubuntu 22.04 (Manual Node.js and PM2 without Docker)]({{< ref "/tutorials/how-to-install-misskey-in-ubuntu-22-04-manual-without-docker/index.md" >}}), you may encounter some problem when trying to [update your Misskey instances](https://misskey-hub.net/en/docs/install/manual.htmlhow-to-update-your-misskey-server-to-the-latest-version).
 
 <!--more-->
 
-This because **Misskey** is under heavy development and event *minor* update need higher version of **NodeJS**. For example, **Misskey** `13.10.3` was released in March, 25th and it works well with **NodeJS** `18.15`. Last week (May, 12th), *Misskey* `13.12.2` was released and need to be run using (at least) on **NodeJS** `18.16`. In this article, I want to share my experience how to perform an update to **Misskey instances**.
+This because **Misskey** is under heavy development and event *minor* update need higher version of **Node.js**. For example, **Misskey** `13.10.3` was released in March, 25th, and it works well with **Node.js** `18.15`. Last week (May, 12th), *Misskey* `13.12.2` was released and need to be run using (at least) on **Node.js** `18.16`. In this article, I want to share my experience how to perform an update to **Misskey instances**.
 
 ## Install / update required dependencies for new version
-First you need to know what is the [minimum requirement (dependencies)](https://misskey-hub.net/en/docs/install/manual.html#dependencies) for the latest *stable* version of **Misskey**, especially for **NodeJS** version and **PostgreSQL**. I'll take example of upgrading **Misskey** from `13.10.3` to `13.12.2` which have different minimum requirement of **NodeJS** version.
+First you need to know what is the [minimum requirement (dependencies)](https://misskey-hub.net/en/docs/install/manual.html#dependencies) for the latest *stable* version of **Misskey**, especially for **Node.js** version and **PostgreSQL**. I'll take example of upgrading **Misskey** from `13.10.3` to `13.12.2` which have different minimum requirement of **Node.js** version.
 
-### NodeJS
+### Node.js
 ```shell
 nvm install 18.16
 use 18.16
 ```
-Install `corepack` and enable it from your new **nodeJS** version environment:
+Install `corepack` and enable it from your new **Node.js** version environment:
 ```shell
 npm install -g corepack
 corepack enable

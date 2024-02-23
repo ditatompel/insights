@@ -17,7 +17,7 @@ require (
 	github.com/hbstack/featured-image v0.1.2 // indirect
 	github.com/hbstack/gallery v0.11.0 // indirect
 	github.com/hbstack/gallery/modules/breadcrumb v0.1.0 // indirect
-	github.com/hbstack/heading-sign v0.1.3 // indirect
+	github.com/hbstack/heading-sign v0.2.0 // indirect
 	github.com/hbstack/meta/recommended v0.2.10 // indirect
 	github.com/hbstack/pagination v0.6.0 // indirect
 	github.com/hbstack/snackbar v0.1.2 // indirect

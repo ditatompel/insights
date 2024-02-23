@@ -30,6 +30,7 @@ github.com/hbstack/gallery/modules/breadcrumb v0.1.0 h1:zenzwq4EiE2PIB2gx8QU4I2Z
 github.com/hbstack/gallery/modules/breadcrumb v0.1.0/go.mod h1:7E1zwN0GC59OsXAUEALUiYWJhQw5hGPnpHfRHQDS/5Q=
 github.com/hbstack/heading-sign v0.1.3 h1:bkyBAwTETrbLqPBM89EuSscgLt2MOrmEPSeooeR0Jfc=
 github.com/hbstack/heading-sign v0.1.3/go.mod h1:uR6DdjYDoLDFanc8kSglEe/08GyNyQBmyNEJ6Z1KRAg=
+github.com/hbstack/heading-sign v0.2.0/go.mod h1:SXJWIr9C/7phTOXfWMzNSVZCeimKbYualuwIOHDeOu0=
 github.com/hbstack/meta/recommended v0.2.10 h1:RzRe2LT/lJxlsfGv5UzYC3onl7lp1VWbCm1jAb69kSw=
 github.com/hbstack/meta/recommended v0.2.10/go.mod h1:OdGN+zqdgFbet5A6XrfjaTNUTd5L91rOUNRJxgq38fo=
 github.com/hbstack/pagination v0.6.0 h1:sUirQEsW9ZmRU0GxlsE2pN7ZYghI4aqJYgfWAgd+iys=

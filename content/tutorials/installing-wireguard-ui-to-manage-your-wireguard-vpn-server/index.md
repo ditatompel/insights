@@ -48,7 +48,7 @@ If you prefer to install WireGuard server *"from scratch"* and manage it manuall
 ## Prerequisites
 - A **VPS** (**Ubuntu** `22.04 LTS`) with Public IP address and **Nginx** installed.
 - Comfortable with Linux *command-line*.
-- Basic knowledge of _**IPv4** subletting_ (_to be honest, I'm not familiar with IPv6 subnetting, so this article is for **IPv4** only_).
+- Basic knowledge of _**IPv4** subnetting_ (_to be honest, I'm not familiar with IPv6 subnetting, so this article is for **IPv4** only_).
 - Able to configure **Nginx** *Virtual Host*.
 
 In this guide, our goals:

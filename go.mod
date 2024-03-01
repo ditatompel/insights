@@ -33,7 +33,7 @@ require (
 	github.com/hugomods/icons/vendors/bootstrap v0.5.5 // indirect
 	github.com/hugomods/icons/vendors/font-awesome v0.6.3 // indirect
 	github.com/hugomods/idb-js v0.1.0 // indirect
-	github.com/hugomods/images v0.9.1 // indirect
+	github.com/hugomods/images v0.9.2 // indirect
 	github.com/hugomods/mermaid v0.1.1 // indirect
 	github.com/hugomods/pwa v0.7.0 // indirect
 	github.com/hugomods/search v0.13.2 // indirect

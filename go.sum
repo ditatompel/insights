@@ -9,6 +9,7 @@ github.com/hbstack/base v0.4.1 h1:rRmnQonYwixoo/MzDAGOH5S1aIB6/ArPRueRDil0cnc=
 github.com/hbstack/base v0.4.1/go.mod h1:ihI8NSFogNNXLpt7vWEYTGgSWE9UvgnfyFKJqmyOauU=
 github.com/hbstack/base v0.4.2 h1:fGJ3McmCNcbnT5r2jGFfxsaGAQb8QbOaWZMvghSVRPA=
 github.com/hbstack/base v0.4.2/go.mod h1:TimBDf5axaS0vfBwKOo4+NMGO4Qy5G7P8s909I/nd2o=
+github.com/hbstack/base v0.4.3/go.mod h1:J5A7oLAuKGyUU3SPhvwhZ9kWvVBRjWyWIANgR+6fppg=
 github.com/hbstack/blog/modules/content-panel v0.1.21 h1:g43IVjn3O6QCQSvCbgr9iYCgZcI5XG8YAiuVPb269Ok=
 github.com/hbstack/blog/modules/content-panel v0.1.21/go.mod h1:fVnvVtnfo3R78jnGLgckfC43j7rYMMN+l1PhU9E6Jas=
 github.com/hbstack/blog/modules/giscus v0.1.23 h1:k70d91K6mU6LJGhXYh1Mrpk+MFFrxwTOGyCVWHWHgbo=

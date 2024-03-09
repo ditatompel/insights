@@ -59,6 +59,7 @@ github.com/hugomods/bootstrap v0.15.0/go.mod h1:uieaNCwD8ajNXjXmvCGoV0DluFraEn2h
 github.com/hugomods/bootstrap v0.17.3 h1:YdsTcRRr1Aidk6jntyGW2HGP5U+iehguJz9swVDQrNw=
 github.com/hugomods/bootstrap v0.17.3/go.mod h1:SaJtm/hMN0giD5tCUzT+6UsphTIFpAspsZHisGA081U=
 github.com/hugomods/bootstrap v0.18.4/go.mod h1:Ss7a4kP2fqt6qMlU4XUunU0XDc8GAN8mJlOWwwdUJaA=
+github.com/hugomods/bootstrap v0.18.5/go.mod h1:Ss7a4kP2fqt6qMlU4XUunU0XDc8GAN8mJlOWwwdUJaA=
 github.com/hugomods/code-block-panel v0.5.0 h1:IjlVQZJccs02x0TaNxsLR4S2PRyzy3tBXE3nFT2vJxA=
 github.com/hugomods/code-block-panel v0.5.0/go.mod h1:3J9yUxaShbhYvFFZbGVHcBoHPl6TUKLL3f2fTsnVNNg=
 github.com/hugomods/giscus v0.1.1 h1:Kb8137Cp2nQJPFb6e+CdXy8nyIAJ2dFIymG4bDdaXWI=

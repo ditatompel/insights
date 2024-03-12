@@ -11,6 +11,7 @@ github.com/hbstack/base v0.4.2 h1:fGJ3McmCNcbnT5r2jGFfxsaGAQb8QbOaWZMvghSVRPA=
 github.com/hbstack/base v0.4.2/go.mod h1:TimBDf5axaS0vfBwKOo4+NMGO4Qy5G7P8s909I/nd2o=
 github.com/hbstack/base v0.4.3/go.mod h1:J5A7oLAuKGyUU3SPhvwhZ9kWvVBRjWyWIANgR+6fppg=
 github.com/hbstack/base v0.4.4/go.mod h1:oSKOFOxBtKd2zHjWq68SaF+zgtrNar9icGmRxDGPT0M=
+github.com/hbstack/base v0.4.5/go.mod h1:03s6ySDgFTfhIKUc8y1C7xEp8eCtRp0NfYNY57myd1g=
 github.com/hbstack/blog/modules/content-panel v0.1.21 h1:g43IVjn3O6QCQSvCbgr9iYCgZcI5XG8YAiuVPb269Ok=
 github.com/hbstack/blog/modules/content-panel v0.1.21/go.mod h1:fVnvVtnfo3R78jnGLgckfC43j7rYMMN+l1PhU9E6Jas=
 github.com/hbstack/blog/modules/giscus v0.1.23 h1:k70d91K6mU6LJGhXYh1Mrpk+MFFrxwTOGyCVWHWHgbo=
@@ -54,6 +55,7 @@ github.com/hugomods/base v0.4.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLO
 github.com/hugomods/base v0.4.1/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/base v0.4.2 h1:CffAsy/2nxsMm1TazpnFC/Nb+IQnwed5yLAVvt1dmZQ=
 github.com/hugomods/base v0.4.2/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
+github.com/hugomods/base v0.5.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/bootstrap v0.15.0 h1:00+Lkt6zJO71aN5MspuwAM50VwbQsM8P2QlLLUt7EPw=
 github.com/hugomods/bootstrap v0.15.0/go.mod h1:uieaNCwD8ajNXjXmvCGoV0DluFraEn2h8WzXhwtmkig=
 github.com/hugomods/bootstrap v0.17.3 h1:YdsTcRRr1Aidk6jntyGW2HGP5U+iehguJz9swVDQrNw=

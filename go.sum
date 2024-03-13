@@ -50,6 +50,7 @@ github.com/henrygd/bigger-picture v1.1.13 h1:J9ABjwQjk+AHb3ZXwFFTuYcj3ToMWYsxmXT
 github.com/henrygd/bigger-picture v1.1.13/go.mod h1:LayqbjDNNsZH+ZXklmjBe5T02qxpH9Cah/ygAraOBIk=
 github.com/henrygd/bigger-picture v1.1.15 h1:qFdNSaVP50zNndP+N0jsOVKbdKwL2L5bW851/fPjG9M=
 github.com/henrygd/bigger-picture v1.1.15/go.mod h1:LayqbjDNNsZH+ZXklmjBe5T02qxpH9Cah/ygAraOBIk=
+github.com/henrygd/bigger-picture v1.1.16/go.mod h1:LayqbjDNNsZH+ZXklmjBe5T02qxpH9Cah/ygAraOBIk=
 github.com/hugomods/base v0.4.0 h1:jzBIJpqDx8aLAlNe/zF1xbefu1XYxumZc39tOO0ZjSw=
 github.com/hugomods/base v0.4.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/base v0.4.1/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=

@@ -356,4 +356,4 @@ Akan tetapi, melakukan *maintenance* pada jaringan WireGuard yang besar bisa san
 
 ### Catatan Tambahan
 - Jika Anda memiliki kesulitan teknis untuk melakukan *setup* VPN server WireGuard sendiri, saya dapat membantu Anda untuk melakukannya dengan imbalan sedikit uang. (_Saya juga menerima **Monero XMR** sebagai **imbalan** jika Anda tidak memiliki mata uang Rupiah_).
-- Untuk dapat menghubungi saya, silahkan kunjungi [https://www.ditatompel.com/pages/contact](https://www.ditatompel.com/pages/contact).
+- Untuk dapat menghubungi saya, silahkan kunjungi [https://www.ditatompel.com/about](https://www.ditatompel.com/about).

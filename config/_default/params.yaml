@@ -8,12 +8,12 @@ hb:
     # logo_bg: '#712cf9' # logo background color, used by logo with transparent background.
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      github: ditatompel
+      github: https://github.com/ditatompel/insights
       twitter: ditatompel
   footer:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      github: ditatompel
+      github: https://github.com/ditatompel/insights
       twitter: ditatompel
   blog:
     paginate: 12 # paginate.

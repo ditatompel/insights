@@ -73,10 +73,7 @@ Sesuaikan paket / *Droplet Size* yang sesuai dengan kebutuhan Anda untuk menghin
 
 Setelah VPS kamu sudah siap dan sudah berjalan, saya sarankan untuk melakukan update OS terlebih dahulu menggunakan perintah `apt update && apt upgrade`, kemudian *restart* (`reboot`) VPS anda.
 
-<!--
-ARTIKEL BELUM DIBUAT, UPDATE NANTI
-> _Jika Anda ingin bisa mengatur **WireGuard** peers (client) di server Anda dengan mudah, Anda mungkin tertarik untuk membaca "[Cara install WireGuard-UI untuk mengatur server VPN WireGuard dengan mudah]({{< ref "#/tutorials/installing-wireguard-ui-to-manage-your-wireguard-vpn-server/index.id.md" >}})"._
--->
+> _Jika Anda ingin bisa mengatur **WireGuard** peers (client) di server Anda dengan mudah, Anda mungkin tertarik untuk membaca "[Cara install WireGuard-UI untuk mengatur server VPN WireGuard dengan mudah]({{< ref "/tutorials/installing-wireguard-ui-to-manage-your-wireguard-vpn-server/index.id.md" >}})"._
 
 ### Install WireGuard
 Install WireGuard dengan menggunakan perintah `sudo apt install wireguard`. Setelah WireGuard berhasil diinstall, kita perlu membuat *private* dan *public key* untuk WireGuard server kita.

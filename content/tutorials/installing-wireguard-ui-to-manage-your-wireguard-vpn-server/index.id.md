@@ -306,5 +306,5 @@ Setelah menambahkan *peers* (*clients*), tekan tombol **"Apply Config"** dan cob
 Apa langkah selanjutnya? Bagaimana dengan [Mengkonfigurasi WireGuard VPN Client]({{< ref "/tutorials/configure-wireguard-vpn-clients/index.id.md" >}})?
 
 ## Catatan
-- Jika Anda memiliki kesulitan teknis untuk melakukan *setup* VPN server WireGuard sendiri, saya dapat membantu Anda untuk melakukannya dengan imbalan sedikit uang. (_Saya juga menerima **Monero XMR** sebagai **imbalan** jika Anda tidak memiliki mata uang Rupiah_).
+- Jika Anda memiliki kesulitan teknis untuk melakukan *setup* VPN server WireGuard sendiri, saya dapat membantu Anda untuk melakukannya dengan imbalan sedikit uang (sudah termasuk installasi dan konfigurasi WireGuard UI, Nginx dan SSL).
 - Untuk dapat menghubungi saya, silahkan kunjungi [https://www.ditatompel.com/pages/contact](https://www.ditatompel.com/pages/contact).

@@ -351,5 +351,5 @@ When combined with **Nginx** as *reverse proxy*, you can even expose your local 
 Anyway, managing large scale of WireGuard network can be very difficult. But, there are a tool to help you to manage large scale WireGuard networks, such as [Netmaker](https://www.netmaker.io/).
 
 ### Additional Notes
-- If you have some technical difficulties setting up your own WireGuard server, I can help you to set that up for small amount of **IDR** (_I accept **Monero XMR** for **credits** if you don't have Indonesia Rupiah_).
+- If you have some technical difficulties setting up your own WireGuard server, [I can help you to setup WireGuard VPN server](https://www.fiverr.com/s/4vzPGR) for small amount of money.
 - To find out how to contact me, please visit [https://www.ditatompel.com/about](https://www.ditatompel.com/about).

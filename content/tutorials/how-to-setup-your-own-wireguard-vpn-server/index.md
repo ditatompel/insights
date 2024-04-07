@@ -60,7 +60,7 @@ It doesn't matter which *cloud provider* you choose. In this article, I will use
 > _VPS server I use for this article will be destroyed when this article is published._
 
 ## Deploying your new VPS (DigitalOcean Droplet, optional)
-> _If you already have your own VPS running, you can skip this step and go to next step: "[Set up your WireGuard Server](#setup-your-wireguard-server)"._
+> _If you already have your own VPS running, you can skip this step and go to next step: "[Set up your WireGuard Server](#set-up-your-wireguard-server)"._
 
 1. Go to your project and **Create new Droplet**.
 2. Choose **droplet region closest to you** to avoid any potential network latency. In this example, I'll pick **Frankfurt** datacenter.

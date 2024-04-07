@@ -44,6 +44,12 @@ Cukup menggunakan VPS seharga *6 dolar* per bulan, Anda bisa memiliki **VPN** se
 
 Setelah [beberapa seri artikel tentang **VPN IPsec**](https://insights.ditatompel.com/en/series/ipsec-vpn/) (dalam bahasa Inggris), hari ini saya ingin berbagi bagaimana cara mensetting [**WireGuard VPN**](https://www.wireguard.com/) sebagai server VPN. Jika dibandingkan dengan [L2TP/xAuth](https://insights.ditatompel.com/en/tutorials/ipsec-l2tp-xauth-ikev2-vpn-server-auto-setup/) dan [IKEv2 VPN](https://insights.ditatompel.com/en/tutorials/set-up-ikev2-vpn-server-and-clients/) (artikel saya sebelumnya tentang **IPsec VPN** dalam bahasa Inggris), dari sisi performa, **WireGuard VPN jauh lebih unggul** karena menggunakan **UDP** dan bukan **TCP**.
 
+{{< bs/alert info >}}
+{{< bs/alert-heading "TLDR;" >}}
+Jika Anda memiliki kesulitan teknis untuk melakukan setup VPN server WireGuard sendiri, {{< bs/alert-link "saya dapat membantu Anda untuk melakukannya" "https://www.fiverr.com/s/4vzPGR" >}} dengan imbalan sedikit uang.
+{{< /bs/alert >}}
+
+
 ## Prasyarat
 - Sebuah **VPS** dengan alamat IP publik.
 - Nyaman dan terbiasa dengan Linux *command-line*.

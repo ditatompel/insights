@@ -43,6 +43,11 @@ This article will guide you to setting up your own **WireGuard VPN** server usin
 
 After [series of my IPsec VPN article](https://insights.ditatompel.com/en/series/ipsec-vpn/). Today, I want to share how to set up [**WireGuard VPN**](https://www.wireguard.com/) server. Because **WireGuard** use **UDP** instead of **TCP**, it's *extremely fast* compared to [L2TP/xAuth]({{< ref "/tutorials/ipsec-l2tp-xauth-ikev2-vpn-server-auto-setup/index.md" >}}) and [IKEv2 VPN]({{< ref "/tutorials/set-up-ikev2-vpn-server-and-clients/index.md" >}}) (my previous **IPsec VPN** articles).
 
+{{< bs/alert info >}}
+{{< bs/alert-heading "TLDR;" >}}
+If you have some technical difficulties setting up your own WireGuard server, {{< bs/alert-link "I can help you to setup WireGuard VPN server" "https://www.fiverr.com/s/4vzPGR" >}} for small amount of money.
+{{< /bs/alert >}}
+
 ## Prerequisites
 - A **VPS** with Public IP address.
 - Comfortable with Linux *command-line*.

@@ -43,6 +43,11 @@ To manage **WireGuard** *peers* (client) on a single server easily, you can use 
 
 [Wireguard-UI](https://github.com/ngoduykhanh/wireguard-ui) is a *web-based* user interface to manage your **WireGuard** server setup written by [ngoduykhanh](https://github.com/ngoduykhanh) using **Go** programming language. This is an alternative way to install and easily manage your WireGuard VPN server. 
 
+{{< bs/alert info >}}
+{{< bs/alert-heading "TLDR;" >}}
+If you have some technical difficulties setting up your own WireGuard server, {{< bs/alert-link "I can help you to setup WireGuard VPN server" "https://www.fiverr.com/s/4vzPGR" >}} including configuring Nginx, and SSL for WireGuard UI for small amount of money.
+{{< /bs/alert >}}
+
 If you prefer to install WireGuard server *"from scratch"* and manage it manually, you can follow my previous article about "[How to Set up Your Own WireGuard VPN Server]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.md" >}})".
 
 ## Prerequisites

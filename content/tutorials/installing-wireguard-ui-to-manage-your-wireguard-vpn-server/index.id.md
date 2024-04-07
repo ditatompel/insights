@@ -44,7 +44,12 @@ WireGuard-UI akan sangat mempermudah Anda dalam mengatur **WireGuard** *peers* (
 
 [Wireguard-UI](https://github.com/ngoduykhanh/wireguard-ui) adalah GUI berbasis website untu mmengatur konfigurasi WireGuard server yang ditulis oleh [ngoduykhanh](https://github.com/ngoduykhanh) menggunakan bahasa pemrograman **Go**. Ini bisa menjadi alternatif untuk menginstall dan mempermudah pengatur VPN server WireGuard Anda.
 
-Jika Anda lebih memilih untuk menginstall WireGuard server **"from scratch"* dan mengatur dan mengkonfigurasi secara manual, Anda bisa mengikuti artikel saya sebelumnya mengenai "[Cara Setup VPN Server WireGuard Sendiri]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.id.md" >}})"
+{{< bs/alert info >}}
+{{< bs/alert-heading "TLDR;" >}}
+Jika Anda memiliki kesulitan teknis untuk melakukan setup VPN server WireGuard sendiri, {{< bs/alert-link "saya dapat membantu Anda untuk melakukannya" "https://www.fiverr.com/s/4vzPGR" >}} dengan imbalan sedikit uang (sudah termasuk installasi dan konfigurasi WireGuard UI, Nginx dan SSL).
+{{< /bs/alert >}}
+
+Jika Anda lebih memilih untuk menginstall WireGuard server *"from scratch"* dan mengatur dan mengkonfigurasi secara manual, Anda bisa mengikuti artikel saya sebelumnya mengenai "[Cara Setup VPN Server WireGuard Sendiri]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.id.md" >}})"
 
 ## Prasyarat
 - Sebuah **VPS** (**Ubuntu** `22.04 LTS`) dengan alamat IP publik dan **Nginx** *webserver* sudah terinstall di VPS tersebut.

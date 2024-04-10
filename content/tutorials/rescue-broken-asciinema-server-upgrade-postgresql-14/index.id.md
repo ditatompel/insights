@@ -34,7 +34,7 @@ authors:
   - ditatompel
 ---
 
-Hari ini, saya menemui kendala saat melakukan upgrade [self-hosted asciinema-server](https://asciinema.ditatompel.com/) milik saya. Setelah [mengikuti proses upgrade sesuai dokumentasi asciinema-server di GitHub](https://github.com/asciinema/asciinema-server/wiki/Installation-guide#upgrading), *container* `phoenix` dan `postgres` gagal berjalan dan selalu restart.
+Hari ini, saya menemui kendala saat melakukan upgrade _self-hosted_ **asciinema server** milik saya. Setelah [mengikuti proses upgrade sesuai dokumentasi asciinema-server di GitHub](https://github.com/asciinema/asciinema-server/wiki/Installation-guide#upgrading), *container* `phoenix` dan `postgres` gagal berjalan dan selalu restart.
 
 <!--more-->
 

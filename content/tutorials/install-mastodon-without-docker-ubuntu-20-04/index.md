@@ -41,11 +41,7 @@ authors:
 
 This article is my personal snippet for running Mastodon instance on Ubuntu 20.04 from source. I use *self-signed* certificate instead of **cerbot** because the instance will be run behind **Cloudflare** reverse proxy.
 
-The **asciinema** video below is the whole process I install Mastodon instance (for reference)
-
-<script id="asciicast-14" src="https://asciinema.ditatompel.com/a/14.js" async></script>
-
-Or the whole YouTube video:
+The video below is the whole process I install Mastodon instance (for reference)
 
 {{< youtube eBUr7JFiGMo >}}
 

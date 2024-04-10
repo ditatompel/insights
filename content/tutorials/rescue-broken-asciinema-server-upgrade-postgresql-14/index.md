@@ -34,7 +34,7 @@ authors:
   - ditatompel
 ---
 
-Today, I'm experiencing some problem with my recent [self-hosted asciinema-server](https://asciinema.ditatompel.com/) upgrade. After following the upgrade process according to the [asciinema-server documentation page on GitHub](https://github.com/asciinema/asciinema-server/wiki/Installation-guide), the `phoenix` and `postgresql` containers failed to run and kept restarting.
+Today, I'm experiencing some problem with my recent self-hosted asciinema server upgrade. After following the upgrade process according to the [asciinema-server documentation page on GitHub](https://github.com/asciinema/asciinema-server/wiki/Installation-guide), the `phoenix` and `postgresql` containers failed to run and kept restarting.
 
 <!--more-->
 

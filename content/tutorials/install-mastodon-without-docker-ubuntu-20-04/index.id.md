@@ -44,13 +44,9 @@ Artikel ini membahas mengenai cara menginstal Mastodon di Ubuntu 20.04 beserta d
 
 Catatan: saya menggunakan *self-signed* SSL *certificate* karena *instance* yang akan saya jalankan akan berada dibalik **Cloudflare** *reverse proxy*.
 
-Video **asciinema** saat proses installasi dan konfigurasi Mastodon dapat dilihat dibawah ini:
+Video saat proses installasi dan konfigurasi Mastodon dapat dilihat dibawah ini:
 
-<script id="asciicast-14" src="https://asciinema.ditatompel.com/a/14.js" async></script>
-
-Atau full YouTube Video:
 {{< youtube eBUr7JFiGMo >}}
-
 
 ## Pre-requisites
 Sebelum memulai, ada beberapa syarat yang harus dipenuhi untuk dapat menjalankan Mastodon, yaitu:

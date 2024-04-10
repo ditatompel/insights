@@ -174,7 +174,7 @@ Dont forget to save managed process by PM2 using `pm2 save` command.
 ## Updating Misskey
 To update Misskey that run using NodeJS (via NPM and PM2), you can follow my another article: [Misskey NodeJS (NVM with PM2) update steps]({{< ref "/tutorials/misskey-nodejs-nvm-with-pm2-update-steps/index.md" >}}).
 
-That's it, and welcome to another awesome Fediverse project! Take a look my Fediverse account [@ditatompel@hey.ditatompel.com](https://hey.ditatompel.com/@ditatompel) from Misskey.
+That's it, and welcome to another awesome Fediverse project!
 
 ## Resources
 - [Misskey-hub.net :official installation page](https://misskey-hub.net/en/docs/install/manual.html)

@@ -15,7 +15,7 @@ require (
 	github.com/hbstack/docs/modules/giscus v0.1.10 // indirect
 	github.com/hbstack/docs/modules/toc-scrollspy v0.1.7 // indirect
 	github.com/hbstack/featured-image v0.2.1 // indirect
-	github.com/hbstack/gallery v0.11.0 // indirect
+	github.com/hbstack/gallery v0.12.0 // indirect
 	github.com/hbstack/gallery/modules/breadcrumb v0.1.0 // indirect
 	github.com/hbstack/heading-sign v0.2.0 // indirect
 	github.com/hbstack/meta/recommended v0.2.10 // indirect

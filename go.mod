@@ -3,7 +3,7 @@ module github.com/ditatompel/insights
 go 1.19
 
 require (
-	github.com/GoogleChrome/workbox v7.0.0+incompatible // indirect
+	github.com/GoogleChrome/workbox v7.1.0+incompatible // indirect
 	github.com/KaTeX/KaTeX v0.16.10 // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
 	github.com/hbstack/base v0.4.6 // indirect

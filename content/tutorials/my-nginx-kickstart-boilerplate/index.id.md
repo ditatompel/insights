@@ -121,25 +121,25 @@ http {
 
 ## Mempersiapkan struktur direktori Nginx
 
-Buat direktori `sites-available`, `sites-enabled`, `ssl`, `snippets` di dalam direktori `/etc/nginx` dengan menjalankan perintah:
+Buat direktori `sites-available`, `sites-enabled`, `certs`, `snippets` di dalam direktori `/etc/nginx` dengan menjalankan perintah:
 
 ```shell
-sudo mkdir -p /etc/nginx/{sites-available,sites-enabled,ssl,snippets}
+sudo mkdir -p /etc/nginx/{sites-available,sites-enabled,certs,snippets}
 ```
 
 Buat _self-signed certificate_ (hanya digunakan sebagai konfigurasi awal yang nantinya digantikan oleh `certbot`):
 
 ```shell
 sudo openssl req -x509 -newkey rsa:4096 -days 365 -nodes \
-    -keyout /etc/nginx/ssl/privkey.pem                   \
-    -out /etc/nginx/ssl/fullchain.pem                    \
+    -keyout /etc/nginx/certs/privkey.pem                 \
+    -out /etc/nginx/certs/fullchain.pem                  \
     -subj '/CN=example.local/O=My Organization/C=US'
 ```
 
 Buat _DH-param_ dengan menjalankan perintah:
 
 ```shell
-sudo openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
+sudo openssl dhparam -out /etc/nginx/certs/dhparam.pem 2048
 ```
 
 ## Cloudflare IP Trusted Proxy

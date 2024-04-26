@@ -53,7 +53,7 @@ Sempurna sudah, semua fitur yang saya butuhkan terpenuhi oleh Nginx. Dan saatnya
 
 {{< bs/alert info >}}
 {{< bs/alert-heading "INFO:" >}}
-Saya memiliki open-source project {{< bs/alert-link "ngx-kickstart" "https://github.com/ditatompel/ngx-kickstart" >}} (boilerplate) untuk mempermudah menginstall Nginx dari repositori officialnya dan mengkompile Nginx VTS module di FRESH Debian 12 atau Ubuntu 22.04 server.
+Saya memiliki open-source project {{< bs/alert-link "nginx-kickstart" "https://github.com/ditatompel/nginx-kickstart" >}} (boilerplate) untuk mempermudah menginstall Nginx dari repositori officialnya dan mengkompile Nginx VTS module di FRESH Debian 12 atau Ubuntu 22.04 server.
 {{< /bs/alert >}}
 
 ## Installasi Nginx (Official Repo)
@@ -151,7 +151,7 @@ Buat _executable shell script_ `/etc/nginx/cloudflare-ips.sh` berikut:
 ```shell
 #!/usr/bin/env bash
 # Nginx setup for cloudflare's IPs.
-# https://github.com/ditatompel/ngx-kickstart/blob/main/etc/nginx/cloudflare-ips.sh
+# https://github.com/ditatompel/nginx-kickstart/blob/main/etc/nginx/cloudflare-ips.sh
 # This is modified version of itsjfx's cloudflare-nginx-ips
 # Ref of original script:
 # https://github.com/itsjfx/cloudflare-nginx-ips/blob/master/cloudflare-ips.sh
@@ -429,12 +429,12 @@ server {
 
 ## Konfigurasi Akhir
 
-Sebagai referensi konfigurasi akhir, silahkan lihat di repositori [https://github.com/ditatompel/ngx-kickstart/tree/main/etc/nginx](https://github.com/ditatompel/ngx-kickstart/tree/main/etc/nginx).
+Sebagai referensi konfigurasi akhir, silahkan lihat di repositori [https://github.com/ditatompel/nginx-kickstart/tree/main/etc/nginx](https://github.com/ditatompel/nginx-kickstart/tree/main/etc/nginx).
 
 ## Kredit dan Referensi
 
 - [https://nginx.org/en/linux_packages.html](https://nginx.org/en/linux_packages.html).
 - [https://github.com/vozlt/nginx-module-vts](https://github.com/vozlt/nginx-module-vts).
 - [https://github.com/itsjfx/cloudflare-nginx-ips](https://github.com/itsjfx/cloudflare-nginx-ips).
-- [https://github.com/ditatompel/ngx-kickstart](https://github.com/ditatompel/ngx-kickstart).
+- [https://github.com/ditatompel/nginx-kickstart](https://github.com/ditatompel/nginx-kickstart).
 

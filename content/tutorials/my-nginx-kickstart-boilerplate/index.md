@@ -121,25 +121,25 @@ http {
 
 ## Preparing the Nginx directory structure
 
-Create the `sites-available`, `sites-enabled`, `ssl`, `snippets` directories inside the `/etc/nginx` directory:
+Create the `sites-available`, `sites-enabled`, `certs`, `snippets` directories inside the `/etc/nginx` directory:
 
 ```shell
-sudo mkdir -p /etc/nginx/{sites-available,sites-enabled,ssl,snippets}
+sudo mkdir -p /etc/nginx/{sites-available,sites-enabled,certs,snippets}
 ```
 
 Create a _self-signed_ certificate (only used as an initial configuration which will later be replaced by `certbot`):
 
 ```shell
 sudo openssl req -x509 -newkey rsa:4096 -days 365 -nodes \
-    -keyout /etc/nginx/ssl/privkey.pem                   \
-    -out /etc/nginx/ssl/fullchain.pem                    \
+    -keyout /etc/nginx/certs/privkey.pem                 \
+    -out /etc/nginx/certs/fullchain.pem                  \
     -subj '/CN=example.local/O=My Organization/C=US'
 ```
 
 Create _DH-param_ by running:
 
 ```shell
-sudo openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
+sudo openssl dhparam -out /etc/nginx/certs/dhparam.pem 2048
 ```
 
 ## Cloudflare's IPs trusted proxy

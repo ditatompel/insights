@@ -372,7 +372,7 @@ Configure with the same arguments from the `nginx -V` output above and add `--ad
 Build, then copy the VTS module you just compiled to `/etc/nginx/modules/`:
 
 ```shell
-make -j$(nproc)
+make modules -j$(nproc)
 sudo cp objs/ngx_http_vhost_traffic_status_module.so /etc/nginx/modules/
 ```
 

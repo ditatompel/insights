@@ -373,7 +373,7 @@ Configure dengan argumen yang sama dari output `nginx -V` diatas dan tambahkan `
 _Build_, kemudian copy VTS module yang baru saja dicompile ke `/etc/nginx/modules/`:
 
 ```shell
-make -j$(nproc)
+make modules -j$(nproc)
 sudo cp objs/ngx_http_vhost_traffic_status_module.so /etc/nginx/modules/
 ```
 

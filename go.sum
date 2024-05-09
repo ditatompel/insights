@@ -20,6 +20,7 @@ github.com/hbstack/base v0.4.6 h1:RP8J+c9XzmQ57jWLSP51lBfXFQK/O5n1/UNHMPnuEY4=
 github.com/hbstack/base v0.4.6/go.mod h1:+kxOsRxZqtZG4BF9Vmk8APlSSez95515EQqoz0xPK7M=
 github.com/hbstack/base v0.5.0 h1:loZ6amGhRW0fGJqa7d5n8yJSXvOk+3HzDbYOCcR1Zss=
 github.com/hbstack/base v0.5.0/go.mod h1:4A2bxdXMjpj4HSEnugN7hlFECiap4zUX56jOqtu4YPY=
+github.com/hbstack/base v0.5.1 h1:E3I05k9LG6ZhkXHkDJt+SIhr0AGH1RpI5+oeoj3mgHg=
 github.com/hbstack/base v0.5.1/go.mod h1:4A2bxdXMjpj4HSEnugN7hlFECiap4zUX56jOqtu4YPY=
 github.com/hbstack/blog/modules/content-panel v0.1.21 h1:g43IVjn3O6QCQSvCbgr9iYCgZcI5XG8YAiuVPb269Ok=
 github.com/hbstack/blog/modules/content-panel v0.1.21/go.mod h1:fVnvVtnfo3R78jnGLgckfC43j7rYMMN+l1PhU9E6Jas=
@@ -66,6 +67,7 @@ github.com/hbstack/socials v0.10.0/go.mod h1:VeK9k0+f+HsKuPbVAqRwwz5KqWm+2+NlYlJ
 github.com/hbstack/socials v0.12.0/go.mod h1:VeK9k0+f+HsKuPbVAqRwwz5KqWm+2+NlYlJsMdja4c8=
 github.com/hbstack/socials v0.13.0/go.mod h1:xCbwzO1NzuLhll79QlkG9r/wS0r3Hl5Cy+GhxZBqceo=
 github.com/hbstack/socials v0.14.0/go.mod h1:xCbwzO1NzuLhll79QlkG9r/wS0r3Hl5Cy+GhxZBqceo=
+github.com/hbstack/socials v0.14.1 h1:5LZ6VGMzTtvrEP5vOsxepnsYimcSuoe9v7qLhexZ47g=
 github.com/hbstack/socials v0.14.1/go.mod h1:xCbwzO1NzuLhll79QlkG9r/wS0r3Hl5Cy+GhxZBqceo=
 github.com/henrygd/bigger-picture v1.1.13 h1:J9ABjwQjk+AHb3ZXwFFTuYcj3ToMWYsxmXTxN8OL9vk=
 github.com/henrygd/bigger-picture v1.1.13/go.mod h1:LayqbjDNNsZH+ZXklmjBe5T02qxpH9Cah/ygAraOBIk=
@@ -73,6 +75,8 @@ github.com/henrygd/bigger-picture v1.1.15 h1:qFdNSaVP50zNndP+N0jsOVKbdKwL2L5bW85
 github.com/henrygd/bigger-picture v1.1.15/go.mod h1:LayqbjDNNsZH+ZXklmjBe5T02qxpH9Cah/ygAraOBIk=
 github.com/henrygd/bigger-picture v1.1.16 h1:S7xIGHnzUSpRnSzSMVvs4Cs8oWc+Pongjggdzs3GInQ=
 github.com/henrygd/bigger-picture v1.1.16/go.mod h1:LayqbjDNNsZH+ZXklmjBe5T02qxpH9Cah/ygAraOBIk=
+github.com/hugomods/ascii v0.1.0 h1:c7E0nV3z7PiNchGXkIuFBWsKym17k0iOo+o6Bp6bw30=
+github.com/hugomods/ascii v0.1.0/go.mod h1:vvC2YaCuNBWl/8F/mfk9vMxVpwXluH80cROV9TDpmLk=
 github.com/hugomods/base v0.4.0 h1:jzBIJpqDx8aLAlNe/zF1xbefu1XYxumZc39tOO0ZjSw=
 github.com/hugomods/base v0.4.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/base v0.4.1/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
@@ -150,6 +154,7 @@ github.com/hugomods/simple-icons v11.11.0+incompatible h1:ApE4707MM/exTTk4Hj9dNp
 github.com/hugomods/simple-icons v11.11.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
 github.com/hugomods/simple-icons v11.13.0+incompatible h1:6V5xwEgLaFxKStxgqAhB3QPMx852jTNjxf5hj1Ltg0M=
 github.com/hugomods/simple-icons v11.13.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
+github.com/hugomods/simple-icons v11.14.0+incompatible h1:p9H77q11aNJE5oN5qWNiXeeIWXr1Y5Dbti6o/7qf1Dg=
 github.com/hugomods/simple-icons v11.14.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
 github.com/krisk/Fuse v7.0.0+incompatible h1:jVyg6No+Joc51Rn97QQYJZIpCxzd4ywACn/4+FKWjvo=
 github.com/krisk/Fuse v7.0.0+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=

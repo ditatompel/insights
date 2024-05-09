@@ -23,6 +23,7 @@ require (
 	github.com/hbstack/snackbar v0.1.2 // indirect
 	github.com/hbstack/socials v0.14.1 // indirect
 	github.com/henrygd/bigger-picture v1.1.16 // indirect
+	github.com/hugomods/ascii v0.1.0 // indirect
 	github.com/hugomods/base v0.6.0 // indirect
 	github.com/hugomods/bootstrap v0.21.2 // indirect
 	github.com/hugomods/code-block-panel v0.6.0 // indirect

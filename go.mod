@@ -38,6 +38,6 @@ require (
 	github.com/hugomods/mermaid v0.1.1 // indirect
 	github.com/hugomods/pwa v0.8.0 // indirect
 	github.com/hugomods/search v0.13.4 // indirect
-	github.com/hugomods/simple-icons v11.15.0+incompatible // indirect
+	github.com/hugomods/simple-icons v12.0.0+incompatible // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
 )

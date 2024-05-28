@@ -70,6 +70,7 @@ github.com/hbstack/socials v0.13.0/go.mod h1:xCbwzO1NzuLhll79QlkG9r/wS0r3Hl5Cy+G
 github.com/hbstack/socials v0.14.0/go.mod h1:xCbwzO1NzuLhll79QlkG9r/wS0r3Hl5Cy+GhxZBqceo=
 github.com/hbstack/socials v0.14.1 h1:5LZ6VGMzTtvrEP5vOsxepnsYimcSuoe9v7qLhexZ47g=
 github.com/hbstack/socials v0.14.1/go.mod h1:xCbwzO1NzuLhll79QlkG9r/wS0r3Hl5Cy+GhxZBqceo=
+github.com/hbstack/socials v0.15.0/go.mod h1:Bu1TdfuxLKtpEImsmuvB8OwbYJaGzOriQbOh3u7gTtc=
 github.com/henrygd/bigger-picture v1.1.13 h1:J9ABjwQjk+AHb3ZXwFFTuYcj3ToMWYsxmXTxN8OL9vk=
 github.com/henrygd/bigger-picture v1.1.13/go.mod h1:LayqbjDNNsZH+ZXklmjBe5T02qxpH9Cah/ygAraOBIk=
 github.com/henrygd/bigger-picture v1.1.15 h1:qFdNSaVP50zNndP+N0jsOVKbdKwL2L5bW851/fPjG9M=

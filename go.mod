@@ -9,7 +9,7 @@ require (
 	github.com/hbstack/base v0.5.2 // indirect
 	github.com/hbstack/blog/modules/content-panel v0.1.21 // indirect
 	github.com/hbstack/blog/modules/giscus v0.1.23 // indirect
-	github.com/hbstack/blog/modules/toc-scrollspy v0.1.20 // indirect
+	github.com/hbstack/blog/modules/toc-scrollspy v0.2.0 // indirect
 	github.com/hbstack/carousel v0.2.5 // indirect
 	github.com/hbstack/docs/modules/content-panel v0.1.8 // indirect
 	github.com/hbstack/docs/modules/giscus v0.1.10 // indirect

@@ -87,6 +87,7 @@ github.com/hugomods/base v0.4.2/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLO
 github.com/hugomods/base v0.5.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/base v0.6.0 h1:trDA6k742kUb7VOwrvC564MgalMsAtsQGfB9AZFbVeo=
 github.com/hugomods/base v0.6.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
+github.com/hugomods/base v0.7.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/bootstrap v0.15.0 h1:00+Lkt6zJO71aN5MspuwAM50VwbQsM8P2QlLLUt7EPw=
 github.com/hugomods/bootstrap v0.15.0/go.mod h1:uieaNCwD8ajNXjXmvCGoV0DluFraEn2h8WzXhwtmkig=
 github.com/hugomods/bootstrap v0.17.3 h1:YdsTcRRr1Aidk6jntyGW2HGP5U+iehguJz9swVDQrNw=

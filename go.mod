@@ -25,7 +25,7 @@ require (
 	github.com/henrygd/bigger-picture v1.1.16 // indirect
 	github.com/hugomods/ascii v0.1.0 // indirect
 	github.com/hugomods/base v0.7.0 // indirect
-	github.com/hugomods/bootstrap v0.21.2 // indirect
+	github.com/hugomods/bootstrap v0.22.0 // indirect
 	github.com/hugomods/code-block-panel v0.6.0 // indirect
 	github.com/hugomods/giscus v0.1.1 // indirect
 	github.com/hugomods/google-adsense v0.1.0 // indirect

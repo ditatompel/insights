@@ -1,0 +1,34 @@
+imports:
+  # gallery modules.
+  - path: github.com/hbstack/gallery
+  - path: github.com/hbstack/gallery/modules/breadcrumb
+
+  # syntax highlighting, see https://hbstack.dev/en/docs/modules/syntax-highlighting/.
+  # - path: github.com/hbstack/syntax-highlighting/styles/github-dark
+
+  # icons modules
+  - path: github.com/hugomods/icons/vendors/font-awesome
+  # - path: github.com/hugomods/icons/vendors/mdi
+  # - path: github.com/hugomods/icons/vendors/simple-icons
+  # - path: github.com/hugomods/icons/vendors/tabler
+  # - path: github.com/hugomods/icons/vendors/feather
+
+  # blog table of contents scrollspy
+  - path: github.com/hbstack/blog/modules/toc-scrollspy
+
+  # blog content panel
+  - path: github.com/hbstack/blog/modules/content-panel
+
+  # docs comments engine
+  - path: github.com/hbstack/docs/modules/giscus # (upstream default)
+  # - path: github.com/hbstack/docs/modules/utterances
+  # - path: github.com/hbstack/docs/modules/disqus
+
+  # - path: github.com/hugomods/google-analytics
+  - path: github.com/hugomods/google-adsense
+
+  # recommended modules
+  # check which modules were imported by recommended module by "hugo mod graph | grep recommended".
+  # see also https://hbstack.dev/en/docs/modules/meta/.
+  # to remove unused modules, you need to replace the recommended module with modules your need.
+  - path: github.com/hbstack/meta/recommended

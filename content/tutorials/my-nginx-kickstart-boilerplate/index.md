@@ -1,17 +1,16 @@
 ---
 title: "My Nginx Setup Kickstart / Boilerplate"
 description: "My mandatory settings for Nginx as a web server, reverse proxy; including VTS module, analysis, and logging."
-# linkTitle:
+summary: "My mandatory settings for Nginx as a web server, reverse proxy; including VTS module, analysis, and logging."
+keywords:
+  - nginx
+  - nginx kickstart
+  - nginx boilerplate
 date: 2024-04-25T00:00:09+07:00
 lastmod:
 draft: false
 noindex: false
-# comments: false
 nav_weight: 1000
-# nav_icon:
-#   vendor: bootstrap
-#   name: toggles
-#   color: '#e24d0e'
 series:
 #  - Tutorial
 categories:
@@ -19,16 +18,7 @@ categories:
   - Snippets
 tags:
   - Nginx
-#  - 
 images:
-# menu:
-#   main:
-#     weight: 100
-#     params:
-#       icon:
-#         vendor: bs
-#         name: book
-#         color: '#e24d0e'
 authors:
   - ditatompel
 ---
@@ -67,6 +57,7 @@ For **Debian**:
 ```shell
 apt install sudo curl gnupg2 ca-certificates lsb-release debian-archive-keyring
 ```
+
 For **Ubuntu**:
 
 ```shell
@@ -297,7 +288,7 @@ With `map`, and `if` _keyword_, we can determine what to log and what not to log
 ```nginx
 http {
     # ...
-    
+
     map $request_uri$http_user_agent $is_loggable {
         ~*local          0;
         ~*Uptime-Kuma.*  0;
@@ -314,7 +305,7 @@ http {
 
 For me, log centralization really makes my job easier in carrying out server analysis and troubleshooting.
 
-In Nginx, we can easily send logs to _remote servers_ in _real-time_. For example, we can send logs to a remote `rsyslog` server** (UDP) with the following example configuration:
+In Nginx, we can easily send logs to _remote servers_ in _real-time_. For example, we can send logs to a remote `rsyslog` server\*\* (UDP) with the following example configuration:
 
 ```nginx
 http {
@@ -335,7 +326,7 @@ http {
 sudo apt install git build-essential libpcre3-dev zlib1g-dev libssl-dev
 ```
 
-This is a very important part, if you want to use a *dynamically linked module*, the compile module option must be the same as the Nginx _binary file_ that will be used, as well as the version of Nginx used. To find out the information we need, run `nginx -V` command. Example output:
+This is a very important part, if you want to use a _dynamically linked module_, the compile module option must be the same as the Nginx _binary file_ that will be used, as well as the version of Nginx used. To find out the information we need, run `nginx -V` command. Example output:
 
 ```plain
 nginx version: nginx/1.26.0
@@ -357,6 +348,7 @@ Extract the Nginx _source code_ archive, then go to it's directory:
 tar -xvzf nginx-1.26.0.tar.gz
 cd nginx-1.26.0
 ```
+
 Clone the `vozlt/nginx-module-vts` repository and use the [latest release tag](https://github.com/vozlt/nginx-module-vts/tags). When this article was written, the last tag release was `v0.2.2`, so:
 
 ```shell
@@ -436,4 +428,3 @@ As a final configuration reference, please look at [https://github.com/ditatompe
 - [https://github.com/vozlt/nginx-module-vts](https://github.com/vozlt/nginx-module-vts).
 - [https://github.com/itsjfx/cloudflare-nginx-ips](https://github.com/itsjfx/cloudflare-nginx-ips).
 - [https://github.com/ditatompel/nginx-kickstart](https://github.com/ditatompel/nginx-kickstart).
-

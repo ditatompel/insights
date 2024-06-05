@@ -1,17 +1,16 @@
 ---
 title: "My Nginx Setup Kickstart / Boilerplate"
 description: "Settingan wajib saya untuk Nginx sebagai web server, reverse proxy; termasuk VTS module, analisis, dan logging."
-# linkTitle:
+summary: "Settingan wajib saya untuk Nginx sebagai web server, reverse proxy; termasuk VTS module, analisis, dan logging."
+keywords:
+  - nginx
+  - nginx kickstart
+  - nginx boilerplate
 date: 2024-04-25T00:00:09+07:00
 lastmod:
 draft: false
 noindex: false
-# comments: false
 nav_weight: 1000
-# nav_icon:
-#   vendor: bootstrap
-#   name: toggles
-#   color: '#e24d0e'
 series:
 #  - Tutorial
 categories:
@@ -19,16 +18,7 @@ categories:
   - Snippets
 tags:
   - Nginx
-#  - 
 images:
-# menu:
-#   main:
-#     weight: 100
-#     params:
-#       icon:
-#         vendor: bs
-#         name: book
-#         color: '#e24d0e'
 authors:
   - ditatompel
 ---
@@ -67,6 +57,7 @@ Untuk **Debian**:
 ```shell
 apt install sudo curl gnupg2 ca-certificates lsb-release debian-archive-keyring
 ```
+
 Untuk **Ubuntu**:
 
 ```shell
@@ -239,7 +230,7 @@ http {
 
 #### Custom JSON log
 
-Untuk beberapa kasus, saya menggunakan **Nginx integration** di **Grafana Cloud**  yang menggunakan _custom access log format_ (JSON):
+Untuk beberapa kasus, saya menggunakan **Nginx integration** di **Grafana Cloud** yang menggunakan _custom access log format_ (JSON):
 
 ```nginx
 http {
@@ -297,7 +288,7 @@ Dengan `map`, dan `if` _keyword_, kita dapat menentukan apa saya yang akan di-lo
 ```nginx
 http {
     # ...
-    
+
     map $request_uri$http_user_agent $is_loggable {
         ~*local          0;
         ~*Uptime-Kuma.*  0;
@@ -335,7 +326,7 @@ http {
 sudo apt install git build-essential libpcre3-dev zlib1g-dev libssl-dev
 ```
 
-Ini adalah bagian yang sangat penting, jika ingin menggunakan *dynamically linked module*, opsi mengkompile _module_ harus sama dengan Nginx _binary file_ yang akan digunakan, begitu pula dengan versi Nginx yang digunakan. Untuk mengetahui informasi yang kita butuhkan tersebut, jalankan perintah `nginx -V`. Contoh _output_:
+Ini adalah bagian yang sangat penting, jika ingin menggunakan _dynamically linked module_, opsi mengkompile _module_ harus sama dengan Nginx _binary file_ yang akan digunakan, begitu pula dengan versi Nginx yang digunakan. Untuk mengetahui informasi yang kita butuhkan tersebut, jalankan perintah `nginx -V`. Contoh _output_:
 
 ```plain
 nginx version: nginx/1.26.0
@@ -437,4 +428,3 @@ Sebagai referensi konfigurasi akhir, silahkan lihat di repositori [https://githu
 - [https://github.com/vozlt/nginx-module-vts](https://github.com/vozlt/nginx-module-vts).
 - [https://github.com/itsjfx/cloudflare-nginx-ips](https://github.com/itsjfx/cloudflare-nginx-ips).
 - [https://github.com/ditatompel/nginx-kickstart](https://github.com/ditatompel/nginx-kickstart).
-

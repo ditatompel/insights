@@ -9,12 +9,10 @@ hb:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
       github: https://github.com/ditatompel/insights
-      twitter: ditatompel
   footer:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
       github: https://github.com/ditatompel/insights
-      twitter: ditatompel
   blog:
     paginate: 12 # paginate.
     # post_thumbnail: false # whether to show the thumbnails.
@@ -48,7 +46,7 @@ seo:
     icon: images/logo.png # use logo as favicon.
     svg_icon: images/logo.svg
     mask_icon: images/logo.svg
-    mask_icon_color: '#712cf9'
+    mask_icon_color: "#712cf9"
     sizes:
       - size: 180x180
         rel: apple-touch-icon
@@ -68,9 +66,9 @@ pwa:
     - url: /en/
     - url: /id/
   manifest:
-    background_color: '#712cf9'
-    theme_color: '#712cf9'
-    short_name: 'ditatompel Insights'
+    background_color: "#712cf9"
+    theme_color: "#712cf9"
+    short_name: "ditatompel Insights"
 
 # see https://hugomods.com/en/docs/search/#site-parameters
 search:

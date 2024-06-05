@@ -1,7 +1,13 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 # linkTitle:
-description: 
+description:
+# Summary is used in the RSS description tag
+summary:
+# Keywords meta tags. If not specified, tags field will be used
+keywords:
+  - example
+  - example 2
 date: {{ .Date }}
 lastmod:
 draft: true
@@ -30,11 +36,6 @@ images:
 #         color: '#e24d0e'
 authors:
 #  - ditatompel
----
-
-Summary.
-
-<!--more-->
 ---
 
 Content.

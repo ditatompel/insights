@@ -1,6 +1,13 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: 
+# Description will appear in the meta tags and below the title in the blog list
+description:
+# Summary is used in the RSS description tag
+summary:
+# Keywords meta tags. If not specified, tags field will be used
+keywords:
+  - example
+  - example 2
 date: {{ .Date }}
 lastmod:
 draft: true
@@ -26,11 +33,6 @@ images:
 #         color: '#e24d0e'
 authors:
 #  - ditatompel
----
-
-Summary.
-
-<!--more-->
 ---
 
 Content.

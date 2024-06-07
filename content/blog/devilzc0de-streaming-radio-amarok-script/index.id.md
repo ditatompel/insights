@@ -97,4 +97,3 @@ Sebagai _user_ `root`, _extract_ kemudian _copy_ folder hasil _extract_ ke `/usr
 Maaf belum sempat buat untuk _player_ dan _desktop environment_ laen.
 
 Pertanyaan & bugs report ke `https://devilzc0de.org/forum/thread-11791.html`.
-

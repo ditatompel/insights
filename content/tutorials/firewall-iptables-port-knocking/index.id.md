@@ -37,8 +37,6 @@ authors:
 
 Kali ini saya ingin berbagi tips untuk meningkatkan keamanan server dengan menggunakan teknik **port knocking**. **Port knocking** adalah sebuah cara untuk membuka _port_ tertentu dengan cara mengirimkan paket ke sedetetan port-port tertentu yang telah ditentukan sebelumnya.
 
-<!--more-->
-
 > _**Q** : Tujuannya untuk apa?_
 
 **A** : Tujuannya untuk menghindari serangan dari _pentester_ yang melakukan _scanning port_ untuk mendapatkan _service-service_ yang mungkin bisa diexploitasi oleh mereka. Karena jika _pentester_ yang melakukan _scanning_ tersebut tidak mengetuk _port_ yang telah ditentukan sebelumnya secara berurutan, maka _port_ yang ingin kita lindungi tersebut tidak akan terbuka.

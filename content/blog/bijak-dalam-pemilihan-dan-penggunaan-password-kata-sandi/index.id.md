@@ -6,8 +6,8 @@ date: 2022-09-09T19:47:48+07:00
 lastmod:
 draft: false
 noindex: false
-featured: true
-pinned: false
+featured: false
+pinned: true
 series:
 #  -
 categories:

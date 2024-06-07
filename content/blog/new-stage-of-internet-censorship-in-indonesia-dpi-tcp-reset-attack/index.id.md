@@ -5,8 +5,8 @@ date: 2023-06-04T01:19:36+07:00
 lastmod:
 draft: false
 noindex: false
-featured: true
-pinned: false
+featured: false
+pinned: true
 # comments: false
 series:
 #  -
@@ -211,4 +211,3 @@ Kita juga berharap bahwa teknologi **QUIC/HTTP3** segera masuk ke babak baru yan
 - Moh. Khory Alfarizi, Febriyan, "[Survei Indikator Politik Indonesia: 62,9 Persen Rakyat Semakin Takut Berpendapat](https://nasional.tempo.co/read/1580168/survei-indikator-politik-indonesia-629-persen-rakyat-semakin-takut-berpendapat)" - tempo.co .
 - Abba Gabrillin, Krisiandi, "[Selama 2018, Polisi Tangkap 122 Orang Terkait Ujaran Kebencian di Medsos](https://nasional.kompas.com/read/2019/02/15/15471281/selama-2018-polisi-tangkap-122-orang-terkait-ujaran-kebencian-di-medsos)" - kompas.com.
 - Tsarina Maharani, Dani Prabowo "[Kontras: Polisi Siber yang Akan Diaktifkan Pemerintah Berpotensi Bungkam Kebebasan Berekspresi](https://nasional.kompas.com/read/2020/12/28/14074121/kontras-polisi-siber-yang-akan-diaktifkan-pemerintah-berpotensi-bungkam)" - kompas.com.
-

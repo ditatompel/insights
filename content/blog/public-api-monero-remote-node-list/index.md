@@ -23,7 +23,7 @@ authors:
 Since my main site that displays list of Monero remote nodes **MAY** contains Google AdSense (where very likely track users behavior and interests), I decided create dedicated subdomain for my Monero Remote Node pages and it's API endpoint. No Ads, no user tracking.
 
 - Web interface: [https://xmr.ditatompel.com/](https://xmr.ditatompel.com/).
-- Source Code: Available for public soon.
+- Source Code: [https://github.com/ditatompel/xmr-remote-nodes](https://github.com/ditatompel/xmr-remote-nodes)
 
 ## API Endpoint and Query Parameters
 

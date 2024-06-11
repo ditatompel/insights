@@ -67,7 +67,7 @@ Optional query string parameters:
 For example, if you want to **list CORS enabled Monero nodes using https from United States sorted from recently checked node**:
 
 ```shell
-curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cors=1&protocol=https&country=us&sort_by=last_checked&sort_direction=desc' | jq
+curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cors=1&protocol=https&cc=us&sort_by=last_checked&sort_direction=desc' | jq
 ```
 
 ## Response Header
@@ -79,7 +79,7 @@ The response header includes the **HTTP status code** and the `content-type`. Cl
 The response body includes the information of the query result, query status, and response message. In the example below, the response body of:
 
 ```shell
-curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?country=SG' | jq
+curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cc=SG' | jq
 ```
 
 ```json

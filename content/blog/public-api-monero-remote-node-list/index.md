@@ -7,24 +7,14 @@ draft: false
 noindex: false
 featured: false
 pinned: false
-# comments: false
 series:
-#  - 
+#  -
 categories:
-#  - 
+#  -
 tags:
   - Monero
   - API
 images:
-#  - 
-# menu:
-#   main:
-#     weight: 100
-#     params:
-#       icon:
-#         vendor: bs
-#         name: book
-#         color: '#e24d0e'
 authors:
   - ditatompel
 ---
@@ -45,43 +35,47 @@ Since my main site that displays list of Monero remote nodes **MAY** contains Go
 The default response will display 10 records, sorted from `last_checked` node.
 
 Optional query string parameters:
+
 - `host`: Filter nodes based on hostname or IP address.
 - `protocol`: Possible values:
-    - `any` or _empty string_ or _not set_: Return nodes using any protocol.
-    - `http`: Return node using http RPC (excluding Tor network).
-    - `https`: Return nodes using https RPC.
-    - `tor`: Return nodes on Tor network.
+  - `any` or _empty string_ or _not set_: Return nodes using any protocol.
+  - `http`: Return node using http RPC (excluding Tor network).
+  - `https`: Return nodes using https RPC.
+  - `tor`: Return nodes on Tor network.
 - `nettype`: Possible values:
-    - `mainnet`: Return mainnet nodes.
-    - `stagenet`: Return stagenet nodes.
-    - `testnet`: Return testnet nodes.
-    - `any` or _empty string_ or _not set_: No filtering based on nettype is applied.
+  - `mainnet`: Return mainnet nodes.
+  - `stagenet`: Return stagenet nodes.
+  - `testnet`: Return testnet nodes.
+  - `any` or _empty string_ or _not set_: No filtering based on nettype is applied.
 - `cc`: Filter nodes from specific country. Please use two-letter [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code.
 - `sort_by`: Default sorted by last check time. Possible values:
-    - `last_checked`: sorted by last check time (default).
-    - `uptime`: sorted by percentage of uptime.
+  - `last_checked`: sorted by last check time (default).
+  - `uptime`: sorted by percentage of uptime.
 - `sort_direction`: Possible values:
-    - `desc`: descending (default).
-    - `asc`: ascending.
+  - `desc`: descending (default).
+  - `asc`: ascending.
 - `status` Node status. Possible values :
-    - `-1` or not set: both online and offline (default).
-    - `1`: only online nodes.
-    - `0`: only offline nodes.
+  - `-1` or not set: both online and offline (default).
+  - `1`: only online nodes.
+  - `0`: only offline nodes.
 - `limit`: How many records should be displayed.
 - `page`: For paging porpose.
 - `cors`: Filter nodes that have `Access-Control-Allow-Origin` header or not. Options:
-    - `1`: Return nodes that have `Access-Control-Allow-Origin` header.
-    - `-1`: No CORS filter is applied (default).
+  - `1`: Return nodes that have `Access-Control-Allow-Origin` header.
+  - `-1`: No CORS filter is applied (default).
 
 For example, if you want to **list CORS enabled Monero nodes using https from United States sorted from recently checked node**:
+
 ```shell
 curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cors=1&protocol=https&country=us&sort_by=last_checked&sort_direction=desc' | jq
 ```
 
 ## Response Header
+
 The response header includes the **HTTP status code** and the `content-type`. Clients that receive a HTTP status code other than `200` and `content-type` other than `application/json` must back-off.
 
 ## Response Body
+
 The response body includes the information of the query result, query status, and response message. In the example below, the response body of:
 
 ```shell
@@ -134,43 +128,44 @@ curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?country=SG' | jq
   },
 }
 ```
-- `status`: *string*, `ok` means everything looks good.
-- `message`: *string*, Information related to your query, *success* or *error* message if any.
-- `data`: *object*, Information related to your query.
-  - `total_rows`: *unsigned int*; Total number of nodes found.
-  - `rows_per_page`: *unsigned int*; Number of nodes per page.
-  - `items`:  *array* of nodes or null if no nodes found. Each node has the structure as follows:
-    - `id`: *unsigned int*; ID of the node.
-    - `hostname`: *string*; The hostname / nodes IP address.
-    - `ip`: *string*; The IP address of node, empty string if hostname is not resolveable (Eg.: TOR nodes)
-    - `port`: *unsigned int*; TCP port the nodes is using to listen to RPC calls.
-    - `protocol`: *string*; The protocol used by nodes to listen RPC calls. This can be `http`, `https` or `empty string`.
-    - `is_tor`: *boolean*; whether the node is accessed through the Tor network.
-    - `is_available`: *boolean*; whether the node is online or not. False may means node wasn't ready or my bots can't connect to nodes RPC daemon.
-    - `nettype`: *string*; Network type (one of `mainnet`, `stagenet` or `testnet`).
-    - `height`: *unsigned int*; Current length of longest chain known to daemon.
-    - `adjusted_time`: *unsigned int*; Current time approximated from chain data, as Unix time.
-    - `database_size`: *unsigned int*; The size of the blockchain database, in bytes.
-    - `difficulty`: *unsigned int*; Least-significant 64 bits of the 128-bit network difficulty.
-    - `version`: *string*; Vesion of remote monero node is running.
-    - `uptime`: *float*; Uptime percentage of nodes for last 1 month. This likely **not** the real uptime value since my bots may experiencing network problems (I set connection timeout for 60 seconds).
-    - `estimate_fee`: *unsigned int*; Amount of fees estimated per byte in atomic units. This just fee estimation, Malicious actors who running remote nodes [still can return high fee only when you about to create a transactions](monero-tx-fee-node.jpg).
-    - `asn`: *unsigned int*; The AS number that owns nodes IP address, `0` if no information available.
-    - `asn_name`: *string*; The AS name that owns nodes IP addres.
-    - `cc`: *string*; two-letter ISO 3166-1 country code nodes location, empty string if no information available.
-    - `country_name`: *string*; Country name based on nodes IP address, empty string if no information available.
-    - `city`: *string*; City location based on nodes IP address, empty string if no information available.
-    - `latitude`: *float*; Approx. latitude (geographic coordinate).
-    - `longitude`: *float*; Approx. longitude (geographic coordinate).
-    - `date_entered`: *unsigned int*, The Unix time when my bots start monitoring the node.
-    - `last_checked`: *unsigned int*, The Unix time when was the last time my bot checked into a monero node.
-    - `last_check_statuses`: *array* (size: `5`); last node avaibility status. Possible values:
+
+- `status`: _string_, `ok` means everything looks good.
+- `message`: _string_, Information related to your query, _success_ or _error_ message if any.
+- `data`: _object_, Information related to your query.
+  - `total_rows`: _unsigned int_; Total number of nodes found.
+  - `rows_per_page`: _unsigned int_; Number of nodes per page.
+  - `items`: _array_ of nodes or null if no nodes found. Each node has the structure as follows:
+    - `id`: _unsigned int_; ID of the node.
+    - `hostname`: _string_; The hostname / nodes IP address.
+    - `ip`: _string_; The IP address of node, empty string if hostname is not resolveable (Eg.: TOR nodes)
+    - `port`: _unsigned int_; TCP port the nodes is using to listen to RPC calls.
+    - `protocol`: _string_; The protocol used by nodes to listen RPC calls. This can be `http`, `https` or `empty string`.
+    - `is_tor`: _boolean_; whether the node is accessed through the Tor network.
+    - `is_available`: _boolean_; whether the node is online or not. False may means node wasn't ready or my bots can't connect to nodes RPC daemon.
+    - `nettype`: _string_; Network type (one of `mainnet`, `stagenet` or `testnet`).
+    - `height`: _unsigned int_; Current length of longest chain known to daemon.
+    - `adjusted_time`: _unsigned int_; Current time approximated from chain data, as Unix time.
+    - `database_size`: _unsigned int_; The size of the blockchain database, in bytes.
+    - `difficulty`: _unsigned int_; Least-significant 64 bits of the 128-bit network difficulty.
+    - `version`: _string_; Vesion of remote monero node is running.
+    - `uptime`: _float_; Uptime percentage of nodes for last 1 month. This likely **not** the real uptime value since my bots may experiencing network problems (I set connection timeout for 60 seconds).
+    - `estimate_fee`: _unsigned int_; Amount of fees estimated per byte in atomic units. This just fee estimation, Malicious actors who running remote nodes [still can return high fee only when you about to create a transactions](monero-tx-fee-node.jpg).
+    - `asn`: _unsigned int_; The AS number that owns nodes IP address, `0` if no information available.
+    - `asn_name`: _string_; The AS name that owns nodes IP addres.
+    - `cc`: _string_; two-letter ISO 3166-1 country code nodes location, empty string if no information available.
+    - `country_name`: _string_; Country name based on nodes IP address, empty string if no information available.
+    - `city`: _string_; City location based on nodes IP address, empty string if no information available.
+    - `latitude`: _float_; Approx. latitude (geographic coordinate).
+    - `longitude`: _float_; Approx. longitude (geographic coordinate).
+    - `date_entered`: _unsigned int_, The Unix time when my bots start monitoring the node.
+    - `last_checked`: _unsigned int_, The Unix time when was the last time my bot checked into a monero node.
+    - `last_check_statuses`: _array_ (size: `5`); last node avaibility status. Possible values:
       - `0`: Offline
       - `1`: Online
       - `2`: not yet checked.
-    - `cors`: *boolean*, whether the node return with `Access-Control-Allow-Origin` header or not.
+    - `cors`: _boolean_, whether the node return with `Access-Control-Allow-Origin` header or not.
 
->  You will get `200` response code, `ok` status, and even if your query return no nodes (`null` value in `data.items` field).
+> You will get `200` response code, `ok` status, and even if your query return no nodes (`null` value in `data.items` field).
 
 > _**NOTE**: My API endpoint is behind Cloudflare reverse proxy, so it's still cost your privacy. Monero community suggests to always run your own node to obtain the maximum possible privacy and to help decentralize the network._
 
@@ -220,11 +215,12 @@ Diff: [013aa7d](https://github.com/ditatompel/insights/commit/013aa7db35edd28e72
 Because I [refactoring my backend]({{< ref "/blog/rewriting-ditatompel-site-to-svelte-tailwind-and-go/index.md" >}}), there will most likely be another breaking changes in the near future.
 
 ### Update 2023-05-24
+
 - I've add `cors` and `last_check_statuses` to nodes data record.
 
 ### Update 2022-05-10
+
 - I've add `estimate_fee` to nodes data record which I get from [get_fee_estimate](https://www.getmonero.org/resources/developer-guides/daemon-rpc.html#get_fee_estimate) daemon RPC. This just fee estimation, moneromooo explain that malicious actors who running remote nodes [still can return high fee only when you about to create a transactions](monero-tx-fee-node.jpg).
 - [selsta](https://github.com/selsta) create [pull request](https://github.com/monero-project/monero-gui/pull/3897) to add warning about high fee on official GUI conformation dialog.
 - **The best and safest way is running your own node!**
 - Nodes with 0% uptime within 1 month with more than 500 check attempt will be removed. You can always add your node again latter.
-

@@ -1,6 +1,7 @@
 ---
 title: "Public API Monero Remote Node List"
 description: "API documentation to search for monitored Monero remote nodes on xmr.ditatompel.com. You can filter based on nettype, countries and more."
+summary: "API documentation to search for monitored Monero remote nodes on xmr.ditatompel.com. You can filter based on nettype, countries and more."
 date: 2022-01-29T23:40:26+07:00
 lastmod:
 draft: false
@@ -20,8 +21,6 @@ authors:
 ---
 
 Since my main site that displays list of Monero remote nodes **MAY** contains Google AdSense (where very likely track users behavior and interests), I decided create dedicated subdomain for my Monero Remote Node pages and it's API endpoint. No Ads, no user tracking.
-
-<!--more-->
 
 - Web interface: [https://xmr.ditatompel.com/](https://xmr.ditatompel.com/).
 - Source Code: Available for public soon.

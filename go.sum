@@ -20,6 +20,7 @@ github.com/hbstack/featured-image v0.2.1 h1:sRIzjV6YPVG7Ah0Hxjiuxd9bQnEV+62McOgX
 github.com/hbstack/featured-image v0.2.1/go.mod h1:hux3nYqQUVnQHPttJxVrvwfTsULGuVGRGFk3lO2Si54=
 github.com/hbstack/gallery v0.13.0 h1:xIS5vK0g4wlxgNjxBOdn+9E5n1VsQiZNjBUX5IcPBpQ=
 github.com/hbstack/gallery v0.13.0/go.mod h1:FeLNZqjpKCj1ryfPoTJVk59Bph2N1BfDcNBHyudWT4o=
+github.com/hbstack/gallery v0.13.1/go.mod h1:SlO4eo4aoLjjTfrqEnTEr6ocabHrqZjclWDCI1bUY+o=
 github.com/hbstack/gallery/modules/breadcrumb v0.1.1 h1:hPP+FuHcBo2nieDA3eY/f7714JBe/egECb6TRnmPHTo=
 github.com/hbstack/gallery/modules/breadcrumb v0.1.1/go.mod h1:LdbDrxkgYlIOn/x9HFrde+mpIagFayRuLjIDXL1zCHw=
 github.com/hbstack/heading-sign v0.2.0 h1:yXKZQEjPn/+jKyQxCJh34X+wXbiG4Bnr1VVF6lgMhi8=
@@ -38,6 +39,7 @@ github.com/hugomods/ascii v0.1.0 h1:c7E0nV3z7PiNchGXkIuFBWsKym17k0iOo+o6Bp6bw30=
 github.com/hugomods/ascii v0.1.0/go.mod h1:vvC2YaCuNBWl/8F/mfk9vMxVpwXluH80cROV9TDpmLk=
 github.com/hugomods/base v0.7.0 h1:KEZ1HrZdkx1Yt8BKE750a+zJOusLz9iefU2clqw6duc=
 github.com/hugomods/base v0.7.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
+github.com/hugomods/base v0.7.1/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/bootstrap v0.22.2 h1:wdZbyx/kLs3WH33pdDBmo/MH+42TTZzMtF0bH7otNXs=
 github.com/hugomods/bootstrap v0.22.2/go.mod h1:daEkGLSsmfI8vQ1SjKR7KELPSrm1G+yUnTptKdRxFN0=
 github.com/hugomods/code-block-panel v0.7.0 h1:7y8wbXMPvaFpqNIRUb8ykOQtz+E8lVcYd3yWGv2gMGw=

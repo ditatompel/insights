@@ -1,23 +1,20 @@
-name: Deploy to VPS
+name: Staging
 
 on:
-  # auto deploy when pushing to specified branches.
-  push:
-    branches:
-      - main
+  pull_request:
 
   # allow triggering workflow manually.
   workflow_dispatch:
 
 jobs:
-  publish:
+  deploy:
+    name: Build and copy to staging VPS
     runs-on: ubuntu-latest
     if: github.repository_owner == 'ditatompel'
-    environment: production
+    environment: staging
     permissions:
       contents: read
       deployments: write
-    name: Build and copy to VPS
 
     steps:
       - name: Checkout
@@ -55,10 +52,8 @@ jobs:
 
       - name: Build
         run: hugo --minify --gc --enableGitInfo --cleanDestinationDir
-        # Use following instead if defaultContentLanguageInSubdir is enabled.
-        # run: hugo --minify --gc --enableGitInfo --cleanDestinationDir && cp public/en/404.html public/404.html
 
-      - name: Deploy website with rsync
+      - name: Deploy to staging
         uses: burnett01/rsync-deployments@5.2
         with:
           switches: -avzr --quiet --delete

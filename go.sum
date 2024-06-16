@@ -51,6 +51,7 @@ github.com/hugomods/gravatar v0.2.0/go.mod h1:oATWuh5u2XUK/ZKzOD0VEP5I/TZfVZwplT
 github.com/hugomods/hugopress v0.4.0 h1:ZNORTaUTdw3/AJdu3F280r9aM84c+tZyDQpcJOQJ7Ks=
 github.com/hugomods/hugopress v0.4.0/go.mod h1:CRYvr60xOkZOf4Atkuj+uEj2EH5pjJ39Ws3aJAkoMkA=
 github.com/hugomods/hugopress v0.4.1/go.mod h1:CRYvr60xOkZOf4Atkuj+uEj2EH5pjJ39Ws3aJAkoMkA=
+github.com/hugomods/hugopress v0.5.0/go.mod h1:CRYvr60xOkZOf4Atkuj+uEj2EH5pjJ39Ws3aJAkoMkA=
 github.com/hugomods/icons/vendors/bootstrap v0.5.6 h1:4Vj7u52gFUnO+Jj/CqmGfsLroify2aysRpIvgHRNjjI=
 github.com/hugomods/icons/vendors/bootstrap v0.5.6/go.mod h1:Sw1RhQvFcsQlJ5a4SKpp7A0XHDYQ0DK0pQwnnx+l+Ao=
 github.com/hugomods/icons/vendors/bootstrap v0.5.7/go.mod h1:bTxiIPJ/idHEc35EtvtwSODLpjI+R54BkGdikO3gCmY=

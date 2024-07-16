@@ -3,9 +3,9 @@ title: "My Nginx Setup Kickstart / Boilerplate"
 description: "Settingan wajib saya untuk Nginx sebagai web server, reverse proxy; termasuk VTS module, analisis, dan logging."
 summary: "Settingan wajib saya untuk Nginx sebagai web server, reverse proxy; termasuk VTS module, analisis, dan logging."
 keywords:
-  - nginx
-  - nginx kickstart
-  - nginx boilerplate
+    - nginx
+    - nginx kickstart
+    - nginx boilerplate
 date: 2024-04-25T00:00:09+07:00
 lastmod:
 draft: false
@@ -14,13 +14,13 @@ nav_weight: 1000
 series:
 #  - Tutorial
 categories:
-  - SysAdmin
-  - Snippets
+    - SysAdmin
+    - Snippets
 tags:
-  - Nginx
+    - Nginx
 images:
 authors:
-  - ditatompel
+    - ditatompel
 ---
 
 Sejak pertama kali saya menggunakan [**Nginx**](https://nginx.org/) di pertengahan tahun 2011 lalu, Nginx langsung menjadi _web server_ favorit saya. [Apache](https://httpd.apache.org/) yang sebelumnya merupakan _"standard" web server_ di sistem operasi Linux sedikit demi sedikit mulai saya tinggalkan.
@@ -424,7 +424,7 @@ Sebagai referensi konfigurasi akhir, silahkan lihat di repositori [https://githu
 
 ## Kredit dan Referensi
 
-- [https://nginx.org/en/linux_packages.html](https://nginx.org/en/linux_packages.html).
-- [https://github.com/vozlt/nginx-module-vts](https://github.com/vozlt/nginx-module-vts).
-- [https://github.com/itsjfx/cloudflare-nginx-ips](https://github.com/itsjfx/cloudflare-nginx-ips).
-- [https://github.com/ditatompel/nginx-kickstart](https://github.com/ditatompel/nginx-kickstart).
+-   [https://nginx.org/en/linux_packages.html](https://nginx.org/en/linux_packages.html).
+-   [https://github.com/vozlt/nginx-module-vts](https://github.com/vozlt/nginx-module-vts).
+-   [https://github.com/itsjfx/cloudflare-nginx-ips](https://github.com/itsjfx/cloudflare-nginx-ips).
+-   [https://github.com/ditatompel/nginx-kickstart](https://github.com/ditatompel/nginx-kickstart).

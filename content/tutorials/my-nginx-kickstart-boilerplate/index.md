@@ -3,9 +3,9 @@ title: "My Nginx Setup Kickstart / Boilerplate"
 description: "My mandatory settings for Nginx as a web server, reverse proxy; including VTS module, analysis, and logging."
 summary: "My mandatory settings for Nginx as a web server, reverse proxy; including VTS module, analysis, and logging."
 keywords:
-  - nginx
-  - nginx kickstart
-  - nginx boilerplate
+    - nginx
+    - nginx kickstart
+    - nginx boilerplate
 date: 2024-04-25T00:00:09+07:00
 lastmod:
 draft: false
@@ -14,13 +14,13 @@ nav_weight: 1000
 series:
 #  - Tutorial
 categories:
-  - SysAdmin
-  - Snippets
+    - SysAdmin
+    - Snippets
 tags:
-  - Nginx
+    - Nginx
 images:
 authors:
-  - ditatompel
+    - ditatompel
 ---
 
 Since the first time I used [**Nginx**](https://nginx.org/) in mid-2011, Nginx immediately became my favorite web server. I am slowly starting to leave [Apache](https://httpd.apache.org/) behind, which was previously the _"standard" web server_ on the Linux operating system.
@@ -424,7 +424,7 @@ As a final configuration reference, please look at [https://github.com/ditatompe
 
 ## Credit and references
 
-- [https://nginx.org/en/linux_packages.html](https://nginx.org/en/linux_packages.html).
-- [https://github.com/vozlt/nginx-module-vts](https://github.com/vozlt/nginx-module-vts).
-- [https://github.com/itsjfx/cloudflare-nginx-ips](https://github.com/itsjfx/cloudflare-nginx-ips).
-- [https://github.com/ditatompel/nginx-kickstart](https://github.com/ditatompel/nginx-kickstart).
+-   [https://nginx.org/en/linux_packages.html](https://nginx.org/en/linux_packages.html).
+-   [https://github.com/vozlt/nginx-module-vts](https://github.com/vozlt/nginx-module-vts).
+-   [https://github.com/itsjfx/cloudflare-nginx-ips](https://github.com/itsjfx/cloudflare-nginx-ips).
+-   [https://github.com/ditatompel/nginx-kickstart](https://github.com/ditatompel/nginx-kickstart).

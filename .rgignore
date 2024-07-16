@@ -1,0 +1,7 @@
+# ripgrep ignore for this repository
+assets/**/*.svg
+assets/**/*.png
+content/**/*.png
+content/**/*.jpg
+content/**/*.jpeg
+

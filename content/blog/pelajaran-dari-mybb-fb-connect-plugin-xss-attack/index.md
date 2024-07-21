@@ -8,20 +8,17 @@ draft: false
 noindex: false
 featured: false
 pinned: false
-# comments: false
-series:
-#  -
 categories:
-  - Security
-  - Privasi
-  - TIL
+    - Security
+    - Privacy
+    - TIL
 tags:
-  - MyBB
-  - XSS
-  - Facebook
+    - MyBB
+    - XSS
+    - Facebook
 images:
 authors:
-  - ditatompel
+    - ditatompel
 ---
 
 A few days ago, I was surprised to see that my website's logs were filled with security testing attempts originating from an IP address in Indonesia. One of these attempts was a successful XSS attack targeting the MyBB plugin within one of my online forums.

@@ -241,6 +241,7 @@ github.com/hugomods/simple-icons v13.2.0+incompatible h1:H/bDwNBVazbtdTg/TQlGyfW
 github.com/hugomods/simple-icons v13.2.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
 github.com/hugomods/simple-icons v13.3.0+incompatible h1:vWCB+FgzAzaL1HtI06kJJK/52Ld7a7KuUiUXEkHV7W8=
 github.com/hugomods/simple-icons v13.3.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
+github.com/hugomods/simple-icons v13.4.0+incompatible h1:BO/ox1wfMYZdMc1lYtxov8qDS93Qs4R/7R7rNeb3IG4=
 github.com/hugomods/simple-icons v13.4.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
 github.com/hugomods/snackbar v0.1.2 h1:SLpfH9jlYwf81epH7DvM2XTZHo+3fXXpk6XKtxmo964=
 github.com/hugomods/snackbar v0.1.2/go.mod h1:ykFm0IFibeQPuPAm8Gaa27xJS/bNZcSez4omVSl2gQ0=

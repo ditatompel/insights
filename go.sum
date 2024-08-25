@@ -26,6 +26,7 @@ github.com/hbstack/blog v0.37.1 h1:PbOFTfoWS6xvmo+s1ZkIti/X28afD7zdPiWhe2dJgdI=
 github.com/hbstack/blog v0.37.1/go.mod h1:X4Wo3ClIdrMNXiZ7JbI65pKLNCVt5HJeidFMSIFIwb8=
 github.com/hbstack/blog v0.37.2 h1:ej58w/mfY08X8AwLlVNQIwRhTfvGeGyy7WuIn9H9tUw=
 github.com/hbstack/blog v0.37.2/go.mod h1:ivXn9g7VMsTmlbkrBsY6rA/+8KWESGXZI60CTTCBLyw=
+github.com/hbstack/blog v0.37.3 h1:L1HrGgSuxvJOXomBsSjjCInPddMAvnU7cqL28+57Bak=
 github.com/hbstack/blog v0.37.3/go.mod h1:AIDU/s/QGVJhMB9Y20ZR4L7h2zOCI9XuPBpv11O6rJY=
 github.com/hbstack/blog/modules/breadcrumb v0.1.23 h1:MgUR88vv4cs/M1/cVBKUInFw3DcRw0W2AlmmcdhxewY=
 github.com/hbstack/blog/modules/breadcrumb v0.1.23/go.mod h1:smQySqXDtUv2pP7bb+XBr+QGNFxhDGN0fLmQkOIWa5g=
@@ -227,6 +228,7 @@ github.com/hugomods/search v0.14.0 h1:mN52YGIaIBr2pv5NWGJiQhAVFt+lOUHDNcpbz9T4Cx
 github.com/hugomods/search v0.14.0/go.mod h1:xPnDGjP/HCdEWJrJBwwdI2mEtdxFxp+wHBwSl/r2m00=
 github.com/hugomods/search v0.14.1 h1:BPwoQU+a6iM2Ab4U0AcPD22Dp+SksSxhbnse/qZRDCM=
 github.com/hugomods/search v0.14.1/go.mod h1:xPnDGjP/HCdEWJrJBwwdI2mEtdxFxp+wHBwSl/r2m00=
+github.com/hugomods/search v0.15.0 h1:ogfxmTiQXi2IKRFb+1NiKa7y1ytEnuMxmO15+5H2reE=
 github.com/hugomods/search v0.15.0/go.mod h1:xPnDGjP/HCdEWJrJBwwdI2mEtdxFxp+wHBwSl/r2m00=
 github.com/hugomods/seo/modules/alternatives v0.1.1 h1:Y8NdyBhvkSfr43ZKtXvQBgOW9lHL0a6vC1UIZFNbMpo=
 github.com/hugomods/seo/modules/alternatives v0.1.1/go.mod h1:y/VmIbVDnJWgcbhw0Rp8PP4RtvLhAx+URfvwl5SrWg0=

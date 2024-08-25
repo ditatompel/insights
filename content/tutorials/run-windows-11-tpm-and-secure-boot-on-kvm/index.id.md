@@ -77,6 +77,12 @@ Hal ini diebabkan karena Windows 11 belum dapat mendeteksi *Network Interface*ny
 
 Klik **_"I don't have internet"_** kemudian **_"Continue with limited setup"_** dan selesaikan _initial setup_ hingga kita berhasil login masuk ke Desktop.
 
+> **Catatan**: Di versi Windows terbaru (yang terakhir saya coba di iso `Win11_23H2_English_x64v2.iso`), tombol **_"I don't have internet"_** tidak tampil.
+>
+> ![BypassNRO.cmd](kvm-win11-oobe-bypassnro.jpg#center "BypassNRO.cmd")
+>
+> Untuk menampilkannya, tekan tombol <kbd>SHIFT</kbd> + <kbd>F10</kbd>. untuk menampilkan _command prompt_ dan Ketikan `OOBE\BypassNRO.cmd` lalu tekan <kbd>ENTER</kbd>. Setelah itu komputer akan restart dan tombol **_"I don't have internet"_** akan muncul.
+
 ## Install _virtio driver_ pada VM Windows 11
 
 Setelah proses installasi selesai, matikan dulu VM Windows 11 supaya kita bisa memperbaiki permasalahan pada **_Ethernet Driver_**nya. Kemudian kembali ke konfigurasi VM di `virt-manager`, pilih **SATA CDROM 1**, dan ubah `Source path` dari yang semula adalah **ISO Windows 11** menjadi lokasi tempat **Windows 11 virtio drivers** dengan mengeklik tombol **Browse** dan pilih [Windows 11 virtio drivers](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso) yang sudah Anda download dan simpan di KVM host Anda.

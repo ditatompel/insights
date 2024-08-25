@@ -68,6 +68,10 @@ Click **"I don't have internet"** and **"Continue with limited setup"**.
 
 ![KVM Windows 11 No Network](kvm-win11-02-no-network-iface.png#center)
 
+> Note: In the latest version of Windows (the last one I tried in the `Win11_23H2_English_x64v2.iso`), the **"I don't have internet"** button does not appear.
+> ![BypassNRO.cmd](kvm-win11-oobe-bypassnro.jpg#center "BypassNRO.cmd")
+> To display it, press <kbd>SHIFT</kbd> + <kbd>F10</kbd> type `OOBE\BypassNRO.cmd` then press <kbd>ENTER</kbd>. After that the computer will restart and the **"I don't have internet"** button will appear.
+
 Continue initial setup wizard by create a **local account**, set **3 security questions** and **"privacy" settings** stuff. Wait for a few minutes until you boot into Windows desktop successfully.
 
 Until this step, your Windows 11 VM is successfully installed. Now, you need to poweroff the VM to fix network driver problem.

@@ -204,6 +204,7 @@ github.com/hugomods/icons/vendors/simple-icons v1.0.48 h1:ioqQdzQV/u99Ub68ED1vHa
 github.com/hugomods/icons/vendors/simple-icons v1.0.48/go.mod h1:OW3DGGP2A2ArBfZWjnLsiZShjXr2fltoP57HySYrsTg=
 github.com/hugomods/icons/vendors/simple-icons v1.0.50 h1:8tJqhTzxgsE2vn+WBVP4JHKFzQk0KP1MKymrB8t2x+0=
 github.com/hugomods/icons/vendors/simple-icons v1.0.50/go.mod h1:yc7MBoWIZX7Da0f6beE/Ppxmp7/stWqyGZRZMBErVJw=
+github.com/hugomods/icons/vendors/simple-icons v1.0.51 h1:yW4ppQqqWZ7Hqrmnsy7wHXvSDVMqr0tpey0/r6+824c=
 github.com/hugomods/icons/vendors/simple-icons v1.0.51/go.mod h1:Uk4BMaWL6ohfjicOQEPZJuhCgWD9beDOkJ8+3zD0m2Q=
 github.com/hugomods/idb-js v0.1.0 h1:mA6hEGtR0aFEdmq9zYMGpfSpCU6SMilx9RzC4uK3DqY=
 github.com/hugomods/idb-js v0.1.0/go.mod h1:GPfnmr+BQpP4s6Epd4Yu+RlUog8q/Djw8qy8BZFWZ04=
@@ -211,6 +212,7 @@ github.com/hugomods/images v0.10.1 h1:ok3ZUZ63MAcmFuTx2kC5JJ3Sffd420RRW9yO57SFeQ
 github.com/hugomods/images v0.10.1/go.mod h1:U6Gwj16LKvk66rOMyGFrnF6f0aV8lT89lqOsckOAjYY=
 github.com/hugomods/images v0.11.0 h1:njtKxqLmKIRXwzriosh13aj9BK3iBgJXeQFpYXIzQTM=
 github.com/hugomods/images v0.11.0/go.mod h1:U6Gwj16LKvk66rOMyGFrnF6f0aV8lT89lqOsckOAjYY=
+github.com/hugomods/images v0.11.2 h1:d7u3c/ePboeOGx8OI5eUnilpA79YvD7KJjUgqVMR83Y=
 github.com/hugomods/images v0.11.2/go.mod h1:U6Gwj16LKvk66rOMyGFrnF6f0aV8lT89lqOsckOAjYY=
 github.com/hugomods/katex v0.3.2 h1:ETXxFxxu9P8FbkYwWqgWE0/7tpQTDXm6YG7XrXiTwvE=
 github.com/hugomods/katex v0.3.2/go.mod h1:i+fKI52f3QbiuK0ug5yRCB9ZJ/qUFERTk8UGuSZMQNQ=
@@ -265,6 +267,7 @@ github.com/hugomods/simple-icons v13.4.0+incompatible h1:BO/ox1wfMYZdMc1lYtxov8q
 github.com/hugomods/simple-icons v13.4.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
 github.com/hugomods/simple-icons v13.6.0+incompatible h1:jCUVk2YvtknOoHQqMFjDE4Ccmph39RUEn+AmBzngs1I=
 github.com/hugomods/simple-icons v13.6.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
+github.com/hugomods/simple-icons v13.7.0+incompatible h1:Pl0dWsY/Gn7PMFVC4oiY4crT7h2pd1bvYlJMczK6f4U=
 github.com/hugomods/simple-icons v13.7.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
 github.com/hugomods/snackbar v0.1.2 h1:SLpfH9jlYwf81epH7DvM2XTZHo+3fXXpk6XKtxmo964=
 github.com/hugomods/snackbar v0.1.2/go.mod h1:ykFm0IFibeQPuPAm8Gaa27xJS/bNZcSez4omVSl2gQ0=

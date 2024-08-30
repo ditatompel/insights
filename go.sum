@@ -48,6 +48,7 @@ github.com/hbstack/breadcrumb v0.7.2 h1:6TrbG5xnnsY74yTzCk+Kieu5RrL+4OuoeQwKPms9
 github.com/hbstack/breadcrumb v0.7.2/go.mod h1:iLp0/AKYRVTNo+Sae1V55hX7CfhX9i0F/nMZ0SnicLQ=
 github.com/hbstack/breadcrumb v0.7.3 h1:HVwTFf8ZOW4PkSUH2phx33DwMa2hmjpn2GHN1/nCEyk=
 github.com/hbstack/breadcrumb v0.7.3/go.mod h1:Xh93KE3dzXP7fYKcV7mjiMgw7P4JUOFfFgsx28jTo5o=
+github.com/hbstack/breadcrumb v0.7.4/go.mod h1:PuwTpChVZHvvcEEEf7XmSNr4vwKEgVJxxSLKUuD5TUc=
 github.com/hbstack/bs-tooltip v0.1.1 h1:3ne4fgVrn90TUPhU5r94AKqY2zD6ZmUFZGVW1wzZEv4=
 github.com/hbstack/bs-tooltip v0.1.1/go.mod h1:CHhLg2OQq5CdRI1UCe52NbBUQb+pNkXFPdyj32gB/uk=
 github.com/hbstack/carousel v0.2.5 h1:+N4U9wvCvd8gWI0anyNVqelkrDqsWI/jDc8LG/KvB1E=
@@ -94,6 +95,7 @@ github.com/hbstack/hb v0.12.3 h1:/sJEzqpGY4dJDNc2YcIRMT7sgLOwmKKckHG6VXzDuEQ=
 github.com/hbstack/hb v0.12.3/go.mod h1:K+8F6OQKKAVneWZKzW/Jj3vbqaG1ewFIH/P7HKNeF3o=
 github.com/hbstack/hb v0.12.4 h1:dhhsoGyHq2HGhz3xJUGuyK6A4sqiTxW1l8yuTREr4JM=
 github.com/hbstack/hb v0.12.4/go.mod h1:FJilVCHtkVpfXZT+Ii2OFCVeu9wQh/YGgRMuPKX5ycA=
+github.com/hbstack/hb v0.13.0/go.mod h1:FJilVCHtkVpfXZT+Ii2OFCVeu9wQh/YGgRMuPKX5ycA=
 github.com/hbstack/header v0.14.5 h1:TGjaudDop6df38A0K8hjMOdmcD1WpUN03xenpgR7tJw=
 github.com/hbstack/header v0.14.5/go.mod h1:W7eolpYJctsTD8GVFEj09Ogbqqy8OAqcxBEbW3ZTYIg=
 github.com/hbstack/header v0.14.6 h1:HyRbRtn8ckakpW+TRwYzYXXLfYbx3+pt50uacE7qgnA=

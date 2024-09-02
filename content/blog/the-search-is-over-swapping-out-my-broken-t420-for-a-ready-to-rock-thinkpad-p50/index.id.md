@@ -236,6 +236,33 @@ belum bisa saya coba atau saya tidak berniat untuk mencoba:
 -   Saya tidak berminat mencoba Fingerprint Reader dan
     **Pantone color calibrator** karena saya tidak menggunakannya.
 
+### Performa
+
+Bicara soal performa, saya kurang bisa memberikan _"review"_ yang lengkap
+karena kebanyakan saya menggunakan laptop hanya untuk bekerja (yang dalam hal
+ini meremote server, mengcompile program C, Rust, ataupun Go). Saya juga tidak
+bermain game, jadi untuk Intel CPU generasi ke-6 ini sudah lebih dari cukup
+buat saya.
+
+Tapi ada satu test yang saya coba, yaitu melakukan _re-encoding_ video 4K
+menggunakan **FFmpeg**. Saya melakukan test sebanyak 2 kali: yang pertama hanya
+mengandalkan CPU, dan yang kedua menggunakan GPU NVIDIA bawaan laptop ini.
+RAM yang terinstall saat melakukan test hanya 8GB sedangkan video yang diproses
+adalah video 4K UHD (resolusi 3840x2160 px) 30FPS yang berdurasi 10 menit
+31 detik.
+
+Test pertama yang hanya mengandalkan CPU **i7-6820HQ** memakan waktu
+**40 menit 45 detik**. Temperatur CPU rata-rata di 79 derajat Celsius yang
+kadang-kadang _spike_ hingga 84 derajat Celsius.
+
+Untuk test kedua yang menggunakan NVIDIA **Quadro M1000M** memakan waktu
+**7 menit 32 detik**. Temperatur CPU rata-rata berada di 71 derajat Celsius
+yang kadang-kadang loncat ke 74 derajat Celsius.
+
+Proses testing tersebut bisa dilihat di video dibawah ini:
+
+{{< youtube Qr1r1mPSYjE >}}
+
 ## Kesimpulan
 
 _Overall_, saya puas dengan kondisi produk yang saya dapatkan. Serius, saya
@@ -244,7 +271,11 @@ terkejut dan salut dengan daya tahan baterai untuk pemakaian normal yang mampu
 **3 - 4 jam pemakaian dengan mode grafis**.
 
 Untuk _disk storage_, saya pasti akan melakukan upgrade. Saat ini saya lebih
-memprioritaskan upgrade NVMe storage ke kapasitas yang lebih besar.
+memprioritaskan upgrade NVMe storage ke kapasitas yang lebih besar. Di tanggal
+30 Agustus 2024, saya mengganti NVMe SSD bawaan laptop ini dengan
+**Team MP33 Pro 1TB**. Proses penggantian dan test performa
+_sequential/random read_ bisa dilihat di video YouTube
+[_"Replace ThinkPad P50 NVMe Storage (Team MP33 Pro 1TB)"_][yt_nvme_test].
 
 Sedangkan untuk RAM, saat ini saya masih merasa cukup dengan 8GB. Namun
 kedepannya saya pasti akan memaksimalkan RAM pada ThinkPad P50 saya ini!
@@ -259,6 +290,7 @@ sebagai sebuah mini server dan _testing machine_.
 [my_t420_monitor]: screen-cryin-t420.jpg#center "Internal monitor T420 saya: tidak jelas dan sangat tidak responsif"
 [my_p50]: https://github.com/ditatompel/ditatompel/tree/main/machines/p50 "My ThinkPad P50 GitHub Repo"
 [p50_uk_keyboard]: uk-eu-p50-keyboard-layout.jpg#center "UK/EU keyboard layout"
+[yt_nvme_test]: https://www.youtube.com/watch?v=YtuV_HY9zxg "Replace ThinkPad P50 NVMe Storage (Team MP33 Pro 1TB + read test)"
 [i52520m]: https://www.intel.com/content/www/us/en/products/sku/52229/intel-core-i52520m-processor-3m-cache-up-to-3-20-ghz/specifications.html "Intel(R) Core(TM) i5-2520M specifications"
 [i72620m]: https://www.intel.com/content/www/us/en/products/sku/52231/intel-core-i72620m-processor-4m-cache-up-to-3-40-ghz/specifications.html "Intel(R) Core(TM) i7-2620M specifications"
 [i76820hq]: https://www.intel.com/content/www/us/en/products/sku/88970/intel-core-i76820hq-processor-8m-cache-up-to-3-60-ghz/specifications.html "Intel(R) Core(TM) i7-6820HQ specifications"

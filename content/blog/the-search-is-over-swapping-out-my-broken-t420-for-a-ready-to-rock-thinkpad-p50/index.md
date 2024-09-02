@@ -230,6 +230,33 @@ have not been able to test or do not intend to use:
 -   I'm not interested in testing the Fingerprint Reader and
     **Pantone color calibrator**, as I do not utilize these features.
 
+### Performance
+
+When it comes to performance, I'd like to share my experience, but I must
+preface that my primary use of this laptop is for work (specifically remote
+servers, compiling C, Rust, or Go programs). As a non-gamer, I don't rely on
+the CPU's gaming capabilities, so the 6th generation Intel CPU is more than
+sufficient for my needs.
+
+However, I did conduct one test using **FFmpeg** to re-encode 4K video.
+I performed the test twice: once relying solely on the CPU and again utilizing
+the NVIDIA GPU integrated into this laptop. During both tests, the RAM was set
+to 8GB, while the processed video had a resolution of 3840x2160 pixels,
+30 frames per second, and a duration of 10 minutes and 31 seconds.
+
+The first test, relying solely on the **i7-6820HQ** CPU, took approximately
+**40 minutes and 45 seconds**. The average CPU temperature during this test was
+79 degrees Celsius, with occasional spikes reaching 84 degrees Celsius.
+
+In contrast, the second test utilizing the NVIDIA **Quadro M1000M** GPU
+completed in a mere **7 minutes and 32 seconds**. During this test, the average
+CPU temperature was 71 degrees Celsius, with occasional jumps to 74 degrees
+Celsius.
+
+The testing process can be viewed in the video below:
+
+{{< youtube Qr1r1mPSYjE >}}
+
 ## Conclusion
 
 Overall, I am satisfied with the condition of the product I received.
@@ -238,7 +265,10 @@ normal use, which can last up to **7 hours in "hybrid" mode** and
 **3-4 hours in graphics mode**.
 
 For disk storage, I plan to upgrade it. Currently, I prioritize upgrading
-NVMe storage to a larger capacity.
+NVMe storage to a larger capacity. On August 30, 2024, I upgraded the laptop's
+default NVMe SSD with a **Team MP33 Pro 1TB**. The replacement process and
+sequential/random read performance test can be viewed in the YouTube video
+titled ["Replace ThinkPad P50 NVMe Storage (Team MP33 Pro 1TB)"][yt_nvme_test].
 
 As for RAM, while I currently feel sufficient with 8GB, I do intend to maximize
 the RAM on my ThinkPad P50 in the future!
@@ -253,6 +283,7 @@ and testing machine in the future.
 [my_t420_monitor]: screen-cryin-t420.jpg#center "My T420's internal monitor: unclear and unresponsive"
 [my_p50]: https://github.com/ditatompel/ditatompel/tree/main/machines/p50 "My ThinkPad P50 GitHub Repo"
 [p50_uk_keyboard]: uk-eu-p50-keyboard-layout.jpg#center "UK/EU keyboard layout"
+[yt_nvme_test]: https://www.youtube.com/watch?v=YtuV_HY9zxg "Replace ThinkPad P50 NVMe Storage (Team MP33 Pro 1TB + read test)"
 [i52520m]: https://www.intel.com/content/www/us/en/products/sku/52229/intel-core-i52520m-processor-3m-cache-up-to-3-20-ghz/specifications.html "Intel(R) Core(TM) i5-2520M specifications"
 [i72620m]: https://www.intel.com/content/www/us/en/products/sku/52231/intel-core-i72620m-processor-4m-cache-up-to-3-40-ghz/specifications.html "Intel(R) Core(TM) i7-2620M specifications"
 [i76820hq]: https://www.intel.com/content/www/us/en/products/sku/88970/intel-core-i76820hq-processor-8m-cache-up-to-3-60-ghz/specifications.html "Intel(R) Core(TM) i7-6820HQ specifications"

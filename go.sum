@@ -259,6 +259,7 @@ github.com/hugomods/seo/modules/twitter-cards v0.1.1 h1:1cxNnftQ8MdajH48tB46DQ6e
 github.com/hugomods/seo/modules/twitter-cards v0.1.1/go.mod h1:KA6MA3GbyQZdd3vloDgcTFBoztmqEJI8R59whcSxpf4=
 github.com/hugomods/shortcodes v0.21.0 h1:h8Vulwd3Kiff5FERe3KaAXsI9GWW3msNof6XjNgGGEo=
 github.com/hugomods/shortcodes v0.21.0/go.mod h1:EnVopbZMNI/HeteM3Lp3phBTCRLvPSe7l142qhRFFPY=
+github.com/hugomods/shortcodes v0.22.0/go.mod h1:EnVopbZMNI/HeteM3Lp3phBTCRLvPSe7l142qhRFFPY=
 github.com/hugomods/simple-icons v12.2.0+incompatible h1:Atj+h4st6qB8I9p7jdMdf1/tw7pqtWBFL6L4SCaWEFI=
 github.com/hugomods/simple-icons v12.2.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
 github.com/hugomods/simple-icons v12.3.0+incompatible h1:OQ03hQSjQBP9hvggkf9sRbVfDaMo9uj2S0v6HXUHrM4=

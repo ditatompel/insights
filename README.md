@@ -2,6 +2,13 @@
 
 This is replacement for `rtd.ditatompel.com` (previously using **Ghost**) and based from starter theme template of [HB Framework](https://hbstack.dev/). live demo: https://theme.hbstack.dev/.
 
+## Requirements
+
+-   Go
+-   Hugo 124.1
+-   Embedded Dart Sass
+-   NodeJS >= 20
+
 I install this by just following [https://hbstack.dev/en/docs/getting-started/installation/](https://hbstack.dev/en/docs/getting-started/installation/) process.
 
 ```bash

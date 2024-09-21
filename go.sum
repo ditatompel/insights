@@ -124,8 +124,8 @@ github.com/hugomods/fuse-js v0.1.0 h1:CmWHBZANvjOP44RDNQNLntqlLf9GLqeM29jekxTNcP
 github.com/hugomods/fuse-js v0.1.0/go.mod h1:srCqvtBQR02HS/abTraDU4oINv1D3PljNPdexdoHhpo=
 github.com/hugomods/giscus v0.1.1 h1:Kb8137Cp2nQJPFb6e+CdXy8nyIAJ2dFIymG4bDdaXWI=
 github.com/hugomods/giscus v0.1.1/go.mod h1:tCRkqNi/sMsLh3kjDesXZNzf4R/w+b5oc5boS/l8Jtw=
-github.com/hugomods/google-adsense v0.2.0 h1:aw+AuOwsW+2du+rT36NZ2Kdzm1hiMwb03xj7iaS6y6U=
-github.com/hugomods/google-adsense v0.2.0/go.mod h1:zXQIuUr9pIqlNdCzOLY04Rx7oeUm5R+OhUmscNPiI0w=
+github.com/hugomods/google-adsense v0.2.1 h1:ybI/ayRn6eu0WgJHXk6bL2+i+cGWICmuft4QLcvntMs=
+github.com/hugomods/google-adsense v0.2.1/go.mod h1:zXQIuUr9pIqlNdCzOLY04Rx7oeUm5R+OhUmscNPiI0w=
 github.com/hugomods/gravatar v0.2.0 h1:642HNhGN7Mw7qefNcUFJKzLoT2zJKt4IQkrS53mIUfA=
 github.com/hugomods/gravatar v0.2.0/go.mod h1:oATWuh5u2XUK/ZKzOD0VEP5I/TZfVZwplTyhT61Q4Fc=
 github.com/hugomods/hugopress v0.5.0 h1:eQHg1aKnc5StGFnV5H0BORhE0UmHYpaWHnX9QNseHrw=

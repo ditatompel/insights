@@ -98,6 +98,17 @@ beberapa perubahan konfigurasi hardware dari _virt-manager_.
 -   Klik pada bagian **Network interface** dan ubah **Device model** dari
     `e1000e` menjadi `virtio`.
 
+> Catatan: Jika Anda mengalokasikan _virtual_ CPU (vCPU) lebih dari satu,
+> pastikan topologi CPU yang Anda konfigurasi mengunakan 1 socket. Hal ini
+> dikarenakan Windows Home Edition hanya membaca maksimal 1 CPU socket,
+> sedangkan Windows Pro Edition maksimal 2 CPU socket. Untuk informasi lebih
+> detail bisa dilihat di
+> [chart perbandingan edisi Windows][win_edition_comp_wiki].
+>
+> Jadi bermainlah pada CPU _cores_ dan _thread_, karena rata-rata
+> _consumer hardware_ hanya memiliki 1 CPU socket
+> (kecuali Anda menggunakan _mid-range_ / _high-end_ server).
+
 ## Install Windows 11
 
 Jalankan VM dan ikuti proses installasi Windows 11 hingga proses
@@ -154,3 +165,4 @@ Anda.
 [virtio_win_iso]: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso "Windows 11 virtio driver"
 [swtpm_gh]: https://github.com/stefanberger/swtpm "swtpm GitHub repository"
 [swtpm_ppa]: https://launchpad.net/~stefanberger/+archive/ubuntu/swtpm "swtpm PPA repository"
+[win_edition_comp_wiki]: https://en.wikipedia.org/wiki/Windows_10_editions#Comparison_chart "Windows Edition Comparison chart"

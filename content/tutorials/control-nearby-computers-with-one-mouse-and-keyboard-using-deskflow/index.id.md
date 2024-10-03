@@ -38,6 +38,8 @@ Anda (ibaratkan Anda memiliki multiple monitor, tapi dari PC yang berbeda).
 
 ## Instalasi
 
+{{< youtube JiTIDnD1clM >}}
+
 Saat tulisan ini dibuat, Deskflow **belum tersedia** di _package manager_
 seluruh distro Linux. Deskflow juga tidak menyediakan _pre-compiled binary_
 baik untuk Linux, MAC, maupun Windows. Jadi satu-satunya cara untuk menginstall
@@ -119,6 +121,10 @@ mouse dan keyboard komputer server untuk komputer client.
 > Tips: Setelah client ter-registrasi ke server, Anda dapat secara manual
 > melakukan koneksi dari client menggunakan CLI dengan
 > `deskflowc --enable-crypto [alamat ip server]`.
+
+## Referensi
+
+-   Deskflow Project: [github.com/deskflow/deskflow][deskflow_gh]
 
 [xrdp_gh]: https://github.com/neutrinolabs/xrdp "xrdp GitHub repository"
 [deskflow_gh]: https://github.com/deskflow/deskflow "Deskflow GitHub repository"

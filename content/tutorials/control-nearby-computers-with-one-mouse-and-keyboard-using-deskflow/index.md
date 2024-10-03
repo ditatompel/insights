@@ -39,6 +39,8 @@ multiple monitors, but from different PCs).
 
 ## Installation
 
+{{< youtube JiTIDnD1clM >}}
+
 At the time of writing, Deskflow is **not** yet available in the package
 manager for all Linux distributions. Deskflow also does not provide
 pre-compiled binaries for Linux, macOS, or Windows. Therefore, the only way to
@@ -121,6 +123,10 @@ server computer's mouse and keyboard for the client computer.
 > Tip: After the client is registered to the server, you can manually connect
 > from the client using the CLI with
 > `deskflowc --enable-crypto [server IP address]`.
+
+## Resources
+
+-   Deskflow Project: [github.com/deskflow/deskflow][deskflow_gh]
 
 [xrdp_gh]: https://github.com/neutrinolabs/xrdp "xrdp GitHub repository"
 [deskflow_gh]: https://github.com/deskflow/deskflow "Deskflow GitHub repository"

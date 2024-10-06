@@ -152,8 +152,7 @@ github.com/hugomods/mermaid v0.1.4 h1:/u0FZRSBMpqTbDh4XPBL7c6p0DUjvIkoo9cC89GASS
 github.com/hugomods/mermaid v0.1.4/go.mod h1:GOID2Ko1vdrX03ZMaFNQL/vdTU1tZmGcVjOgBN8O42Y=
 github.com/hugomods/pwa v0.9.0 h1:bEKFkP7xkow6IadY9hKEwPbdKeLC0XZfVT31gGP7CPc=
 github.com/hugomods/pwa v0.9.0/go.mod h1:KpYK2Ffn969+Py5SzV3+iXYase4UoUeRAsd9jY7Q2Us=
-github.com/hugomods/search v0.17.1 h1:2pL3pVGmdzF0JxD/EEmE7/xDMPd7Y4eDTMNPxvKHYWw=
-github.com/hugomods/search v0.17.1/go.mod h1:xPnDGjP/HCdEWJrJBwwdI2mEtdxFxp+wHBwSl/r2m00=
+github.com/hugomods/search v0.17.2 h1:B9AdAD+kUathCvsA+zS+tgBu7YzFutCVLP6wqJsiUpw=
 github.com/hugomods/search v0.17.2/go.mod h1:xPnDGjP/HCdEWJrJBwwdI2mEtdxFxp+wHBwSl/r2m00=
 github.com/hugomods/seo/modules/alternatives v0.1.1 h1:Y8NdyBhvkSfr43ZKtXvQBgOW9lHL0a6vC1UIZFNbMpo=
 github.com/hugomods/seo/modules/alternatives v0.1.1/go.mod h1:y/VmIbVDnJWgcbhw0Rp8PP4RtvLhAx+URfvwl5SrWg0=

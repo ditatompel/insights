@@ -57,6 +57,12 @@ Pada artikel ini, tujuan kita adalah:
 -   **Nginx** bertugas sebagai _reverse proxy_ supaya **WireGuard UI** dan
     WireGuard UI dapat diakses melalui protokol **HTTPS**.
 
+{{< youtube o_JcLMjYI1A >}}
+
+> Catatan: Video YouTube diatas tidak secara urut mengikuti artikel ini. Video
+> tersebut juga menggunakan subnet yang berbeda, jadi sesuaikan sesuai
+> kebutuhan.
+
 ## Mempersiapkan Server Anda
 
 Pertama, pastikan server sudah _up-to-date_ dan WireGuard sudah terinstall di

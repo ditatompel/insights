@@ -1,6 +1,7 @@
 ---
 title: "Cara Setup VPN Server WireGuard Sendiri"
 description: "Tutorial cara bagaimana men-setup server VPN WireGuard sendiri menggunakan VPS server seharga 6 dolar"
+summary: "Cukup menggunakan VPS seharga _6 dolar_ per bulan, Anda bisa memiliki VPN server sendiri menggunakan WireGuard VPN."
 # linkTitle:
 date: 2023-06-05T19:04:57+07:00
 lastmod:
@@ -10,50 +11,31 @@ featured: false
 pinned: true
 # comments: false
 nav_weight: 1000
-# nav_icon:
-#   vendor: bootstrap
-#   name: toggles
-#   color: '#e24d0e'
 series:
-  - WireGuard VPN
+    - WireGuard VPN
 categories:
-  - Privasi
-  - SysAdmin
-  - Networking
-  - Self-Hosted
+    - Privasi
+    - SysAdmin
+    - Networking
+    - Self-Hosted
 tags:
-  - VPN
-  - WireGuard
+    - VPN
+    - WireGuard
 images:
-# menu:
-#   main:
-#     weight: 100
-#     params:
-#       icon:
-#         vendor: bs
-#         name: book
-#         color: '#e24d0e'
 authors:
-  - ditatompel
-  - vie
+    - ditatompel
+    - vie
 ---
 
 Cukup menggunakan VPS seharga _6 dolar_ per bulan, Anda bisa memiliki **VPN** server sendiri menggunakan **WireGuard VPN**. Ikuti caranya di artikel berikut ini untuk menginstall, dan mensetting VPS **Ubuntu 22.04** menjadi **VPN server** Anda.
 
-## <!--more-->
-
 Setelah [beberapa seri artikel tentang **VPN IPsec**](https://insights.ditatompel.com/en/series/ipsec-vpn/) (dalam bahasa Inggris), hari ini saya ingin berbagi bagaimana cara mensetting [**WireGuard VPN**](https://www.wireguard.com/) sebagai server VPN. Jika dibandingkan dengan [L2TP/xAuth](https://insights.ditatompel.com/en/tutorials/ipsec-l2tp-xauth-ikev2-vpn-server-auto-setup/) dan [IKEv2 VPN](https://insights.ditatompel.com/en/tutorials/set-up-ikev2-vpn-server-and-clients/) (artikel saya sebelumnya tentang **IPsec VPN** dalam bahasa Inggris), dari sisi performa, **WireGuard VPN jauh lebih unggul** karena menggunakan **UDP** dan bukan **TCP**.
-
-{{< bs/alert info >}}
-{{< bs/alert-heading "TLDR;" >}}
-Jika Anda memiliki kesulitan teknis untuk melakukan setup VPN server WireGuard sendiri, {{< bs/alert-link "saya dapat membantu Anda untuk melakukannya" "https://www.fiverr.com/s/4vzPGR" >}} dengan imbalan sedikit uang.
-{{< /bs/alert >}}
 
 ## Prasyarat
 
-- Sebuah **VPS** dengan alamat IP publik.
-- Nyaman dan terbiasa dengan Linux _command-line_.
-- Pengetahuan dasar _subnetting_ di **IPv4** (_jujur saja, sayya tidak begitu familiar dengan subnetting di IPv6, jadi artikel ini hanya untuk IPv4_).
+-   Sebuah **VPS** dengan alamat IP publik.
+-   Nyaman dan terbiasa dengan Linux _command-line_.
+-   Pengetahuan dasar _subnetting_ di **IPv4** (_jujur saja, sayya tidak begitu familiar dengan subnetting di IPv6, jadi artikel ini hanya untuk IPv4_).
 
 Untuk pemilihan _cloud provider_ mana yang akan Anda gunakan, itu terserah Anda. Di artikel ini, saya akan mengguakan **Droplet** di [**DigitalOcean**](https://m.do.co/c/42d4ba96cc94) (_referral link_) untuk VPN server saya. (Anda bisa mendapatkan kredit sebesar 200 dolar yang valid untuk 60 hari secara cuma-cuma dengan menggunakan _link_ referensi saya).
 
@@ -124,9 +106,9 @@ _Public key_ tersebut akan kita butuhkan untuk mengkonfigurasi koneksi WireGuard
 
 Sebelum mengkonfigurasi server WireGuard Anda, Anda perlu memilih / menentukan _private network IP range_ untuk koneksi WireGuard yang akan Anda gunakan. Anda harus menggunakan [private network IP ranges](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_addresses) yang **valid**. Contoh:
 
-- Antara `10.0.0.0` - `10.255.255.255` (`10.0.0.0/8`)
-- Antara `172.16.0.0` - `172.31.255.255` (`172.16.0.0/12`)
-- Antara `192.168.0.0` - `192.168.255.255` (`192.168.0.0/16`)
+-   Antara `10.0.0.0` - `10.255.255.255` (`10.0.0.0/8`)
+-   Antara `172.16.0.0` - `172.31.255.255` (`172.16.0.0/12`)
+-   Antara `192.168.0.0` - `192.168.255.255` (`192.168.0.0/16`)
 
 > _Tips: Hindari menggunakan IP range yang sudah Anda gunakan dan IP range yang sering digunakan oleh sebuah aplikasi. Misalnya: Bawaan installasi Docker menggunakan network `172.17.0.0/16`. Jika Anda menggunakan Docker, Anda harus menggunakan IP range lain untuk jaringan WireGuard Anda supaya tidak terjadi bentrok._
 
@@ -136,11 +118,11 @@ Anda juga perlu menentukan _port_ berapa (**UDP**) yang akan digunakan oleh Wire
 
 Sekarang, kita sudah memiliki semua informasi dasar yang kita butuhkan supaya server WireGuard dapat dijalankan:
 
-- Server Public IP: `xxx.xx.xx0.246`
-- Server Private key: `uO0GDXBc+ZH5QsLmf+qRyCtFmUV1coadJvQp8iM0mEg=`
-- Server Public Key: `7c023YtKepRPNNKfGsP5f2H2VtfPvVptn8Hn6jjmaz8=`
-- Server Listen Port: `UDP` port `51822`
-- WireGuard Network: `10.10.88.0/24`
+-   Server Public IP: `xxx.xx.xx0.246`
+-   Server Private key: `uO0GDXBc+ZH5QsLmf+qRyCtFmUV1coadJvQp8iM0mEg=`
+-   Server Public Key: `7c023YtKepRPNNKfGsP5f2H2VtfPvVptn8Hn6jjmaz8=`
+-   Server Listen Port: `UDP` port `51822`
+-   WireGuard Network: `10.10.88.0/24`
 
 Buat file dengan nama `wg0.conf` untuk konfigurasi WireGuard anda di folder `/etc/wireguard` dan isi dengan contoh konfigurasi berikut ini:
 
@@ -317,11 +299,11 @@ Sebelum mengkonfigurasi WireGuard _peer_ (_client_), Anda perlu memilih / menent
 
 Sekarang, kita sudah memiliki semua informasi dasar yang kita butuhkan supaya untuk konfigurasi WireGuard _peer_:
 
-- Server Public IP: `xxx.xx.xx0.246`
-- Server Public Key: `7c023YtKepRPNNKfGsP5f2H2VtfPvVptn8Hn6jjmaz8=`
-- Server Listen Port: `UDP` port `51822`
-- WireGuard Network: `10.10.88.0/24`
-- Client IP address: `10.10.88.2/24`
+-   Server Public IP: `xxx.xx.xx0.246`
+-   Server Public Key: `7c023YtKepRPNNKfGsP5f2H2VtfPvVptn8Hn6jjmaz8=`
+-   Server Listen Port: `UDP` port `51822`
+-   WireGuard Network: `10.10.88.0/24`
+-   Client IP address: `10.10.88.2/24`
 
 Buat file dengan nama `wg-do1.conf` untuk konfigurasi WireGuard Anda di folder `/etc/wireguard` dan isi dengan contoh konfigurasi berikut ini:
 
@@ -344,11 +326,11 @@ Ubah `<YOUR_PEER_PRIVATE_KEY>`, `<YOUR_PEER_IP_ADDRESS>`, `<YOUR_SERVER_PUBLIC_K
 
 Catatan:
 
-- `AllowedIPs` = `0.0.0.0/0` artinya semua lalu-lintas jaringan akan melalui _peer_ tersebut (dalam hal ini, server WireGuard kita).  
-  Anda bisa menentukan / memilih _routing_ menuju IP/_network_ tertentu supaya melewati _peer_ tertentu (Jika Anda terkoneksi ke banyak _peer_ / server).  
-  Sebagai contoh, jika Anda hanya ingin mengarahkan lalu-lintas jaringan menuju IP 1.0.0.1 dan 8.8.4.4 melalui _peer_ tertentu dan menggunakan konesi internet dari ISP Anda sebagai _default route_-nya, Anda bisa menghapus `0.0.0.0/0` dan menambahkan `1.0.0.1/32,8.8.4.4/32` (dipisahkan dengan tanda koma) untuk nilai dari `AllowedIPs`.
-- `PersistentKeepalive` = `15` : Berapa detik sekali _peer_ mengirimkan _ping_ ke server, supaya server dapat mencapai / berkomunikasi dengan peer yang berada dibalik **NAT**/firewall.
-- `DNS` Anda juga dapat menentukan DNS server yang ingin Anda gunakan dengan menentukan alamat IP DNS server pada konfigurasi `DNS`.
+-   `AllowedIPs` = `0.0.0.0/0` artinya semua lalu-lintas jaringan akan melalui _peer_ tersebut (dalam hal ini, server WireGuard kita).  
+    Anda bisa menentukan / memilih _routing_ menuju IP/_network_ tertentu supaya melewati _peer_ tertentu (Jika Anda terkoneksi ke banyak _peer_ / server).  
+    Sebagai contoh, jika Anda hanya ingin mengarahkan lalu-lintas jaringan menuju IP 1.0.0.1 dan 8.8.4.4 melalui _peer_ tertentu dan menggunakan konesi internet dari ISP Anda sebagai _default route_-nya, Anda bisa menghapus `0.0.0.0/0` dan menambahkan `1.0.0.1/32,8.8.4.4/32` (dipisahkan dengan tanda koma) untuk nilai dari `AllowedIPs`.
+-   `PersistentKeepalive` = `15` : Berapa detik sekali _peer_ mengirimkan _ping_ ke server, supaya server dapat mencapai / berkomunikasi dengan peer yang berada dibalik **NAT**/firewall.
+-   `DNS` Anda juga dapat menentukan DNS server yang ingin Anda gunakan dengan menentukan alamat IP DNS server pada konfigurasi `DNS`.
 
 #### Menambahkan _Peers Public Key_ ke WireGuard Server
 
@@ -406,8 +388,3 @@ WireGuard adalah protokol VPN favorit saya. Performanya cepat dan lebih hemat _r
 Ketika dikombinasikan dengan **Nginx** sebagai _reverse proxy_, Anda bahkan bisa mengekspose / server HTTP di jaringan lokal Anda yang berada dibalik **NAT**/_firewall_ ke internet.
 
 Akan tetapi, melakukan _maintenance_ pada jaringan WireGuard yang besar bisa sangat kompleks dan susah dilakukan. Namun, ada _software_ yang dapat membantu Anda untuk membantu mengatur hal itu, salah satu contohnya adalah [Netmaker](https://www.netmaker.io/).
-
-### Catatan Tambahan
-
-- Jika Anda memiliki kesulitan teknis untuk melakukan _setup_ VPN server WireGuard sendiri, [saya dapat membantu Anda untuk melakukannya](https://www.fiverr.com/s/4vzPGR) dengan imbalan sedikit uang.
-- Untuk dapat menghubungi saya, silahkan kunjungi [https://www.ditatompel.com/about](https://www.ditatompel.com/about).

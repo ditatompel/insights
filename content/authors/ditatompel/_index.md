@@ -1,10 +1,11 @@
 ---
 title: ditatompel
-description: A programmer and sys-admin living in Indonesia
+description: Just another coding nut and Linux enthusiast
 images:
-  - https://avatars.githubusercontent.com/u/1184957?s=200&v=4
+    - https://avatars.githubusercontent.com/u/1184957?s=200&v=4
 socials:
-  github: ditatompel
-  website: https://www.ditatompel.com
-  patreon: svcadm
+    github: ditatompel
+    website: https://www.ditatompel.com
+    patreon: svcadm
+    youtube: https://www.youtube.com/channel/UCDV5fWBAvJdULelWdOa3ubQ?sub_confirmation=1
 ---

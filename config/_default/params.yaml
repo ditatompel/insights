@@ -9,12 +9,12 @@ hb:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
       github: https://github.com/ditatompel/insights
-      youtube: https://www.youtube.com/channel/UCDV5fWBAvJdULelWdOa3ubQ?sub_confirmation=1
+      youtube: https://www.youtube.com/channel/UCDV5fWBAvJdULelWdOa3ubQ
   footer:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
       github: https://github.com/ditatompel/insights
-      youtube: https://www.youtube.com/channel/UCDV5fWBAvJdULelWdOa3ubQ?sub_confirmation=1
+      youtube: https://www.youtube.com/channel/UCDV5fWBAvJdULelWdOa3ubQ
   blog:
     paginate: 12 # paginate.
     # post_thumbnail: false # whether to show the thumbnails.

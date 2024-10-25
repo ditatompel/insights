@@ -7,5 +7,5 @@ socials:
     github: ditatompel
     website: https://www.ditatompel.com
     patreon: svcadm
-    youtube: https://www.youtube.com/channel/UCDV5fWBAvJdULelWdOa3ubQ?sub_confirmation=1
+    youtube: https://www.youtube.com/channel/UCDV5fWBAvJdULelWdOa3ubQ
 ---

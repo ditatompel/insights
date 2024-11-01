@@ -37,7 +37,12 @@ expose adalah [Immich][immich-web]. Bagi yang belum tahu, Immich adalah solusi
 manajemen foto dan video yang dapat dihosting sendiri; sebuah alternatif dari
 [Google Photos][google-photos].
 
-Saya tidak akan membahas detail cara menginstall Immich karena proses [instalasi Immich menggunakan Docker][immich-docker-install] sangat mudah dilakukan. Saya akan lebih fokus ke konfigurasi Nginx dan VPN tunnel, serta topologi yang digunakan.
+Saya tidak akan membahas detail cara menginstall Immich karena proses
+[instalasi Immich menggunakan Docker][immich-docker-install] sangat mudah
+dilakukan. Saya akan lebih fokus ke konfigurasi Nginx dan VPN tunnel, serta
+topologi yang digunakan.
+
+{{< youtube RIiSldGZuD0 >}}
 
 ## Prasyarat
 

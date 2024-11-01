@@ -40,6 +40,8 @@ using Docker][immich-docker-install] is very easy to do. Instead, I'll focus on
 the configuration of Nginx and VPN tunnel, as well as the [topology
 used](#topology).
 
+{{< youtube RIiSldGZuD0 >}}
+
 ## Prerequisites
 
 Before we get started, there are a few conditions that need to be met:

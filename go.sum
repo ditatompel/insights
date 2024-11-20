@@ -120,6 +120,7 @@ github.com/hugomods/code-block-panel v0.7.1 h1:WP3xzQC++Bh5SiSke0csO0H1O4G6Vejwd
 github.com/hugomods/code-block-panel v0.7.1/go.mod h1:3J9yUxaShbhYvFFZbGVHcBoHPl6TUKLL3f2fTsnVNNg=
 github.com/hugomods/font-awesome v6.6.0+incompatible h1:LRI2HqrbS2epfl5/DOfPzpCI6H33GBss1SLb670GsLw=
 github.com/hugomods/font-awesome v6.6.0+incompatible/go.mod h1:C2wW6xDvHkcMlJMVTPQ+Npt+rO0OGv13xT1iyll2z2Q=
+github.com/hugomods/font-awesome v6.7.1+incompatible/go.mod h1:C2wW6xDvHkcMlJMVTPQ+Npt+rO0OGv13xT1iyll2z2Q=
 github.com/hugomods/fuse-js v0.1.0 h1:CmWHBZANvjOP44RDNQNLntqlLf9GLqeM29jekxTNcPE=
 github.com/hugomods/fuse-js v0.1.0/go.mod h1:srCqvtBQR02HS/abTraDU4oINv1D3PljNPdexdoHhpo=
 github.com/hugomods/giscus v0.1.1 h1:Kb8137Cp2nQJPFb6e+CdXy8nyIAJ2dFIymG4bDdaXWI=

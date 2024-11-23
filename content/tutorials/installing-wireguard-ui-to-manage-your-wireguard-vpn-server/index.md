@@ -88,6 +88,7 @@ sudo ufw allow 80 comment "allow HTTP" # will be used by Nginx
 sudo ufw allow 443 comment "allow HTTPS" # will be used by Nginx
 sudo ufw allow proto udp to any port 443  comment "allow QUIC" # If your Nginx support QUIC
 sudo ufw allow proto udp to any port 51822 comment "WireGuard listen port"
+sudo ufw allow proto udp to any port 51820 comment "WireGuard listen port"
 ```
 
 > _Note that I also add **OpenSSH** to allow list to avoid losing connection to

@@ -45,6 +45,13 @@ seluruh distro Linux. Deskflow juga tidak menyediakan _pre-compiled binary_
 baik untuk Linux, MAC, maupun Windows. Jadi satu-satunya cara untuk menginstall
 dan menjalankan Deskflow adalah meng-compile dari source code-nya.
 
+> **UPDATE**: Proses build telah berubah sejak tulisan ini dibuat. Bagi
+> pengguna Linux, rilis terbaru sudah penyertakan paket untuk Debian, Fedora,
+> dan OpenSUSE. Silahkan kunjungi [halaman rilis
+> terbaru][deskflow-release-page] mereka. Untuk Distro Arch, Deskflow sudah
+> berada di repositori `extra`, jadi Anda dapat menginstallnya dengan mudah
+> menggunakan `pacman -S deskflow`.
+
 Meskipun begitu, Anda tidak perlu khawatir karena sudah tersedia
 _"install / helper"_ script untuk sebagian besar distro (Debian, Fedora,
 OpenSUSE, dan Arch Linux).
@@ -128,6 +135,7 @@ mouse dan keyboard komputer server untuk komputer client.
 
 [xrdp_gh]: https://github.com/neutrinolabs/xrdp "xrdp GitHub repository"
 [deskflow_gh]: https://github.com/deskflow/deskflow "Deskflow GitHub repository"
+[deskflow-release-page]: https://github.com/deskflow/deskflow/releases/latest "Deskflow GitHub release page"
 [synergy_web]: https://symless.com/synergy "Synergy Website"
 [deskflow_cmp]: https://github.com/deskflow/deskflow/blob/master/BUILD.md "Deskflow Build Quick Start"
 [xdg_desktop_spec]: https://specifications.freedesktop.org/desktop-entry-spec/latest/ "XDG Desktop Entry spec"

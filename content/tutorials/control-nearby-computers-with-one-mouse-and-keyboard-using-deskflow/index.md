@@ -46,6 +46,12 @@ manager for all Linux distributions. Deskflow also does not provide
 pre-compiled binaries for Linux, macOS, or Windows. Therefore, the only way to
 install and run Deskflow is to compile it from its source code.
 
+> **UPDATE**: The build process has been changed since this video was
+> uploaded. For Linux users, their latest release already includes packages for
+> Debian, Fedora, and OpenSUSE. Check on [their release
+> page][deskflow-release-page]. For Arch Linux, it's already on EXTRA
+> repository, so you can easily install using `pacman -S deskflow`.
+
 However, you don't need to worry because there is already an "install" script
 available for most distributions (Debian, Fedora, OpenSUSE, and Arch Linux).
 
@@ -130,6 +136,7 @@ server computer's mouse and keyboard for the client computer.
 
 [xrdp_gh]: https://github.com/neutrinolabs/xrdp "xrdp GitHub repository"
 [deskflow_gh]: https://github.com/deskflow/deskflow "Deskflow GitHub repository"
+[deskflow-release-page]: https://github.com/deskflow/deskflow/releases/latest "Deskflow GitHub release page"
 [synergy_web]: https://symless.com/synergy "Synergy Website"
 [deskflow_cmp]: https://github.com/deskflow/deskflow/blob/master/BUILD.md "Deskflow Build Quick Start"
 [xdg_desktop_spec]: https://specifications.freedesktop.org/desktop-entry-spec/latest/ "XDG Desktop Entry spec"

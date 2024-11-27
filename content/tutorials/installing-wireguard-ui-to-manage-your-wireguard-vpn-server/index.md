@@ -55,8 +55,15 @@ In this guide, our goals:
 
 {{< youtube o_JcLMjYI1A >}}
 
-> Note: The YouTube videos above are not in the order of this article. They
-> also use different IPs & subnets, so adjust them to your needs.
+> Note:
+>
+> -   By default, WireGuard listens on UDP port 51820, and WireGuard-UI follows
+>     this configuration by default. If you don't use port 51822 (like this
+>     article does), please adjust [your firewall](#setting-up-firewall) and
+>     [WireGuard UI Server Settings](#using-wireguard-ui) configuration
+>     accordingly.
+> -   The YouTube videos above are not in the order of this article. They
+>     also use different IPs & subnets, so adjust them to your needs.
 
 ## Prepare Your Server
 
@@ -87,8 +94,9 @@ sudo ufw allow OpenSSH
 sudo ufw allow 80 comment "allow HTTP" # will be used by Nginx
 sudo ufw allow 443 comment "allow HTTPS" # will be used by Nginx
 sudo ufw allow proto udp to any port 443  comment "allow QUIC" # If your Nginx support QUIC
-sudo ufw allow proto udp to any port 51822 comment "WireGuard listen port"
-sudo ufw allow proto udp to any port 51820 comment "WireGuard listen port"
+# Adjust ufw command below according to your WireGuard listen port
+sudo ufw allow proto udp to any port 51820 comment "WireGuard default listen port"
+sudo ufw allow proto udp to any port 51822 comment "WireGuard tutorial listen port"
 ```
 
 > _Note that I also add **OpenSSH** to allow list to avoid losing connection to

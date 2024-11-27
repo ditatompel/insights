@@ -59,9 +59,16 @@ Pada artikel ini, tujuan kita adalah:
 
 {{< youtube o_JcLMjYI1A >}}
 
-> Catatan: Video YouTube diatas tidak secara urut mengikuti artikel ini. Video
-> tersebut juga menggunakan subnet yang berbeda, jadi sesuaikan sesuai
-> kebutuhan.
+> Catatan:
+>
+> -   Secara default, WireGuard menggunakan UDP port 51820 dan WireGuard-UI
+>     mengikuti konfigurasi tersebut juga. Jika Anda tidak menggunakan port
+>     51820 seperti yang digunakan di artikel ini, silahkan sesuaikan
+>     [konfigurasi firewall](#mengkonfigurasi-firewall) dan [WireGuard UI
+>     Server Settings](#menggunakan-wireguard-ui) Anda.
+> -   Video YouTube diatas tidak secara urut mengikuti artikel ini. Video
+>     tersebut juga menggunakan subnet yang berbeda, jadi sesuaikan sesuai
+>     kebutuhan.
 
 ## Mempersiapkan Server Anda
 
@@ -83,7 +90,7 @@ sudo sysctl -p
 Hal tersebut perlu dilakukan supaya _kernel_ mengijinkan melakukan **IP
 forwarding**.
 
-### Mengkonfigrasi Firewall
+### Mengkonfigurasi Firewall
 
 Anda perlu untuk menambahkan _port_ yang akan digunakan oleh WireGuard _daemon_
 ke _allow-list firewall_ Anda. Dari bawaan distro **Ubuntu**, **UFW** sudah
@@ -91,10 +98,12 @@ terinstall dan dapat digunakan untuk mengkonfigurasi _firewall_.
 
 ```shell
 sudo ufw allow OpenSSH
-sudo ufw allow 80 comment "allow HTTP" # akan digunakan  oleh Nginx
+sudo ufw allow 80 comment "allow HTTP" # akan digunakan oleh Nginx
 sudo ufw allow 443 comment "allow HTTPS" # akan digunakan  oleh Nginx
 sudo ufw allow proto udp to any port 443  comment "allow QUIC" # Jika konfigurasi Nginx Anda mensupport QUIC
-sudo ufw allow proto udp to any port 51822 comment "WireGuard listen port"
+# Sesuaikan perintah ufw dibawah ini dengan WireGuard listen port Anda
+sudo ufw allow proto udp to any port 51820 comment "WireGuard default listen port"
+sudo ufw allow proto udp to any port 51822 comment "WireGuard tutorial listen port"
 ```
 
 > _Perhatikan bahwa saya juga menambahkan **OpenSSH** ke allow list untuk

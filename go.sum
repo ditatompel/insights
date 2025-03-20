@@ -107,6 +107,7 @@ github.com/hbstack/syntax-highlighting v0.2.1 h1:JMAfLzebsQy983WS560yPo4vnF6rBCo
 github.com/hbstack/syntax-highlighting v0.2.1/go.mod h1:6IoaM+tSIkKZblIrT1i5L3zVH68nt4UScU9JB30FQsc=
 github.com/hbstack/syntax-highlighting/styles/gruvbox v0.1.1 h1:IzJlnkHGS8XhibNjUFvyV3YE7rc7WMsAhdxWZTbORI4=
 github.com/hbstack/syntax-highlighting/styles/gruvbox v0.1.1/go.mod h1:ar5ZFplNyVZCVG6rvo69co1hNZwptxtrDz3zproGLPg=
+github.com/hbstack/syntax-highlighting/styles/gruvbox v0.1.2/go.mod h1:ar5ZFplNyVZCVG6rvo69co1hNZwptxtrDz3zproGLPg=
 github.com/hbstack/toc-scrollspy v0.2.0 h1:JPBozafeDvTUwGFkR90m/SzcyBfKg40pVJOLFihr60k=
 github.com/hbstack/toc-scrollspy v0.2.0/go.mod h1:wIqdWFRjqGGKX6Y5XVRQzaBBeZ91kZBKgovQp8IPvtk=
 github.com/henrygd/bigger-picture v1.1.19 h1:fv3S1wlW5L9XF01wOHGZmwPn3vMNgQOwwYMhTTHhHic=

@@ -41,6 +41,8 @@ meringankan tugas para Linux System Administrstrator yang seringkali banyak
 menggunakan perintah dengan _pipeline_ yang kompleks. Untungnya ada sebuah
 program yang bernama **HiSHtory**.
 
+{{< youtube z1ZUzmzv70c >}}
+
 ## Pengenalan HiSHtory
 
 [HiSHtory][hishtory-gh] merupakan program yang menyimpan konteks history

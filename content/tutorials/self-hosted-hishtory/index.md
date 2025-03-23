@@ -41,6 +41,8 @@ keywords, it will certainly help alleviate the task of Linux System
 Administrators who often use many complex commands with pipelines. Fortunately,
 there is a program called **HiSHtory**.
 
+{{< youtube z1ZUzmzv70c >}}
+
 ## Introduction to HiSHtory
 
 [HiSHtory][hishtory-gh] is a program that stores terminal history context,

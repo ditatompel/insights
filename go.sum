@@ -66,8 +66,7 @@ github.com/hbstack/gallery/modules/breadcrumb v0.1.1 h1:hPP+FuHcBo2nieDA3eY/f771
 github.com/hbstack/gallery/modules/breadcrumb v0.1.1/go.mod h1:LdbDrxkgYlIOn/x9HFrde+mpIagFayRuLjIDXL1zCHw=
 github.com/hbstack/giscus v0.1.1 h1:jKbA17XjAcbD59QIDUVoFOdbi9P2WzQMtOcIpG/Znuo=
 github.com/hbstack/giscus v0.1.1/go.mod h1:XElW8oNLnS0dRVFzoo9Gq8xknvz3D2PuTHC7yw9h3EE=
-github.com/hbstack/hb v0.16.0 h1:k5SLF8zmGb8M5UWJwTjWi8/EuiKZ+7gQbP2qRcWYdr0=
-github.com/hbstack/hb v0.16.0/go.mod h1:FJilVCHtkVpfXZT+Ii2OFCVeu9wQh/YGgRMuPKX5ycA=
+github.com/hbstack/hb v0.16.2 h1:4hUaWygXmZA26cToXj/hXmMuQzsprNdkBuE4Rs7eIYc=
 github.com/hbstack/hb v0.16.2/go.mod h1:f17XbKHV29zgwV0OaayneXU1nMXFpQUdBYApAPNjFMo=
 github.com/hbstack/header v0.16.6 h1:t8wUlpXAo7FTYutk1run6Slb8AqfJ3aNlFerZLy3FAw=
 github.com/hbstack/header v0.16.6/go.mod h1:ZfeQNeNWaBeGPBZHtbRz2W9IWkmIoMrpOXoDsoYa/Gg=

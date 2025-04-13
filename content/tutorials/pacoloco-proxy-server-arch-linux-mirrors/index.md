@@ -27,7 +27,6 @@ Mirrors][arch-mirrors], allowing it to cache and serve packages to users.
 Every time the Pacoloco server receives a request from a user, it downloads the
 requested file from a real Arch Linux mirror and bypasses it to the user, while
 keeping copies of downloaded packages in local storage.
-https://youtu.be/
 
 {{< youtube meVHOzgke10 >}}
 

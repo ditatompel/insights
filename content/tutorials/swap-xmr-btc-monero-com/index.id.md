@@ -35,6 +35,8 @@ metode alternatif untuk menukarkan Monero ke Rupiah:
 - Menukarkan Monero ke mata uang kripto lainnya seperti Bitcoin, lalu
   menjualnya di _cryptocurrency exchange_.
 
+{{< youtube Zm8a0AenuV0  >}}
+
 ## Menukar Monero >< Bitcoin
 
 Untuk menukarkan XMR ke BTC atau mata uang kripto lain, Anda bisa menggunakan

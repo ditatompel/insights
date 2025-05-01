@@ -34,6 +34,8 @@ methods to exchange Monero into Rupiah:
 2. Exchanging Monero into other cryptocurrencies such as Bitcoin, then selling
    it on a cryptocurrency exchange.
 
+{{< youtube Zm8a0AenuV0  >}}
+
 ## Exchanging Monero for Bitcoin
 
 To exchange XMR to BTC or other cryptocurrencies, you can use _peer-to-peer_

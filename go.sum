@@ -134,8 +134,7 @@ github.com/hugomods/i18n-js v0.2.1 h1:uIUl4LiYdwo8IK08oq7OmluYLedL21Wc9Rig1taDTS
 github.com/hugomods/i18n-js v0.2.1/go.mod h1:eJfxjgI2CQsNA1/ReIVvr5127DftUKcbHd2A2SQmDvU=
 github.com/hugomods/icons v0.6.6 h1:gGlafcBDRP7sSID+tgLcWdog+s/QBj8DIfU+h9tZj1U=
 github.com/hugomods/icons v0.6.6/go.mod h1:cIkSvK6W0q6N4U6n9KGz+QfRWQXAW0INd+1P31gPNGg=
-github.com/hugomods/icons/vendors/bootstrap v0.5.9 h1:IlKsW1iybTNZLYnMipyc2d9w51rUtu89lPMkocGaP6c=
-github.com/hugomods/icons/vendors/bootstrap v0.5.9/go.mod h1:DuB5N1o3GCUyvYFnEeBvJRBrCHqbMWEbjoEWVLULggw=
+github.com/hugomods/icons/vendors/bootstrap v0.5.10 h1:BwbzyQ3pYEGwh4/dS32ikyalSZ8zshxe+Og/+QHTSN4=
 github.com/hugomods/icons/vendors/bootstrap v0.5.10/go.mod h1:WK/K+Ig81G833kx39zJKehOvdVI02Ih7v1K8GQExITA=
 github.com/hugomods/icons/vendors/font-awesome v0.6.12 h1:I8ckJFuxr8mD8bJ4NX9NrmnHd3f6XvITuD2ME8a9wXc=
 github.com/hugomods/icons/vendors/font-awesome v0.6.12/go.mod h1:6YBo/5GaNpAocKwnKNWcd9xkliiRJXmwz2mstY5lr9I=
@@ -179,14 +178,12 @@ github.com/hugomods/snackbar v0.1.2 h1:SLpfH9jlYwf81epH7DvM2XTZHo+3fXXpk6XKtxmo9
 github.com/hugomods/snackbar v0.1.2/go.mod h1:ykFm0IFibeQPuPAm8Gaa27xJS/bNZcSez4omVSl2gQ0=
 github.com/hugomods/workbox v0.1.0 h1:yxuTj3gT1BNf6OitxrjxSJXfmbFBj2UTwdWr142eYFQ=
 github.com/hugomods/workbox v0.1.0/go.mod h1:RpFcIcltqYsiHWJV6PHPOdMagFZxO7nrO5XUpn/TMoc=
-github.com/jakearchibald/idb v8.0.2+incompatible h1:yaX22MGrQ5g7LRbLI7AKpBlqUcuu/E10qfIYyCEFzpU=
-github.com/jakearchibald/idb v8.0.2+incompatible/go.mod h1:AuDoW54s2DKfbclM+ScrnPp8ahUQ9rHph9bb8sZTEXc=
+github.com/jakearchibald/idb v8.0.3+incompatible h1:+tMErfQebeSvSKBl4j3DDiwZU6X/yARkA6Ny45DCWXI=
 github.com/jakearchibald/idb v8.0.3+incompatible/go.mod h1:AuDoW54s2DKfbclM+ScrnPp8ahUQ9rHph9bb8sZTEXc=
 github.com/krisk/Fuse v7.1.0+incompatible h1:WKrE7/HvvQQnysvOcOXk+KDlKoH+Z6S0KJcAtbglvXs=
 github.com/krisk/Fuse v7.1.0+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
-github.com/twbs/bootstrap v5.3.5+incompatible h1:6XrrFNMsiTTFcVTBf2886FO2XUNtwSE+QPv1os0uAA4=
-github.com/twbs/bootstrap v5.3.5+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/twbs/bootstrap v5.3.6+incompatible h1:efmXVyq839m5QQ0+JBUdQQ1TrmoBqvQ5kRhUueKsH+4=
 github.com/twbs/bootstrap v5.3.6+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.12.1 h1:6R1KGdI0Rvup2NoM3X+7v62jJMVX29+N2x9PcM37Fv8=
 github.com/twbs/icons v1.12.1/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=

@@ -170,8 +170,7 @@ github.com/hugomods/seo/modules/translations v0.1.1 h1:FFgOHA5qtkHt1YuyYoLnicrka
 github.com/hugomods/seo/modules/translations v0.1.1/go.mod h1:ARboWQ31UeIwpB2AiN/efWLfplTTjarZRGEgKkkg3CA=
 github.com/hugomods/seo/modules/twitter-cards v0.1.1 h1:1cxNnftQ8MdajH48tB46DQ6eoCzrV1dQuVKLiKGFWwM=
 github.com/hugomods/seo/modules/twitter-cards v0.1.1/go.mod h1:KA6MA3GbyQZdd3vloDgcTFBoztmqEJI8R59whcSxpf4=
-github.com/hugomods/shortcodes v0.25.0 h1:CSi9ImvbY6YGAGSLIO0HkUXMYuohRnnbxhXpUmy0qfE=
-github.com/hugomods/shortcodes v0.25.0/go.mod h1:EnVopbZMNI/HeteM3Lp3phBTCRLvPSe7l142qhRFFPY=
+github.com/hugomods/shortcodes v0.25.1 h1:JQZ/Kw9aOlFVnDiDgXsSqiu8gLFXAM7tQn+TYr8q2bc=
 github.com/hugomods/shortcodes v0.25.1/go.mod h1:EnVopbZMNI/HeteM3Lp3phBTCRLvPSe7l142qhRFFPY=
 github.com/hugomods/simple-icons v13.21.0+incompatible h1:ux9TN7I2oOw5uz4htrdhqFyjAeY+/KYCo3LmfnOfuWI=
 github.com/hugomods/simple-icons v13.21.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=

@@ -11,7 +11,7 @@ require (
 	github.com/hbstack/back-to-top v0.2.0 // indirect
 	github.com/hbstack/base v0.6.2 // indirect
 	github.com/hbstack/bigger-picture v0.10.1 // indirect
-	github.com/hbstack/blog v0.40.3 // indirect
+	github.com/hbstack/blog v0.41.0 // indirect
 	github.com/hbstack/blog/modules/breadcrumb v0.1.23 // indirect
 	github.com/hbstack/blog/modules/content-panel v0.1.21 // indirect
 	github.com/hbstack/blog/modules/featured-image v0.2.21 // indirect
@@ -95,6 +95,6 @@ require (
 	github.com/hugomods/workbox v0.1.0 // indirect
 	github.com/jakearchibald/idb v8.0.3+incompatible // indirect
 	github.com/krisk/Fuse v7.1.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.6+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.7+incompatible // indirect
 	github.com/twbs/icons v1.13.1 // indirect
 )

@@ -1,6 +1,6 @@
 ---
 title: "New Archlinux Mirror in Indonesia"
-description: "New archlinux mirror repository in Indonesia and it's Grafana monitoring metrics."
+description: "New archlinux mirror repository in Indonesia, server config and it's monitoring metrics are available."
 date: 2023-02-17T08:36:36+07:00
 lastmod:
 draft: false
@@ -65,6 +65,13 @@ search and generate the fastest mirror for you. For example:
 reflector --verbose -l 10 -f 10 --sort rate
 ```
 
+## Server Configuration
+
+I publish this mirror server configuration to my GitHub repository that will
+automatically push commits periodically when there are changes to the sync
+script or Nginx configuration. The repository can be accessed at
+[ditatompel/srv-mirror][gh-repo].
+
 ## Public Monitoring
 
 For official mirrors, the **Arch Linux** website itself provides monitoring
@@ -73,9 +80,13 @@ that can be accessed at
 
 However, I provide [monitoring for the mirror.ditatompel.com server through
 Grafana][mirror-grafana], which can be accessed without having to log in / have
-an account on my Grafana server.
+an account on my Grafana server. In addition to monitoring via Grafana, I also
+provide [statistical information on mirror.ditatompel.com from Nginx access logs
+visualized using GoAccess][goaccess].
 
 [feature-request]: https://bugs.archlinux.org/task/77542 "My feature request for official mirror"
 [official-archlinux-mirror-page]: https://archlinux.org/mirrors/mirror.ditatompel.com/ "mirror.ditatompel.com details page on archlinux.org"
 [anton-hvornum]: https://bugs.archlinux.org/user/15638 "Anton Hvornum, ArchLinux mirror admin"
 [mirror-grafana]: https://monitor.ditatompel.com/d/mirror-ditatompel-com/mirror-ditatompel-com?orgId=2&refresh=1m "Mirror monitoring through Grafana"
+[gh-repo]: https://github.com/ditatompel/srv-mirror "mirror.ditatompel.com GitHub repository"
+[goaccess]: https://mirror-goaccess.ditatompel.com/ "mirror.ditatompel.com GoAccess page"

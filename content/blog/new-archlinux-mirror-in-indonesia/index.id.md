@@ -74,15 +74,23 @@ reflector --verbose -l 10 -f 10 --sort rate -c Indonesia,Singapore
 > di Indonesia saat ini memiliki bandwidth yang cukup besar dan latency yang
 > baik untuk ke Singapore.\*
 
+## Konfigurasi Server
+
+Saya mempublikasikan konfigurasi server mirror ini ke repositori GitHub yang
+secara otomatis akan melakukan _push commit_ secara berkala ketika ada
+perubahan _script_ sinkronisasi atau konfigurasi Nginx. Repositori tersebut
+dapat diakses di [ditatompel/srv-mirror][gh-repo].
+
 ## Public Monitoring
 
-Untuk official mirror, situs Arch Linux sendiri sudah menyediakan monitoring
-yang dapat diakses di
-[https://archlinux.org/mirrors/mirror.ditatompel.com/][official-archlinux-mirror-page].
+Untuk official mirror, situs Arch Linux sudah menyediakan monitoring yang dapat
+diakses di [https://archlinux.org/mirrors/mirror.ditatompel.com/][official-archlinux-mirror-page].
 
 Namun saya sendiri menyediakan [monitoring untuk server mirror.ditatompel.com
 melalui Grafana][official-archlinux-mirror-page] yang dapat diakses tanpa harus
-login / memiliki akun di server Grafana saya.
+login / memiliki akun di server Grafana saya. Selain monitoring melalui
+Grafana, saya juga menyediakan informasi [statistik mirror.ditatompel.com dari
+akses log yang divisualisasikan menggunakan GoAccess][goaccess].
 
 Semoga mirror tambahan saya yang tidak seberapa ini dapat membantu mengurangi
 _server load_ dan _bandwidth_ rekan-rekan sebangsa dan setanah air.
@@ -95,3 +103,5 @@ berkontribusi ke _distro_ yang paling Saya sayangi sejak tahun 2011 lalu. Amin!
 [official-archlinux-mirror-page]: https://archlinux.org/mirrors/mirror.ditatompel.com/ "mirror.ditatompel.com details page on archlinux.org"
 [anton-hvornum]: https://bugs.archlinux.org/user/15638 "Anton Hvornum, ArchLinux mirror admin"
 [mirror-grafana]: https://monitor.ditatompel.com/d/mirror-ditatompel-com/mirror-ditatompel-com?orgId=2&refresh=1m "Mirror monitoring through Grafana"
+[gh-repo]: https://github.com/ditatompel/srv-mirror "mirror.ditatompel.com GitHub repository"
+[goaccess]: https://mirror-goaccess.ditatompel.com/ "mirror.ditatompel.com GoAccess page"

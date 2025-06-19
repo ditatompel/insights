@@ -34,6 +34,8 @@ Linux repository**. And now it's already listed on the [official Arch Linux
 mirror page][official-archlinux-mirror-page]! Yay! Thank you, [Anton
 Hvornum][anton-hvornum] and Arch Linux Mirror Team!
 
+{{< youtube tO44l_oVO2A >}}
+
 ## Mirror Information
 
 Location: **Indonesia Data Center Duren Tiga** (IDC3D) Jakarta, Indonesia (ID)

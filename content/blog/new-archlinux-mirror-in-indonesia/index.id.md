@@ -38,6 +38,8 @@ Sebenarnya, dulu saya pernah juga me-maintenance mirror Arch Linux. Pada saat
 itu waktu server devilzc0de.org masih sehat dan domain belum hilang 😂.
 Tapi... Ah, sudahlah.. Jadi keinget masa-masa indah 😍, masa masa sendu 😞.
 
+{{< youtube tO44l_oVO2A >}}
+
 ## Informasi Mirror
 
 Lokasi: Indonesia Data Center Duren Tiga (IDC3D) **Jakarta**, **Indonesia**
@@ -93,4 +95,3 @@ berkontribusi ke _distro_ yang paling Saya sayangi sejak tahun 2011 lalu. Amin!
 [official-archlinux-mirror-page]: https://archlinux.org/mirrors/mirror.ditatompel.com/ "mirror.ditatompel.com details page on archlinux.org"
 [anton-hvornum]: https://bugs.archlinux.org/user/15638 "Anton Hvornum, ArchLinux mirror admin"
 [mirror-grafana]: https://monitor.ditatompel.com/d/mirror-ditatompel-com/mirror-ditatompel-com?orgId=2&refresh=1m "Mirror monitoring through Grafana"
-

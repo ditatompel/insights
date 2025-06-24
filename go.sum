@@ -118,6 +118,7 @@ github.com/hugomods/bootstrap v0.24.1 h1:HUJWnN5duZV4MtcwALvcQcMdU/o2pssJfHPEsq0
 github.com/hugomods/bootstrap v0.24.1/go.mod h1:lCGwW9J0KeuRzlSWdJTHM9ptS9XYVGVtSAGE2xAL73Y=
 github.com/hugomods/code-block-panel v0.8.0 h1:ICJrcEx85oZzLdR1Hlf77osxRU04LlPigTRhp+anNFE=
 github.com/hugomods/code-block-panel v0.8.0/go.mod h1:3J9yUxaShbhYvFFZbGVHcBoHPl6TUKLL3f2fTsnVNNg=
+github.com/hugomods/code-block-panel v0.9.0/go.mod h1:3J9yUxaShbhYvFFZbGVHcBoHPl6TUKLL3f2fTsnVNNg=
 github.com/hugomods/font-awesome v6.7.1+incompatible h1:eM2vtHyQJVMnD9tgdGFbEgEiPh3sqnmu3EP3CFTyPLY=
 github.com/hugomods/font-awesome v6.7.1+incompatible/go.mod h1:C2wW6xDvHkcMlJMVTPQ+Npt+rO0OGv13xT1iyll2z2Q=
 github.com/hugomods/fuse-js v0.1.0 h1:CmWHBZANvjOP44RDNQNLntqlLf9GLqeM29jekxTNcPE=

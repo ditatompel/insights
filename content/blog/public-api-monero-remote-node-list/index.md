@@ -35,7 +35,7 @@ The default response will display 10 records, sorted from `last_checked` node.
 
 Optional query string parameters:
 
-- `host`: Filter nodes based on hostname or IP address.
+- `host`: Filter nodes based on hostname or IP addresses.
 - `protocol`: Possible values:
   - `any` or _empty string_ or _not set_: Return nodes using any protocol.
   - `http`: Return node using http RPC (excluding Tor network).
@@ -62,6 +62,14 @@ Optional query string parameters:
 - `cors`: Filter nodes that have `Access-Control-Allow-Origin` header or not. Options:
   - `1`: Return nodes that have `Access-Control-Allow-Origin` header.
   - `-1`: No CORS filter is applied (default).
+- `spynode`: Possible values:
+  - `-1` or not set: Display both spy and honest nodes (default).
+  - `1`: Only show "possibly" spy nodes.
+  - `0`: Only show "honest" nodes.
+- `archived`: Archived node. Possible values:
+  - `0` or not set: shows only active nodes (default).
+  - `1`: shows only archived nodes.
+  - `-1`: shows both archived and active nodes.
 
 For example, if you want to **list CORS enabled Monero nodes using https from United States sorted from recently checked node**:
 
@@ -82,26 +90,27 @@ curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cc=SG' | jq
 ```
 
 ```json
+
 {
-  "status": "ok"
-  "message": "Success",
   "data": {
-    "total_rows": 1,
+    "total_rows": 7,
+    "total_pages": 1,
     "rows_per_page": 10,
     "items": [
       {
         "id": 3,
         "hostname": "xmr-node.cakewallet.com",
-        "ip": "192.46.228.85",
+        "ip": "172.104.50.212",
         "port": 18081,
         "protocol": "http",
         "is_tor": false,
+        "is_i2p": false,
         "is_available": true,
         "nettype": "mainnet",
-        "height": 3145189,
-        "adjusted_time": 1715259907,
-        "database_size": 209379655680,
-        "difficulty": 243377341744,
+        "height": 3476062,
+        "adjusted_time": 1754985960,
+        "database_size": 252329328640,
+        "difficulty": 586494859229,
         "version": "",
         "uptime": 100,
         "estimate_fee": 20000,
@@ -112,8 +121,8 @@ curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cc=SG' | jq
         "city": "Singapore",
         "latitude": 0,
         "longitude": 0,
-        "date_entered": 1715009404,
-        "last_checked": 1715259840,
+        "date_entered": 1632724330,
+        "last_checked": 1754985962,
         "last_check_statuses": [
           1,
           1,
@@ -121,10 +130,18 @@ curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cc=SG' | jq
           1,
           1
         ],
-        "cors": false
+        "cors": true,
+        "ipv6_only": false,
+        "ip_addresses": "194.195.112.30,172.104.50.212",
+        "is_archived": 0,
+        "is_spy_node": 0,
+        "mrl_ban_list_enabled": 1,
+        "dns_ban_list_enabled": 1
       }
     ]
   },
+  "message": "Success",
+  "status": "ok"
 }
 ```
 
@@ -140,6 +157,7 @@ curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cc=SG' | jq
     - `port`: _unsigned int_; TCP port the nodes is using to listen to RPC calls.
     - `protocol`: _string_; The protocol used by nodes to listen RPC calls. This can be `http`, `https` or `empty string`.
     - `is_tor`: _boolean_; whether the node is accessed through the Tor network.
+    - `is_i2p`: _boolean_; whether the node is accessed through the I2P network.
     - `is_available`: _boolean_; whether the node is online or not. False may means node wasn't ready or my bots can't connect to nodes RPC daemon.
     - `nettype`: _string_; Network type (one of `mainnet`, `stagenet` or `testnet`).
     - `height`: _unsigned int_; Current length of longest chain known to daemon.
@@ -163,12 +181,17 @@ curl -sL 'https://xmr.ditatompel.com/api/v1/nodes?cc=SG' | jq
       - `1`: Online
       - `2`: not yet checked.
     - `cors`: _boolean_, whether the node return with `Access-Control-Allow-Origin` header or not.
+    - `ip_addresses`: _string_, `A`/`AAAA` DNS records from given domain name.
 
 > You will get `200` response code, `ok` status, and even if your query return no nodes (`null` value in `data.items` field).
 
 > _**NOTE**: My API endpoint is behind Cloudflare reverse proxy, so it's still cost your privacy. Monero community suggests to always run your own node to obtain the maximum possible privacy and to help decentralize the network._
 
 ## Changelog
+
+### Update 2025-08-12
+
+Please see [release page](https://github.com/ditatompel/xmr-remote-nodes/releases) for future changes.
 
 ### Upcoming changes (2024-05-31, Breaking Changes)
 

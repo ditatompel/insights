@@ -145,6 +145,10 @@ berjalan seperti sebelumnya.
 
 ## Referensi
 
+- https://www.reddit.com/r/docker/comments/1mqlbg8/keep_getting_signal_9_error_no_matter_what/
+- https://wiki.archlinux.org/title/Docker#With_NVIDIA_container_runtime
+- https://github.com/NVIDIA/nvidia-container-toolkit/issues/1246#issuecomment-3194219487
+
 [immich-web]: https://immich.app/ "Immich Official Website"
 [nvidia-ctk-gh]: https://github.com/NVIDIA/nvidia-container-toolkit "NVIDIA Container Toolkit GitHub Repository"
 [reddit-signal-9-err]: https://www.reddit.com/r/docker/comments/1mqlbg8/keep_getting_signal_9_error_no_matter_what/ "Topik di Reddit mengenai Docker signal 9 error"

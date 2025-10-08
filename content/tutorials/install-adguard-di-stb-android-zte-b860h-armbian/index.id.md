@@ -124,6 +124,10 @@ web UI. Ikuti langkah-langkah selanjutnya dan seharusnya teman-teman sudah bisa
 melakukan login ke AdGuard Home dashboard menggunakan username dan password
 yang baru saja dibuat dan melakukan konfigurasi lanjutan.
 
+> Jika teman-teman memiliki beberapa AdGuard Home dan ingin mereplikasi
+> konfigurasi secara berkala dan otomatis, teman-teman bisa mengikuti artikel
+> tentang [Cara Sinkronisasi 2 AdGuard Server Atau Lebih]({{< ref "/tutorials/cara-sinkronisasi-2-adguard-server-atau-lebih/index.id.md" >}}).
+
 [soc-s905x]: https://www.armbian.com/soc/s905x/ "Armbian Amlogic S905X Page"
 [armbian-website]: https://www.armbian.com "Armbian Official Website"
 [adguardhome-gh]: https://github.com/AdguardTeam/AdGuardHome "AdGuardHome GitHub Repo"

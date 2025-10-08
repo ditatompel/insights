@@ -1,7 +1,5 @@
 github.com/GoogleChrome/workbox v7.3.0+incompatible h1:P0VEW4ZF9li7dLLOsB3wknFhVBym05A7td3x/qWFTZM=
 github.com/GoogleChrome/workbox v7.3.0+incompatible/go.mod h1:dyEoGLpJeO43pUVJb+nNNr1WRgoF81hNEl4UGLV+yow=
-github.com/KaTeX/KaTeX v0.16.22 h1:+CyvN/2mDtqLjGeKRHft2+tQfIgQcc5aWigKHx0egWo=
-github.com/KaTeX/KaTeX v0.16.22/go.mod h1:VI+aE+CVs/VqtbHnuhstfQST46GmrwpXH7LQAzYIouw=
 github.com/KaTeX/KaTeX v0.16.23 h1:Psiv1mJ/50+zLflfDJ+3f3JVmpw8jINqG5c2Qk9nlqo=
 github.com/KaTeX/KaTeX v0.16.23/go.mod h1:VI+aE+CVs/VqtbHnuhstfQST46GmrwpXH7LQAzYIouw=
 github.com/desandro/masonry v4.2.2+incompatible h1:4LI69kwq5DJSF9jhHVGfCw+q2Nt3IgJ0KzEp19Z3YiA=

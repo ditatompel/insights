@@ -42,10 +42,10 @@ Sebelum memulai dan supaya lebih jelas, saya informasikan dulu bahwa di artikel
 ini saya menggunakan jaringan `192.168.2.0/24`. Sedangkan alamat IP STB Armbian
 dimana AdGuard _secondary DNS resolver_ akan diinstall adalah `192.168.2.253`.
 
-Supaya teman-teman mempunyai gambaran prosesnya, saya juga akan menyertakan
-video saat saya melakukan installasi dan konfigurasi AdGuard, namun saat ini
-video tersebut belum siap untuk diupload. jadi artikel ini akan saya update
-begitu video tersebut sudah saya upload ke YouTube. jadi mohon bersabar. xD
+Supaya teman-teman mempunyai gambaran prosesnya, saya juga menyertakan video
+saat saya melakukan installasi dan konfigurasi AdGuard berikut:
+
+{{< youtube twr8ImCmE4c >}}
 
 > **Catatan**: Sebenarnya, Armbian sudah menyediakan `armbian-config` yang bisa
 > digunakan untuk menginstall _software-software_ atau _service_ seperti
@@ -123,6 +123,10 @@ Setelah itu, tekan tombol **"Next"** dan buat user dan password untuk admin
 web UI. Ikuti langkah-langkah selanjutnya dan seharusnya teman-teman sudah bisa
 melakukan login ke AdGuard Home dashboard menggunakan username dan password
 yang baru saja dibuat dan melakukan konfigurasi lanjutan.
+
+> Jika teman-teman memiliki beberapa AdGuard Home dan ingin mereplikasi
+> konfigurasi secara berkala dan otomatis, teman-teman bisa mengikuti artikel
+> tentang [Cara Sinkronisasi 2 AdGuard Server Atau Lebih]({{< ref "/tutorials/cara-sinkronisasi-2-adguard-server-atau-lebih/index.id.md" >}}).
 
 [soc-s905x]: https://www.armbian.com/soc/s905x/ "Armbian Amlogic S905X Page"
 [armbian-website]: https://www.armbian.com "Armbian Official Website"

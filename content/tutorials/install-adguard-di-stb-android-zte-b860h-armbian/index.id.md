@@ -42,10 +42,10 @@ Sebelum memulai dan supaya lebih jelas, saya informasikan dulu bahwa di artikel
 ini saya menggunakan jaringan `192.168.2.0/24`. Sedangkan alamat IP STB Armbian
 dimana AdGuard _secondary DNS resolver_ akan diinstall adalah `192.168.2.253`.
 
-Supaya teman-teman mempunyai gambaran prosesnya, saya juga akan menyertakan
-video saat saya melakukan installasi dan konfigurasi AdGuard, namun saat ini
-video tersebut belum siap untuk diupload. jadi artikel ini akan saya update
-begitu video tersebut sudah saya upload ke YouTube. jadi mohon bersabar. xD
+Supaya teman-teman mempunyai gambaran prosesnya, saya juga menyertakan video
+saat saya melakukan installasi dan konfigurasi AdGuard berikut:
+
+{{< youtube twr8ImCmE4c >}}
 
 > **Catatan**: Sebenarnya, Armbian sudah menyediakan `armbian-config` yang bisa
 > digunakan untuk menginstall _software-software_ atau _service_ seperti

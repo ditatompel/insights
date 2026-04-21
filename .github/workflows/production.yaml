@@ -59,7 +59,7 @@ jobs:
         run: hugo --minify --gc --enableGitInfo --cleanDestinationDir
 
       - name: Deploy
-        uses: burnett01/rsync-deployments@5.2
+        uses: burnett01/rsync-deployments@8.0.5
         with:
           switches: -avzr --quiet --delete
           path: public/

@@ -1,0 +1,64 @@
+name: Staging
+
+on:
+  pull_request:
+
+  # allow triggering workflow manually.
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build and copy to staging VPS
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'ditatompel'
+    environment: staging
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
+      - name: Cache dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Setup Hugo
+        run: CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@v0.134.1
+
+      - name: Cache Hugo modules
+        uses: actions/cache@v5
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
+      - name: Build
+        run: hugo --minify --gc --enableGitInfo --cleanDestinationDir
+
+      # - name: Deploy to staging
+      #   uses: burnett01/rsync-deployments@5.2
+      #   with:
+      #     switches: -avzr --quiet --delete
+      #     path: public/
+      #     remote_path: ${{ secrets.DEPLOY_PATH }}
+      #     remote_host: ${{ secrets.DEPLOY_HOST }}
+      #     remote_user: ${{ secrets.DEPLOY_USER }}
+      #     remote_key: ${{ secrets.DEPLOY_KEY }}

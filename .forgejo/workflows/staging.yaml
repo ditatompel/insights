@@ -30,7 +30,6 @@ jobs:
           curl -LJO https://github.com/sass/dart-sass/releases/download/1.100.0/dart-sass-1.100.0-linux-x64.tar.gz
           tar -xzf dart-sass-1.100.0-linux-x64.tar.gz
           cp -r dart-sass/* /usr/local/bin
-        run: sudo snap install dart-sass
 
       - name: Cache dependencies
         uses: actions/cache@v5

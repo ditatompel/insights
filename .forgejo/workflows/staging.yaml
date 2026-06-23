@@ -32,7 +32,7 @@ jobs:
           cp -r dart-sass/* /usr/local/bin
 
       - name: Cache dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -51,7 +51,7 @@ jobs:
         run: CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@v0.134.1
 
       - name: Cache Hugo modules
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}

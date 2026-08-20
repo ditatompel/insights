@@ -109,8 +109,8 @@ settings:
 You need to set up and run WireGuard on the VPS server which will be used to
 communicate with the LXC server on the local network. If you're new to
 WireGuard configuration, I recommend reviewing my previous articles on [setting
-up a WireGuard VPN server manually]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.id.md" >}})
-or [using WireGuard-UI]({{< ref "/tutorials/installing-wireguard-ui-to-manage-your-wireguard-vpn-server/index.id.md" >}}).
+up a WireGuard VPN server manually]({{< ref "/tutorials/how-to-setup-your-own-wireguard-vpn-server/index.md" >}})
+or [using WireGuard-UI]({{< ref "/tutorials/installing-wireguard-ui-to-manage-your-wireguard-vpn-server/index.md" >}}).
 
 Here's an example of my WireGuard configuration on my VPS server:
 

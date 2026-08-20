@@ -65,8 +65,7 @@ pwa:
     - 256
     - 512
   precaches:
-    - url: /en/
-    - url: /id/
+    - url: /
   manifest:
     background_color: "#712cf9"
     theme_color: "#712cf9"

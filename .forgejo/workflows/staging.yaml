@@ -10,7 +10,7 @@ jobs:
   deploy:
     name: Build and copy to staging VPS
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'ditatompel'
+    if: github.repository_owner == 'turks'
     environment: staging
     permissions:
       contents: read

@@ -12,7 +12,7 @@ jobs:
   deploy:
     name: Build and copy to production server
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'ditatompel'
+    if: github.repository_owner == 'turks'
     environment: production
     permissions:
       contents: read
